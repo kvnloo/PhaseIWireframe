@@ -1,0 +1,12 @@
+PODS:
+  - InputValidators (1.0.0)
+
+DEPENDENCIES:
+  - InputValidators
+
+SPEC CHECKSUMS:
+  InputValidators: b278d3042d23893533d688cfb1563370d4cb184e
+
+PODFILE CHECKSUM: f4ab53829456bc3a26da54ea4845674e2dc97310
+
+COCOAPODS: 1.2.0

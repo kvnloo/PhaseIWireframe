@@ -1,0 +1,509 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/AppDelegate.swift",
+      "line": 13,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/AppDelegate.swift",
+      "line": 15,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/AppDelegate.swift",
+      "line": 18,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/AppDelegate.swift",
+      "line": 23,
+      "symbol": "AppDelegate.applicationWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/AppDelegate.swift",
+      "line": 28,
+      "symbol": "AppDelegate.applicationDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/AppDelegate.swift",
+      "line": 33,
+      "symbol": "AppDelegate.applicationWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/AppDelegate.swift",
+      "line": 37,
+      "symbol": "AppDelegate.applicationDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/AppDelegate.swift",
+      "line": 41,
+      "symbol": "AppDelegate.applicationWillTerminate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/AppDelegate.swift",
+      "line": 49,
+      "symbol": "AppDelegate.persistentContainer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/AppDelegate.swift",
+      "line": 78,
+      "symbol": "AppDelegate.saveContext()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/CustomUITextField.swift",
+      "line": 12,
+      "symbol": "CustomUITextField",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/CustomUITextField.swift",
+      "line": 15,
+      "symbol": "CustomUITextField.leftImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/CustomUITextField.swift",
+      "line": 21,
+      "symbol": "CustomUITextField.leftPadding",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/CustomUITextField.swift",
+      "line": 22,
+      "symbol": "CustomUITextField.imageWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/CustomUITextField.swift",
+      "line": 23,
+      "symbol": "CustomUITextField.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/CustomUITextField.swift",
+      "line": 31,
+      "symbol": "CustomUITextField.leftViewRect(forBounds:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/CustomUITextField.swift",
+      "line": 37,
+      "symbol": "CustomUITextField.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/CustomUITextField.swift",
+      "line": 46,
+      "symbol": "CustomUITextField.updateView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/DemoToolsViewController.swift",
+      "line": 11,
+      "symbol": "DemoToolsViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/DemoToolsViewController.swift",
+      "line": 15,
+      "symbol": "DemoToolsViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/DemoToolsViewController.swift",
+      "line": 23,
+      "symbol": "DemoToolsViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralColorPallete.swift",
+      "line": 13,
+      "symbol": "UIColor.BACKGROUND",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralColorPallete.swift",
+      "line": 21,
+      "symbol": "UIColor.BLUE",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralColorPallete.swift",
+      "line": 29,
+      "symbol": "UIColor.GREEN",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralColorPallete.swift",
+      "line": 37,
+      "symbol": "UIColor.RED",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralColorPallete.swift",
+      "line": 45,
+      "symbol": "UIColor.YELLOW",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralColorPallete.swift",
+      "line": 53,
+      "symbol": "UIColor.CHARCOAL",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralColorPallete.swift",
+      "line": 61,
+      "symbol": "UIColor.CREME",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralColorPallete.swift",
+      "line": 69,
+      "symbol": "UIColor.WHITE",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralColorPallete.swift",
+      "line": 77,
+      "symbol": "UIColor.BLACK",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralColorPallete.swift",
+      "line": 85,
+      "symbol": "UIColor.FB_BLUE",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralColorPallete.swift",
+      "line": 93,
+      "symbol": "UIColor.GOOGLE_RED",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralUIButton.swift",
+      "line": 11,
+      "symbol": "GeneralUIButton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralUIButton.swift",
+      "line": 21,
+      "symbol": "GeneralUIButton.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralUILabel.swift",
+      "line": 11,
+      "symbol": "GeneralUILabel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralUILabel.swift",
+      "line": 14,
+      "symbol": "GeneralUILabel.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralUITableView.swift",
+      "line": 11,
+      "symbol": "GeneralUITableView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralUITableView.swift",
+      "line": 14,
+      "symbol": "GeneralUITableView.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralUITextField.swift",
+      "line": 11,
+      "symbol": "GeneralUITextField",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralUITextField.swift",
+      "line": 14,
+      "symbol": "GeneralUITextField.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralUIViewController.swift",
+      "line": 11,
+      "symbol": "GeneralUIViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralUIViewController.swift",
+      "line": 14,
+      "symbol": "GeneralUIViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GeneralUIViewController.swift",
+      "line": 21,
+      "symbol": "GeneralUIViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GerneralFonts.swift",
+      "line": 13,
+      "symbol": "UIFont.BUTTON",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GerneralFonts.swift",
+      "line": 17,
+      "symbol": "UIFont.LABEL",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/GerneralFonts.swift",
+      "line": 21,
+      "symbol": "UIFont.TEXTFIELD",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/InitialViewController.swift",
+      "line": 11,
+      "symbol": "InitialViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/InitialViewController.swift",
+      "line": 14,
+      "symbol": "InitialViewController.createAccountButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/InitialViewController.swift",
+      "line": 15,
+      "symbol": "InitialViewController.logInButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/InitialViewController.swift",
+      "line": 16,
+      "symbol": "InitialViewController.demoToolsButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/InitialViewController.swift",
+      "line": 19,
+      "symbol": "InitialViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/InitialViewController.swift",
+      "line": 29,
+      "symbol": "InitialViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/InitialViewController.swift",
+      "line": 36,
+      "symbol": "InitialViewController.viewWillDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/InitialViewController.swift",
+      "line": 44,
+      "symbol": "InitialViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/LoginViewController.swift",
+      "line": 11,
+      "symbol": "LoginViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/LoginViewController.swift",
+      "line": 17,
+      "symbol": "LoginViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/LoginViewController.swift",
+      "line": 22,
+      "symbol": "LoginViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpTableViewCell.swift",
+      "line": 11,
+      "symbol": "SignUpTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpTableViewCell.swift",
+      "line": 14,
+      "symbol": "SignUpTableViewCell.button",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpTableViewCell.swift",
+      "line": 15,
+      "symbol": "SignUpTableViewCell.label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpTableViewCell.swift",
+      "line": 16,
+      "symbol": "SignUpTableViewCell.textField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpTableViewCell.swift",
+      "line": 20,
+      "symbol": "SignUpTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpTableViewCell.swift",
+      "line": 25,
+      "symbol": "SignUpTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpViewController.swift",
+      "line": 11,
+      "symbol": "SignUpViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpViewController.swift",
+      "line": 14,
+      "symbol": "SignUpViewController.signUpTableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpViewController.swift",
+      "line": 17,
+      "symbol": "SignUpViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpViewController.swift",
+      "line": 22,
+      "symbol": "SignUpViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpViewController.swift",
+      "line": 28,
+      "symbol": "SignUpViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpViewController.swift",
+      "line": 32,
+      "symbol": "SignUpViewController.tableView(_:heightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpViewController.swift",
+      "line": 45,
+      "symbol": "SignUpViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpViewController.swift",
+      "line": 49,
+      "symbol": "SignUpViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone/Phase 1 Wireframe/SignUpViewController.swift",
+      "line": 97,
+      "symbol": "SignUpViewController.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/iphone"
+}
