@@ -15,7 +15,7 @@ class GeneralUITextField: UITextField {
         
         // Do any additional setup after awakening
         self.backgroundColor       = UIColor.CHARCOAL
-        self.attributedPlaceholder = NSAttributedString(string: "placeholder", attributes:[NSForegroundColorAttributeName : UIColor.WHITE])
+        self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSForegroundColorAttributeName: UIColor.CREME])
         self.textColor             = UIColor.WHITE
         self.font                  = UIFont.TEXTFIELD
         

@@ -14,16 +14,22 @@ class InitialViewController: GeneralUIViewController {
     @IBOutlet weak var createAccountButton: GeneralUIButton!
     @IBOutlet weak var logInButton: GeneralUIButton!
     @IBOutlet weak var demoToolsButton: GeneralUIButton!
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var logoLabel: GeneralUILabel!
     
     // MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        logInButton.backgroundColor = UIColor.WHITE
+        
         logInButton.setTitleColor(UIColor.BLACK, for: .normal)
-        demoToolsButton.backgroundColor = UIColor.WHITE
         demoToolsButton.setTitleColor(UIColor.BLACK, for: .normal)
+        logInButton.backgroundColor     = UIColor.WHITE
+        demoToolsButton.backgroundColor = UIColor.WHITE
+        logoImageView.tintColor         = UIColor.CREME
+        logoLabel.font                  = UIFont.LOGO
+        logoLabel.textColor             = UIColor.CREME
     }
     
     override func viewWillAppear(_ animated: Bool) {

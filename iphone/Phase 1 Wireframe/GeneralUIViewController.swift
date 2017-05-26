@@ -16,6 +16,9 @@ class GeneralUIViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.BACKGROUND
+        self.navigationController?.navigationBar.setBottomBorderColor(color: UIColor.CREME, height: 0.25)
+        let item = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem = item
     }
 
     override func didReceiveMemoryWarning() {

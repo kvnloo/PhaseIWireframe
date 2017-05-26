@@ -15,6 +15,9 @@
 		0A7BE23F1ED54AA800792CD7 /* Phase_1_WireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE23E1ED54AA800792CD7 /* Phase_1_WireframeTests.swift */; };
 		0A7BE24A1ED54AA800792CD7 /* Phase_1_WireframeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2491ED54AA800792CD7 /* Phase_1_WireframeUITests.swift */; };
 		0A7BE2581ED55D1000792CD7 /* GeneralUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2571ED55D1000792CD7 /* GeneralUIButton.swift */; };
+		0A7E51201ED79B2400DD0B78 /* GeneralUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E511F1ED79B2400DD0B78 /* GeneralUINavigationBar.swift */; };
+		0A7E51221ED7A47200DD0B78 /* NoiseMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E51211ED7A47200DD0B78 /* NoiseMeterViewController.swift */; };
+		0A7E51241ED7A52D00DD0B78 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E51231ED7A52D00DD0B78 /* EqualizerViewController.swift */; };
 		0AB970771ED6529900A5ADBF /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9706A1ED6529900A5ADBF /* LICENSE.txt */; };
 		0AB970781ED6529900A5ADBF /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9706B1ED6529900A5ADBF /* Roboto-Black.ttf */; };
 		0AB970791ED6529900A5ADBF /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9706C1ED6529900A5ADBF /* Roboto-BlackItalic.ttf */; };
@@ -78,6 +81,9 @@
 		0A7BE2491ED54AA800792CD7 /* Phase_1_WireframeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase_1_WireframeUITests.swift; sourceTree = "<group>"; };
 		0A7BE24B1ED54AA800792CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A7BE2571ED55D1000792CD7 /* GeneralUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUIButton.swift; sourceTree = "<group>"; };
+		0A7E511F1ED79B2400DD0B78 /* GeneralUINavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUINavigationBar.swift; sourceTree = "<group>"; };
+		0A7E51211ED7A47200DD0B78 /* NoiseMeterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseMeterViewController.swift; sourceTree = "<group>"; };
+		0A7E51231ED7A52D00DD0B78 /* EqualizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
 		0AB9706A1ED6529900A5ADBF /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		0AB9706B1ED6529900A5ADBF /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		0AB9706C1ED6529900A5ADBF /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -247,6 +253,7 @@
 				0AC92E711ED6C333007D636D /* GeneralUITableView.swift */,
 				0A7BE2571ED55D1000792CD7 /* GeneralUIButton.swift */,
 				0AC92E731ED6C577007D636D /* GeneralUITableViewCell.swift */,
+				0A7E511F1ED79B2400DD0B78 /* GeneralUINavigationBar.swift */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -254,6 +261,8 @@
 		0AC92E6F1ED6BFDF007D636D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0A7E51211ED7A47200DD0B78 /* NoiseMeterViewController.swift */,
+				0A7E51231ED7A52D00DD0B78 /* EqualizerViewController.swift */,
 				0AC92E671ED6BB3B007D636D /* DemoToolsViewController.swift */,
 				0A7BE2281ED54AA800792CD7 /* LoginViewController.swift */,
 				0AC92E651ED6BA64007D636D /* InitialViewController.swift */,
@@ -596,11 +605,14 @@
 				0AC92E661ED6BA64007D636D /* InitialViewController.swift in Sources */,
 				0A7BE2291ED54AA800792CD7 /* LoginViewController.swift in Sources */,
 				0AC92E741ED6C577007D636D /* GeneralUITableViewCell.swift in Sources */,
+				0A7E51201ED79B2400DD0B78 /* GeneralUINavigationBar.swift in Sources */,
 				0AC92E6A1ED6BC71007D636D /* GeneralUILabel.swift in Sources */,
+				0A7E51241ED7A52D00DD0B78 /* EqualizerViewController.swift in Sources */,
 				0AC92E721ED6C333007D636D /* GeneralUITableView.swift in Sources */,
 				0AC92E5D1ED6B0C0007D636D /* GeneralColorPallete.swift in Sources */,
 				0A7BE2271ED54AA800792CD7 /* AppDelegate.swift in Sources */,
 				0AC92E6E1ED6BEE2007D636D /* GeneralUITextField.swift in Sources */,
+				0A7E51221ED7A47200DD0B78 /* NoiseMeterViewController.swift in Sources */,
 				0A7BE22F1ED54AA800792CD7 /* Phase_1_Wireframe.xcdatamodeld in Sources */,
 				0AC92E5F1ED6B373007D636D /* GeneralUIViewController.swift in Sources */,
 				0AB970861ED65F3700A5ADBF /* CustomUITextField.swift in Sources */,

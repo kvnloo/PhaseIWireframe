@@ -56,8 +56,5 @@ class CustomUITextField: GeneralUITextField {
             leftViewMode = UITextFieldViewMode.never
             leftView = nil
         }
-        
-        // Placeholder text color
-        attributedPlaceholder = NSAttributedString(string: placeholder != nil ?  placeholder! : "", attributes:[NSForegroundColorAttributeName: color])
     }
 }

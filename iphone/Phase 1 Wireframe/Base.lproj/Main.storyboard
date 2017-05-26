@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Roboto-Black.ttf">
+            <string>Roboto-Black</string>
+        </array>
         <array key="Roboto-Bold.ttf">
             <string>Roboto-Bold</string>
         </array>
@@ -34,10 +37,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="IsR-cI-xnU">
-                                <rect key="frame" x="62" y="212.5" width="250" height="243"/>
+                                <rect key="frame" x="62" y="33" width="250" height="602"/>
                                 <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Cqd-H1-lca">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="324"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Kfu-14-eoQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="1Q0-rC-Nae"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="InE-Gw-IcZ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JubiAudio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhF-Fe-VRM" customClass="GeneralUILabel" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="268" width="250" height="56"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="48"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnY-A9-njh" customClass="GeneralUIButton" customModule="Phase_1_Wireframe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="42"/>
+                                        <rect key="frame" x="0.0" y="360" width="250" height="42"/>
                                         <color key="backgroundColor" red="0.16078431372549018" green="0.63921568627450975" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="nBr-JG-aJ8"/>
@@ -51,17 +72,17 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XCA-Vk-avD">
-                                        <rect key="frame" x="0.0" y="78" width="250" height="64.5"/>
+                                        <rect key="frame" x="0.0" y="438" width="250" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already a user?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jI0-7f-nDC" customClass="GeneralUILabel" customModule="Phase_1_Wireframe" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="250" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="14"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlg-Sd-PvQ" customClass="GeneralUIButton" customModule="Phase_1_Wireframe" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="22.5" width="250" height="42"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <rect key="frame" x="0.0" y="22" width="250" height="42"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="By0-eh-Fgc"/>
                                                     <constraint firstAttribute="height" constant="42" id="a7e-tE-ri0"/>
@@ -76,17 +97,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="w7e-hw-sX0">
-                                        <rect key="frame" x="0.0" y="178.5" width="250" height="64.5"/>
+                                        <rect key="frame" x="0.0" y="538" width="250" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't want to sign up or log in?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7r-Ke-IQd" customClass="GeneralUILabel" customModule="Phase_1_Wireframe" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="250" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="14"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLH-Cx-RMZ" customClass="GeneralUIButton" customModule="Phase_1_Wireframe" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="22.5" width="250" height="42"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <rect key="frame" x="0.0" y="22" width="250" height="42"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="efX-U3-CRn"/>
                                                     <constraint firstAttribute="height" constant="42" id="ld4-rh-REx"/>
@@ -103,10 +124,12 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.15686274509803921" green="0.1764705882352941" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.1764705882" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="IsR-cI-xnU" secondAttribute="bottom" constant="24" id="RJq-sh-wWT"/>
                             <constraint firstItem="IsR-cI-xnU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cC5-mE-kLM"/>
                             <constraint firstItem="IsR-cI-xnU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cE5-PA-mAL"/>
+                            <constraint firstItem="IsR-cI-xnU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="24" id="h6t-Rd-46o"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eJb-mV-yxJ"/>
@@ -114,13 +137,15 @@
                         <outlet property="createAccountButton" destination="ZnY-A9-njh" id="meG-rk-IUN"/>
                         <outlet property="demoToolsButton" destination="sLH-Cx-RMZ" id="Xst-Uq-4to"/>
                         <outlet property="logInButton" destination="zlg-Sd-PvQ" id="fQS-BN-OJP"/>
+                        <outlet property="logoImageView" destination="Kfu-14-eoQ" id="02N-3P-SA5"/>
+                        <outlet property="logoLabel" destination="YhF-Fe-VRM" id="8Zn-z7-SVD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1688.8" y="35.532233883058474"/>
         </scene>
-        <!--Login View Controller-->
+        <!--LOG IN-->
         <scene sceneID="qJd-1O-XY8">
             <objects>
                 <viewController id="G4O-ro-dCF" customClass="LoginViewController" customModule="Phase_1_Wireframe" customModuleProvider="target" sceneMemberID="viewController">
@@ -131,8 +156,9 @@
                     <view key="view" contentMode="scaleToFill" id="eyT-6f-akz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.1764705882" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="LOG IN" id="OVT-MJ-wtx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0A4-Cs-eh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -275,10 +301,10 @@
             </objects>
             <point key="canvasLocation" x="2793" y="-635"/>
         </scene>
-        <!--View Controller-->
+        <!--DEMO TOOLS-->
         <scene sceneID="yil-kb-gmA">
             <objects>
-                <viewController id="e3D-r8-DUa" sceneMemberID="viewController">
+                <viewController id="e3D-r8-DUa" customClass="DemoToolsViewController" customModule="Phase_1_Wireframe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hmj-dZ-QB1"/>
                         <viewControllerLayoutGuide type="bottom" id="l6x-be-J3O"/>
@@ -286,19 +312,59 @@
                     <view key="view" contentMode="scaleToFill" id="2FP-qM-NEf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="dfK-Tq-Z3E">
+                                <rect key="frame" x="62" y="216.5" width="250" height="234"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lm9-lK-tLc" customClass="GeneralUIButton" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="42"/>
+                                        <color key="backgroundColor" red="0.16078431369999999" green="0.63921568630000003" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="Ynm-DE-CWW"/>
+                                            <constraint firstAttribute="width" constant="250" id="exc-LN-vNa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="NOISE METER"/>
+                                        <connections>
+                                            <segue destination="5aI-I9-B0U" kind="show" id="uw9-YO-Rru"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seO-bB-Skv" customClass="GeneralUIButton" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="192" width="250" height="42"/>
+                                        <color key="backgroundColor" red="0.16078431369999999" green="0.63921568630000003" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="fRK-kQ-nkh"/>
+                                            <constraint firstAttribute="height" constant="42" id="r0u-6G-1rl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="EQUALIZER"/>
+                                        <connections>
+                                            <segue destination="fED-7N-Nlh" kind="show" id="ZSt-7R-isY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.1764705882" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dfK-Tq-Z3E" firstAttribute="centerY" secondItem="2FP-qM-NEf" secondAttribute="centerY" id="6ml-ja-wId"/>
+                            <constraint firstItem="dfK-Tq-Z3E" firstAttribute="centerX" secondItem="2FP-qM-NEf" secondAttribute="centerX" id="XHZ-N3-2UR"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="DEMO TOOLS" id="h5z-rU-DGb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRV-Tg-hEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2793" y="881"/>
+            <point key="canvasLocation" x="2793" y="879"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FyU-cv-VpV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fk1-GX-45Z" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4si-bu-0Ll">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4si-bu-0Ll">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -311,5 +377,102 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="35.532233883058474"/>
         </scene>
+        <!--NOISE METER-->
+        <scene sceneID="xk5-FK-B4Z">
+            <objects>
+                <viewController id="5aI-I9-B0U" customClass="NoiseMeterViewController" customModule="Phase_1_Wireframe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hK7-al-hPS"/>
+                        <viewControllerLayoutGuide type="bottom" id="knd-Ni-EkF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="603-GV-KSe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Cv-7d-qiD">
+                                <rect key="frame" x="117" y="305" width="141.5" height="56.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2x-Ox-qTp" customClass="GeneralUILabel" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="56.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="48"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="dB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH5-cR-TK3" customClass="GeneralUILabel" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                        <rect key="frame" x="83.5" y="0.0" width="58" height="56.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="48"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Lrn-Lu-INf">
+                                <rect key="frame" x="20" y="121" width="335" height="36"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xSD-Rw-xq5">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNB-m3-8Ye">
+                                        <rect key="frame" x="67" y="0.0" width="67" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z14-96-rhD">
+                                        <rect key="frame" x="134" y="0.0" width="67" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZeN-J9-AS1">
+                                        <rect key="frame" x="201" y="0.0" width="67" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gs9-MV-1wI">
+                                        <rect key="frame" x="268" y="0.0" width="67" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="u5x-iJ-kGf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.1764705882" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lrn-Lu-INf" secondAttribute="trailing" constant="4" id="IKG-MI-Xek"/>
+                            <constraint firstItem="Lrn-Lu-INf" firstAttribute="leading" secondItem="603-GV-KSe" secondAttribute="leadingMargin" constant="4" id="wBf-bq-MHx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="NOISE METER" id="wHd-zY-B7o"/>
+                    <connections>
+                        <outlet property="noiseLevelLabel" destination="k2x-Ox-qTp" id="Np3-Pz-814"/>
+                        <outlet property="noiseMeterStackView" destination="Lrn-Lu-INf" id="xDa-Ta-GX3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mja-yx-SNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3853.5999999999999" y="549.17541229385313"/>
+        </scene>
+        <!--EQUALIZER-->
+        <scene sceneID="Lr7-Uq-P5S">
+            <objects>
+                <viewController id="fED-7N-Nlh" customClass="EqualizerViewController" customModule="Phase_1_Wireframe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rkk-MO-KKj"/>
+                        <viewControllerLayoutGuide type="bottom" id="yv2-j2-ty1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jMk-Mq-my9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.1764705882" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="EQUALIZER" id="y5Y-ef-SHH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hsf-dy-NFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3854" y="1273"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="256" height="256"/>
+    </resources>
 </document>

@@ -1,5 +1,5 @@
 //
-//  DemoToolsViewController.swift
+//  EqualizerViewController.swift
 //  Phase 1 Wireframe
 //
 //  Created by Kevin Rajan on 5/25/17.
@@ -8,21 +8,17 @@
 
 import UIKit
 
-class DemoToolsViewController: GeneralUIViewController {
+class EqualizerViewController: GeneralUIViewController {
 
-    
-    // MARK: - UIViewController
+    // MARK: - GeneralUIViewController Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
 }

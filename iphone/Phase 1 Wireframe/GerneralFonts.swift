@@ -22,4 +22,8 @@ extension UIFont {
         return UIFont(name: "Roboto-Bold", size: 14.0)!
     }
     
+    public class var LOGO: UIFont {
+        return UIFont(name: "Roboto-Black", size: 36.0)!
+    }
+    
 }
