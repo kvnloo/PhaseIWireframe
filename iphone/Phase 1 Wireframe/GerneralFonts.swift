@@ -23,7 +23,14 @@ extension UIFont {
     }
     
     public class var LOGO: UIFont {
-        return UIFont(name: "Roboto-Black", size: 36.0)!
+        return UIFont(name: "Roboto-Black", size: 40.0)!
     }
     
+    public class var LARGE: UIFont {
+        return UIFont(name: "Roboto-Black", size: 48.0)!
+    }
+    
+    public class var CAPTION: UIFont {
+        return UIFont(name: "Roboto-Light", size: 12.0)!
+    }
 }

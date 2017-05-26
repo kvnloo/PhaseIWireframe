@@ -15,7 +15,19 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     
     // MARK: - IBOutlets
     @IBOutlet weak var noiseLevelLabel: GeneralUILabel!
-    @IBOutlet weak var noiseMeterStackView: UIStackView!
+    @IBOutlet weak var dbLabel: GeneralUILabel!
+    
+    @IBOutlet weak var silentLabel: GeneralUILabel!
+    @IBOutlet weak var quietLabel: GeneralUILabel!
+    @IBOutlet weak var averageLabel: GeneralUILabel!
+    @IBOutlet weak var noisyLabel: GeneralUILabel!
+    @IBOutlet weak var loudLabel: GeneralUILabel!
+    
+    @IBOutlet weak var noiseMeterViewOne: UIView!
+    @IBOutlet weak var noiseMeterViewTwo: UIView!
+    @IBOutlet weak var noiseMeterViewThree: UIView!
+    @IBOutlet weak var noiseMeterViewFour: UIView!
+    @IBOutlet weak var noiseMeterViewFive: UIView!
     
     // MARK: - Global Variables
     var recorder: AVAudioRecorder?
@@ -28,8 +40,10 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        colorViews()
-        setup()
+        setupNoiseMeter()
+        noiseLevelLabel.font = UIFont.LARGE
+        dbLabel.font = UIFont.LARGE
+        setupAVAudioSession()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +52,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     }
     
     // MARK: - Logic
-    func setup() {
+    func setupAVAudioSession() {
         //make an AudioSession, set it to PlayAndRecord and make it active
         let audioSession = AVAudioSession.sharedInstance()
         audioSession.requestRecordPermission { [unowned self] allowed in
@@ -52,40 +66,6 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
                 
             }
         }
-        /*
-        audioSession.setCategory(.defaultToSpeaker, error: nil)
-        audioSession.setActive(true, error: nil)
-        
-        
-        // make a dictionary to hold the recording settings so we can instantiate our AVAudioRecorder
-        var recordSettings: [NSObject : AnyObject] = [AVFormatIDKey:kAudioFormatAppleIMA4,
-                                                      AVSampleRateKey:44100.0,
-                                                      AVNumberOfChannelsKey:2,AVEncoderBitRateKey:12800,
-                                                      AVLinearPCMBitDepthKey:16,
-                                                      AVEncoderAudioQualityKey:AVAudioQuality.Max.rawValue
-            
-        ]
-        
-        //declare a variable to store the returned error if we have a problem instantiating our AVAudioRecorder
-        var error: NSError?
-        
-        //Instantiate an AVAudioRecorder
-        recorder = AVAudioRecorder(URL:nil, settings: recordSettings, error: &error)
-        //If there's an error, print that shit - otherwise, run prepareToRecord and meteringEnabled to turn on metering (must be run in that order)
-        if let e = error {
-            print(e.localizedDescription)
-        } else {
-            recorder.prepareToRecord()
-            recorder.isMeteringEnabled = true
-            
-            //start recording
-            recorder.record()
-            
-            //instantiate a timer to be called with whatever frequency we want to grab metering values
-            self.levelTimer = Timer.scheduledTimerWithTimeInterval(0.02, target: self, selector: Selector("levelTimerCallback"), userInfo: nil, repeats: true)
-            
-        }
- */
     }
     func record() {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -101,7 +81,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
             let settings = [
                 AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
                 AVSampleRateKey: 44100,
-                AVNumberOfChannelsKey: 2,
+                AVNumberOfChannelsKey: 1,
                 AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
             ]
             // create the audio recording, and assign ourselves as the delegate
@@ -140,21 +120,29 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         //we have to update meters before we can get the metering values
         recorder!.updateMeters()
         
-        print("channel 0: ", recorder!.averagePower(forChannel: 0))
+        // print("channel 0: ", recorder!.averagePower(forChannel: 0))
         let dB = convertToDecibel(originalValue: recorder!.averagePower(forChannel: 0))
         updateLabels(dB: dB)
-        
-        // print("channel 1: ", recorder!.averagePower(forChannel: 1))
-        /*
-        if recorder!.averagePower(forChannel: 0) > -7 {
-            print("Dis be da level I'm hearin' you in dat mic ")
-            print(recorder!.averagePower(forChannel: 0))
-            print("Do the thing I want, mofo")
-        }*/
     }
     
     func updateLabels(dB: Float) {
-        
+        noiseLevelLabel.text = String(Int(dB))
+        if(dB < 50) {
+            noiseLevelLabel.textColor = UIColor.BLUE
+            dbLabel.textColor = UIColor.BLUE
+        } else if(dB < 75) {
+            noiseLevelLabel.textColor = UIColor.GREEN
+            dbLabel.textColor = UIColor.GREEN
+        }  else if(dB < 90) {
+            noiseLevelLabel.textColor = UIColor.YELLOW
+            dbLabel.textColor = UIColor.YELLOW
+        } else if(dB < 100) {
+            noiseLevelLabel.textColor = UIColor.ORANGE
+            dbLabel.textColor = UIColor.ORANGE
+        }  else if(dB < 120) {
+            noiseLevelLabel.textColor = UIColor.RED
+            dbLabel.textColor = UIColor.RED
+        }
     }
     
     func convertToDecibel (originalValue: Float) -> Float {
@@ -176,13 +164,18 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         return level * 120
     }
     
-    func colorViews() {
-        var views = noiseMeterStackView.subviews
-        views[0].backgroundColor = UIColor.BLUE
-        views[1].backgroundColor = UIColor.GREEN
-        views[2].backgroundColor = UIColor.YELLOW
-        views[3].backgroundColor = UIColor.ORANGE
-        views[4].backgroundColor = UIColor.RED
+    func setupNoiseMeter() {
+        noiseMeterViewOne.backgroundColor   = UIColor.BLUE
+        noiseMeterViewTwo.backgroundColor   = UIColor.GREEN
+        noiseMeterViewThree.backgroundColor = UIColor.YELLOW
+        noiseMeterViewFour.backgroundColor  = UIColor.ORANGE
+        noiseMeterViewFive.backgroundColor  = UIColor.RED
+        silentLabel.font  = UIFont.CAPTION
+        quietLabel.font   = UIFont.CAPTION
+        averageLabel.font = UIFont.CAPTION
+        noisyLabel.font   = UIFont.CAPTION
+        loudLabel.font    = UIFont.CAPTION
+//
     }
     
     

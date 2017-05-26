@@ -43,6 +43,14 @@ extension UIColor {
     }
     
     public class var YELLOW: UIColor {
+        // HEX:  #eec643
+        // RGB:  238 198 67
+        // HSV:  46 72 93
+        // CMYK: 0 17 72 7
+        return UIColor(red: 238/255, green: 198/255, blue: 67/255, alpha: 1.0)
+    }
+    
+    public class var ORANGE: UIColor {
         // HEX:  #e9b251
         // RGB:  233 178 81
         // HSV:  38 65 91

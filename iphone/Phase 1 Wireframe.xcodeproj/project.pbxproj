@@ -35,7 +35,7 @@
 		0AB970881ED663CF00A5ADBF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB970871ED663CF00A5ADBF /* SignUpViewController.swift */; };
 		0AB9708A1ED66D3800A5ADBF /* SignUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB970891ED66D3800A5ADBF /* SignUpTableViewCell.swift */; };
 		0AC92E5B1ED68962007D636D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC92E5A1ED68962007D636D /* Assets.xcassets */; };
-		0AC92E5D1ED6B0C0007D636D /* GeneralColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E5C1ED6B0C0007D636D /* GeneralColorPallete.swift */; };
+		0AC92E5D1ED6B0C0007D636D /* GeneralUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E5C1ED6B0C0007D636D /* GeneralUIColor.swift */; };
 		0AC92E5F1ED6B373007D636D /* GeneralUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E5E1ED6B373007D636D /* GeneralUIViewController.swift */; };
 		0AC92E661ED6BA64007D636D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E651ED6BA64007D636D /* InitialViewController.swift */; };
 		0AC92E681ED6BB3B007D636D /* DemoToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E671ED6BB3B007D636D /* DemoToolsViewController.swift */; };
@@ -101,7 +101,7 @@
 		0AB970871ED663CF00A5ADBF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0AB970891ED66D3800A5ADBF /* SignUpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTableViewCell.swift; sourceTree = "<group>"; };
 		0AC92E5A1ED68962007D636D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0AC92E5C1ED6B0C0007D636D /* GeneralColorPallete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralColorPallete.swift; sourceTree = "<group>"; };
+		0AC92E5C1ED6B0C0007D636D /* GeneralUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUIColor.swift; sourceTree = "<group>"; };
 		0AC92E5E1ED6B373007D636D /* GeneralUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUIViewController.swift; sourceTree = "<group>"; };
 		0AC92E651ED6BA64007D636D /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		0AC92E671ED6BB3B007D636D /* DemoToolsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoToolsViewController.swift; sourceTree = "<group>"; };
@@ -246,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				0AC92E6B1ED6BD14007D636D /* GerneralFonts.swift */,
-				0AC92E5C1ED6B0C0007D636D /* GeneralColorPallete.swift */,
+				0AC92E5C1ED6B0C0007D636D /* GeneralUIColor.swift */,
 				0AC92E5E1ED6B373007D636D /* GeneralUIViewController.swift */,
 				0AC92E691ED6BC71007D636D /* GeneralUILabel.swift */,
 				0AC92E6D1ED6BEE2007D636D /* GeneralUITextField.swift */,
@@ -609,7 +609,7 @@
 				0AC92E6A1ED6BC71007D636D /* GeneralUILabel.swift in Sources */,
 				0A7E51241ED7A52D00DD0B78 /* EqualizerViewController.swift in Sources */,
 				0AC92E721ED6C333007D636D /* GeneralUITableView.swift in Sources */,
-				0AC92E5D1ED6B0C0007D636D /* GeneralColorPallete.swift in Sources */,
+				0AC92E5D1ED6B0C0007D636D /* GeneralUIColor.swift in Sources */,
 				0A7BE2271ED54AA800792CD7 /* AppDelegate.swift in Sources */,
 				0AC92E6E1ED6BEE2007D636D /* GeneralUITextField.swift in Sources */,
 				0A7E51221ED7A47200DD0B78 /* NoiseMeterViewController.swift in Sources */,
