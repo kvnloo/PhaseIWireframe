@@ -17,7 +17,8 @@
 		0A7BE2581ED55D1000792CD7 /* GeneralUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2571ED55D1000792CD7 /* GeneralUIButton.swift */; };
 		0A7E51201ED79B2400DD0B78 /* GeneralUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E511F1ED79B2400DD0B78 /* GeneralUINavigationBar.swift */; };
 		0A7E51221ED7A47200DD0B78 /* NoiseMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E51211ED7A47200DD0B78 /* NoiseMeterViewController.swift */; };
-		0A7E51241ED7A52D00DD0B78 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E51231ED7A52D00DD0B78 /* EqualizerViewController.swift */; };
+		0A7E51241ED7A52D00DD0B78 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E51231ED7A52D00DD0B78 /* RecorderViewController.swift */; };
+		0AB8B0D41ED9663F00BA3AD6 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB8B0D31ED9663F00BA3AD6 /* EqualizerViewController.swift */; };
 		0AB970771ED6529900A5ADBF /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9706A1ED6529900A5ADBF /* LICENSE.txt */; };
 		0AB970781ED6529900A5ADBF /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9706B1ED6529900A5ADBF /* Roboto-Black.ttf */; };
 		0AB970791ED6529900A5ADBF /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9706C1ED6529900A5ADBF /* Roboto-BlackItalic.ttf */; };
@@ -46,7 +47,7 @@
 		0AC92E741ED6C577007D636D /* GeneralUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E731ED6C577007D636D /* GeneralUITableViewCell.swift */; };
 		C7225FC173BDB775994AC548 /* Pods_Phase_1_WireframeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8328C4CA1CB318A446DDCE /* Pods_Phase_1_WireframeUITests.framework */; };
 		CDD8567697AAA3C2764C177B /* Pods_Phase_1_WireframeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E1E4DC0509EC69BA02F426 /* Pods_Phase_1_WireframeTests.framework */; };
-		E351DD171884785597919697 /* Pods_Phase_1_Wireframe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D32D7F85167E9BF036824 /* Pods_Phase_1_Wireframe.framework */; };
+		E351DD171884785597919697 /* Pods_Phase_1_Wireframe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D32D7F85167E9BF036824 /* Pods_Phase_1_Wireframe.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A5A8C8A1ED8FF430000392C /* Novocaine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Novocaine.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Phase_1_Wireframe-eiypuvltmqzjhxbiwdorbkouosgf/Build/Products/Debug-iphoneos/Novocaine/Novocaine.framework"; sourceTree = "<group>"; };
 		0A7BE2231ED54AA800792CD7 /* Phase 1 Wireframe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phase 1 Wireframe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A7BE2281ED54AA800792CD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +85,8 @@
 		0A7BE2571ED55D1000792CD7 /* GeneralUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUIButton.swift; sourceTree = "<group>"; };
 		0A7E511F1ED79B2400DD0B78 /* GeneralUINavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUINavigationBar.swift; sourceTree = "<group>"; };
 		0A7E51211ED7A47200DD0B78 /* NoiseMeterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseMeterViewController.swift; sourceTree = "<group>"; };
-		0A7E51231ED7A52D00DD0B78 /* EqualizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
+		0A7E51231ED7A52D00DD0B78 /* RecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
+		0AB8B0D31ED9663F00BA3AD6 /* EqualizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
 		0AB9706A1ED6529900A5ADBF /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		0AB9706B1ED6529900A5ADBF /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		0AB9706C1ED6529900A5ADBF /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -262,7 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				0A7E51211ED7A47200DD0B78 /* NoiseMeterViewController.swift */,
-				0A7E51231ED7A52D00DD0B78 /* EqualizerViewController.swift */,
+				0A7E51231ED7A52D00DD0B78 /* RecorderViewController.swift */,
+				0AB8B0D31ED9663F00BA3AD6 /* EqualizerViewController.swift */,
 				0AC92E671ED6BB3B007D636D /* DemoToolsViewController.swift */,
 				0A7BE2281ED54AA800792CD7 /* LoginViewController.swift */,
 				0AC92E651ED6BA64007D636D /* InitialViewController.swift */,
@@ -296,6 +300,7 @@
 		8FBBC80A95D4618E071CEB27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A5A8C8A1ED8FF430000392C /* Novocaine.framework */,
 				862D32D7F85167E9BF036824 /* Pods_Phase_1_Wireframe.framework */,
 				87E1E4DC0509EC69BA02F426 /* Pods_Phase_1_WireframeTests.framework */,
 				9A8328C4CA1CB318A446DDCE /* Pods_Phase_1_WireframeUITests.framework */,
@@ -599,6 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AC92E6C1ED6BD14007D636D /* GerneralFonts.swift in Sources */,
+				0AB8B0D41ED9663F00BA3AD6 /* EqualizerViewController.swift in Sources */,
 				0AB9708A1ED66D3800A5ADBF /* SignUpTableViewCell.swift in Sources */,
 				0AC92E681ED6BB3B007D636D /* DemoToolsViewController.swift in Sources */,
 				0AB970881ED663CF00A5ADBF /* SignUpViewController.swift in Sources */,
@@ -607,7 +613,7 @@
 				0AC92E741ED6C577007D636D /* GeneralUITableViewCell.swift in Sources */,
 				0A7E51201ED79B2400DD0B78 /* GeneralUINavigationBar.swift in Sources */,
 				0AC92E6A1ED6BC71007D636D /* GeneralUILabel.swift in Sources */,
-				0A7E51241ED7A52D00DD0B78 /* EqualizerViewController.swift in Sources */,
+				0A7E51241ED7A52D00DD0B78 /* RecorderViewController.swift in Sources */,
 				0AC92E721ED6C333007D636D /* GeneralUITableView.swift in Sources */,
 				0AC92E5D1ED6B0C0007D636D /* GeneralUIColor.swift in Sources */,
 				0A7BE2271ED54AA800792CD7 /* AppDelegate.swift in Sources */,

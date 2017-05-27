@@ -32,7 +32,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     // MARK: - Global Variables
     var recorder: AVAudioRecorder?
     var levelTimer = Timer()
-    var lowPassResults: Double = 0.0
+//    var lowPassResults: Double = 0.0
     var dBs: NSArray = NSArray()
     
     // MARK: - GeneralUIViewController Methods
@@ -40,9 +40,14 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        // Setup UI Elements
         setupNoiseMeter()
         noiseLevelLabel.font = UIFont.LARGE
         dbLabel.font = UIFont.LARGE
+        
+        
+        // Setup Audio Session
         setupAVAudioSession()
     }
 
@@ -53,73 +58,58 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     
     // MARK: - Logic
     func setupAVAudioSession() {
-        //make an AudioSession, set it to PlayAndRecord and make it active
+        //make an AudioSession and request recording permission
         let audioSession = AVAudioSession.sharedInstance()
         audioSession.requestRecordPermission { [unowned self] allowed in
-            if (allowed) {
-                // Microphone allowed, do what you like!
-                print("GOT PERMISSION")
-                self.record()
+            if (allowed) { // Microphone allowed, do what you like!
                 
+                // settings for a high-quality single-channel recording session
+                let settings = [
+                    AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+                    AVSampleRateKey: 44100,
+                    AVNumberOfChannelsKey: 1,
+                    AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+                ]
+                self.record(filename: "audioFileName.m4a", settings: settings, metered: true, timeIntervalForResults: 0.5)
             } else {
                 // Microphone permission denied
-                
+                print("Failed to get recording permission")
             }
         }
     }
-    func record() {
+    
+    func record(filename: String, settings: [String:Int], metered: Bool, timeIntervalForResults: TimeInterval) {
+        // Get path for app directory
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let docsDirect = paths[0]
-        let audioUrl = try docsDirect.appendingPathComponent("audioFileName.m4a")
+        let audioUrl = try docsDirect.appendingPathComponent(filename)
+        
         // create the session
         let session = AVAudioSession.sharedInstance()
         do {
             // configure the session for recording and playback
             try session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: .defaultToSpeaker)
             try session.setActive(true)
-            // set up a high-quality recording session
-            let settings = [
-                AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-                AVSampleRateKey: 44100,
-                AVNumberOfChannelsKey: 1,
-                AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
-            ]
             // create the audio recording, and assign ourselves as the delegate
             recorder = try AVAudioRecorder(url: audioUrl, settings: settings)
             recorder?.delegate = self
             recorder?.prepareToRecord()
-            recorder?.isMeteringEnabled = true
+            recorder?.isMeteringEnabled = metered
             recorder?.record()
-            //instantiate a timer to be called with whatever frequency we want to grab metering values
-            self.levelTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(NoiseMeterViewController.levelTimerCallback), userInfo: nil, repeats: true)
+            if(metered) {
+                //instantiate a timer to be called with whatever frequency we want to grab metering values
+                self.levelTimer = Timer.scheduledTimer(timeInterval: timeIntervalForResults, target: self, selector: #selector(NoiseMeterViewController.levelTimerCallback), userInfo: nil, repeats: true)
+            }
         } 
         catch let error {
-            // failed to record!
-            print("failed to record!")
-            print(error)
-        }
-    }
-    
-    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        if !flag {
-            recordingEnded(success: false)
-        } else {
-            recordingEnded(success: true)
-        }
-    }
-    
-    func recordingEnded(success: Bool) {
-        if(success) {
-            print("RECORDING SUCCEEDED")
-        } else {
-            print("RECORDING FAILED")
+            print("recording failed...printing error: \n", error)
         }
     }
     
     func levelTimerCallback() {
         //we have to update meters before we can get the metering values
         recorder!.updateMeters()
-        
+
         // print("channel 0: ", recorder!.averagePower(forChannel: 0))
         let dB = convertToDecibel(originalValue: recorder!.averagePower(forChannel: 0))
         updateLabels(dB: dB)
@@ -175,7 +165,23 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         averageLabel.font = UIFont.CAPTION
         noisyLabel.font   = UIFont.CAPTION
         loudLabel.font    = UIFont.CAPTION
-//
+    }
+    
+    // MARK: AVAudioRecorderDelegate
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        if !flag {
+            recordingEnded(success: false)
+        } else {
+            recordingEnded(success: true)
+        }
+    }
+    
+    func recordingEnded(success: Bool) {
+        if(success) {
+            print("RECORDING SUCCEEDED")
+        } else {
+            print("RECORDING FAILED")
+        }
     }
     
     

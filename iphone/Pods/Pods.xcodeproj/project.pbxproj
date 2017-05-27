@@ -53,9 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0055F8D3B24AB50AA93259CF0AC3ADE6 /* Pods-Phase 1 WireframeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Phase 1 WireframeTests.modulemap"; sourceTree = "<group>"; };
+		0055F8D3B24AB50AA93259CF0AC3ADE6 /* Pods-Phase 1 WireframeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Phase 1 WireframeTests.modulemap"; sourceTree = "<group>"; };
 		01F28D225CD3D51D582BDFA20A1A7F70 /* Pods-Phase 1 WireframeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Phase 1 WireframeTests-frameworks.sh"; sourceTree = "<group>"; };
-		0A240A0064C218FA66ACA7A668D046BB /* InputValidators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = InputValidators.framework; path = InputValidators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A240A0064C218FA66ACA7A668D046BB /* InputValidators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InputValidators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		103AD5FAD2EE5A088E2BCCFF5E4DF083 /* Pods-Phase 1 WireframeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Phase 1 WireframeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1279DA484A982D8180E575AED120D61C /* Pods-Phase 1 Wireframe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Phase 1 Wireframe-resources.sh"; sourceTree = "<group>"; };
 		1A5406E074CA607799607195B624C462 /* Pods-Phase 1 WireframeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Phase 1 WireframeTests-dummy.m"; sourceTree = "<group>"; };
@@ -70,16 +70,16 @@
 		435ED0AB30507DBFCBCECF4936F124F2 /* Pods-Phase 1 WireframeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Phase 1 WireframeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		47DA1C779E2518584AB7AAC9130ACECC /* InputValidators-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InputValidators-dummy.m"; sourceTree = "<group>"; };
 		4B054D37AB1B464258964CEC0C974039 /* LKValidators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKValidators.h; path = Sources/LKValidators.h; sourceTree = "<group>"; };
-		501C5CD97F9B99FC55B4876A69FE94DC /* Pods_Phase_1_WireframeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Phase_1_WireframeTests.framework; path = "Pods-Phase 1 WireframeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51EEF6CCD397381F306C3FACE14A9966 /* InputValidators.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = InputValidators.modulemap; sourceTree = "<group>"; };
+		501C5CD97F9B99FC55B4876A69FE94DC /* Pods_Phase_1_WireframeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phase_1_WireframeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51EEF6CCD397381F306C3FACE14A9966 /* InputValidators.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = InputValidators.modulemap; sourceTree = "<group>"; };
 		5357DA4136218DD0A0FBB641CA00DD4C /* InputValidators-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputValidators-prefix.pch"; sourceTree = "<group>"; };
 		55146C144EB04C95D7670BB96F641DD3 /* InputValidators.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InputValidators.xcconfig; sourceTree = "<group>"; };
-		5646DBEA1A445FBFABC765DE60DC1519 /* Pods_Phase_1_WireframeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Phase_1_WireframeUITests.framework; path = "Pods-Phase 1 WireframeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5646DBEA1A445FBFABC765DE60DC1519 /* Pods_Phase_1_WireframeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phase_1_WireframeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56625361785CCFD6349D88E6725C540A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A0D9D0364AC41D9FE9CB71A559A0733 /* LKEmailValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKEmailValidator.m; path = Sources/Validators/LKEmailValidator.m; sourceTree = "<group>"; };
 		5CD89A60D588476A193E40B6A52F207C /* Pods-Phase 1 WireframeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Phase 1 WireframeUITests-frameworks.sh"; sourceTree = "<group>"; };
 		62F7338209A5277AB098CE27CD0204A8 /* Pods-Phase 1 Wireframe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Phase 1 Wireframe-frameworks.sh"; sourceTree = "<group>"; };
-		6491D4E64C9C19A1A3BBA11132FA78E9 /* Pods-Phase 1 WireframeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Phase 1 WireframeUITests.modulemap"; sourceTree = "<group>"; };
+		6491D4E64C9C19A1A3BBA11132FA78E9 /* Pods-Phase 1 WireframeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Phase 1 WireframeUITests.modulemap"; sourceTree = "<group>"; };
 		656A82E41B20A8784A800F2B601B9790 /* Pods-Phase 1 WireframeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Phase 1 WireframeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DF03F4FAA963B6471E401C32989A87A /* LKValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKValidator.m; path = Sources/Core/LKValidator.m; sourceTree = "<group>"; };
 		6F0973BC4B41C7E652AFD4FDDD0AC784 /* LKTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKTextField.h; path = Sources/UI/LKTextField.h; sourceTree = "<group>"; };
@@ -90,20 +90,20 @@
 		86C6BB5BB5BD649C63AD2FC97B870233 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87A35C10BED51058A263337EA0144AA1 /* LKRequiredValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKRequiredValidator.m; path = Sources/Validators/LKRequiredValidator.m; sourceTree = "<group>"; };
 		8E40ECBFEA22D7F231F660087D049F49 /* LKNumericValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKNumericValidator.h; path = Sources/Validators/LKNumericValidator.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98939A40CE3F5353494AF426E3B57EB1 /* Pods-Phase 1 Wireframe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Phase 1 Wireframe-dummy.m"; sourceTree = "<group>"; };
 		9EEC11B0B8DA9958B9EE9621280A1688 /* Pods-Phase 1 WireframeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Phase 1 WireframeUITests-dummy.m"; sourceTree = "<group>"; };
 		AC23F0C7FB50E0881625C0D5D7A20FA4 /* Pods-Phase 1 WireframeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Phase 1 WireframeTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AD6B8047AE8ACB1071687C4B86C2307B /* Pods-Phase 1 Wireframe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Phase 1 Wireframe-acknowledgements.plist"; sourceTree = "<group>"; };
 		AE2C02ECEC97095FA7E3EC4C84367EDD /* LKTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKTextField.m; path = Sources/UI/LKTextField.m; sourceTree = "<group>"; };
-		B50348575D0E49F2946F0DF645F09424 /* Pods-Phase 1 Wireframe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Phase 1 Wireframe.modulemap"; sourceTree = "<group>"; };
+		B50348575D0E49F2946F0DF645F09424 /* Pods-Phase 1 Wireframe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Phase 1 Wireframe.modulemap"; sourceTree = "<group>"; };
 		B5D0B94D362365603538D148BF096A68 /* LKValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKValidator.h; path = Sources/Core/LKValidator.h; sourceTree = "<group>"; };
 		BCE4C1472E40414B31E04E11DBB7CC5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1740A93F12CD62C0B2C9DE8D83788E9 /* LKAlphaValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKAlphaValidator.m; path = Sources/Validators/LKAlphaValidator.m; sourceTree = "<group>"; };
 		CAD158BCC4C5FAF6615BCACCAC4838EE /* LKValidatorError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKValidatorError.m; path = Sources/Core/LKValidatorError.m; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CE21B52094F81C0CF3FCC3B3A280D23D /* Pods-Phase 1 WireframeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Phase 1 WireframeUITests-umbrella.h"; sourceTree = "<group>"; };
-		CF22D76C4E4458B27CD64E9813EF7BFC /* Pods_Phase_1_Wireframe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Phase_1_Wireframe.framework; path = "Pods-Phase 1 Wireframe.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF22D76C4E4458B27CD64E9813EF7BFC /* Pods_Phase_1_Wireframe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phase_1_Wireframe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1445112738D66C8BF652C6B90DE89D9 /* LKLengthValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKLengthValidator.h; path = Sources/Validators/LKLengthValidator.h; sourceTree = "<group>"; };
 		D5DA5CC6A86C92EC2306A210D8858ED9 /* Pods-Phase 1 Wireframe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Phase 1 Wireframe.release.xcconfig"; sourceTree = "<group>"; };
 		DA503131B377EC8B338D08B74215BC64 /* LKRegexValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKRegexValidator.m; path = Sources/Validators/LKRegexValidator.m; sourceTree = "<group>"; };
@@ -260,7 +260,6 @@
 				4B054D37AB1B464258964CEC0C974039 /* LKValidators.h */,
 				83EBF29CDBAB4C94D772D15A7175482C /* Support Files */,
 			);
-			name = InputValidators;
 			path = InputValidators;
 			sourceTree = "<group>";
 		};
@@ -434,6 +433,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					68DBD8FCE3DA3CE929C43953BBE5766A = {
+						LastSwiftMigration = 0830;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -808,6 +812,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55146C144EB04C95D7670BB96F641DD3 /* InputValidators.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -840,6 +845,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55146C144EB04C95D7670BB96F641DD3 /* InputValidators.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -861,6 +867,7 @@
 				PRODUCT_NAME = InputValidators;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
