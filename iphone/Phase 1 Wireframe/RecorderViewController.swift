@@ -22,8 +22,7 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     var state: Bool! // This will decide if the button should be a mic or the pause button
     var recorder: AVAudioRecorder?
     var levelTimer = Timer()
-    var audioUrl:URL!
-
+    var recordedAudio: RecordedAudioObject!
     
     // MARK: - GeneralUIViewController Methods
     override func viewWillAppear(_ animated: Bool) {
@@ -36,7 +35,6 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
         stopButton.imageView?.contentMode   = .scaleAspectFit
         recordButton.tintColor = UIColor.RED
         stopButton.tintColor   = UIColor.WHITE
-        
         
     }
     override func viewDidLoad() {
@@ -60,7 +58,8 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
         super.prepare(for: segue, sender: sender)
         if (segue.identifier == "SegueToEqualizerPlayer") {
             let vc = segue.destination as! EqualizerViewController
-            vc.audioUrl = self.audioUrl
+            let data = sender as! RecordedAudioObject
+            vc.recordedAudio = data
         }
     }
 
@@ -90,7 +89,7 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
         // Get path for app directory
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let docsDirect = paths[0]
-        audioUrl = try docsDirect.appendingPathComponent(filename)
+        let audioUrl:URL = try docsDirect.appendingPathComponent(filename)
         
         // create the session
         let session = AVAudioSession.sharedInstance()
@@ -109,8 +108,30 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
         }
     }
     
+    // MARK: AVAudioRecorderDelegate
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        if flag {
+            recordingEnded(success: true)
+        } else {
+            recordingEnded(success: false)
+        }
+    }
+    
+    func recordingEnded(success: Bool) {
+        if(success) {
+            // Initialize RecordedAudioObject
+            recordedAudio = RecordedAudioObject()
+            recordedAudio.filePathUrl = recorder?.url
+            recordedAudio.title       = recorder?.url.lastPathComponent
+            // Perform Segue to EqualizerPlayer
+            self.performSegue(withIdentifier: "SegueToEqualizerPlayer", sender: recordedAudio)
+        } else {
+            print("RECORDING FAILED")
+        }
+    }
+    
+    // MARK: IBActions
     @IBAction func toggleRecording(_ sender: UIButton) {
-        
         stopButton.isHidden = false
         if(state) {
             recorder?.record()
@@ -125,16 +146,12 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
             recordButton.tintColor = UIColor.RED
             recordingLabel.isHidden = true
         }
-        
     }
-    
     
     @IBAction func stopRecording(_ sender: UIButton) {
         recorder?.stop()
         print("stopped recording")
         
     }
-
-    
     
 }

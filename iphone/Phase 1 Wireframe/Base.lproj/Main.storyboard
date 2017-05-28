@@ -41,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="IsR-cI-xnU">
-                                <rect key="frame" x="62" y="32" width="250" height="603.5"/>
+                                <rect key="frame" x="62" y="32.5" width="250" height="603.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Cqd-H1-lca">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="324.5"/>
@@ -394,7 +394,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cv-7d-qiD">
-                                <rect key="frame" x="137.5" y="306" width="101.5" height="56.5"/>
+                                <rect key="frame" x="137" y="305.5" width="101.5" height="56.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2x-Ox-qTp" customClass="GeneralUILabel" customModule="Phase_1_Wireframe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="43.5" height="56.5"/>
@@ -569,7 +569,6 @@
                                 <state key="normal" image="stop-button"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="fED-7N-Nlh" eventType="touchUpInside" id="Jid-wd-s5i"/>
-                                    <segue destination="ltK-5B-MD6" kind="show" identifier="SegueToEqualizerPlayer" id="8sM-cP-1nN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytk-BW-JPf" customClass="GeneralUILabel" customModule="Phase_1_Wireframe" customModuleProvider="target">
@@ -594,6 +593,7 @@
                         <outlet property="recordButton" destination="3GI-vX-RaA" id="LBr-Jc-Ru9"/>
                         <outlet property="recordingLabel" destination="ytk-BW-JPf" id="hcS-q4-93U"/>
                         <outlet property="stopButton" destination="ZsV-9B-rJP" id="htQ-Gf-Ums"/>
+                        <segue destination="ltK-5B-MD6" kind="show" identifier="SegueToEqualizerPlayer" id="kNM-Pf-JWk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hsf-dy-NFM" userLabel="First Responder" sceneMemberID="firstResponder"/>

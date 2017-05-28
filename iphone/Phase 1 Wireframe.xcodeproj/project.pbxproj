@@ -19,6 +19,7 @@
 		0A7E51221ED7A47200DD0B78 /* NoiseMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E51211ED7A47200DD0B78 /* NoiseMeterViewController.swift */; };
 		0A7E51241ED7A52D00DD0B78 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E51231ED7A52D00DD0B78 /* RecorderViewController.swift */; };
 		0AB8B0D41ED9663F00BA3AD6 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB8B0D31ED9663F00BA3AD6 /* EqualizerViewController.swift */; };
+		0AB8B0D61EDA233200BA3AD6 /* RecordedAudioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB8B0D51EDA233200BA3AD6 /* RecordedAudioObject.swift */; };
 		0AB970771ED6529900A5ADBF /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9706A1ED6529900A5ADBF /* LICENSE.txt */; };
 		0AB970781ED6529900A5ADBF /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9706B1ED6529900A5ADBF /* Roboto-Black.ttf */; };
 		0AB970791ED6529900A5ADBF /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9706C1ED6529900A5ADBF /* Roboto-BlackItalic.ttf */; };
@@ -87,6 +88,7 @@
 		0A7E51211ED7A47200DD0B78 /* NoiseMeterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseMeterViewController.swift; sourceTree = "<group>"; };
 		0A7E51231ED7A52D00DD0B78 /* RecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
 		0AB8B0D31ED9663F00BA3AD6 /* EqualizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
+		0AB8B0D51EDA233200BA3AD6 /* RecordedAudioObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordedAudioObject.swift; path = ../RecordedAudioObject.swift; sourceTree = "<group>"; };
 		0AB9706A1ED6529900A5ADBF /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		0AB9706B1ED6529900A5ADBF /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		0AB9706C1ED6529900A5ADBF /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				0AB970681ED6529900A5ADBF /* Fonts */,
 				0AC92E601ED6B379007D636D /* General */,
 				0AC92E6F1ED6BFDF007D636D /* ViewControllers */,
+				0AB8B0D71EDA234200BA3AD6 /* Models */,
 				0A7BE2351ED54AA800792CD7 /* Info.plist */,
 				0A7BE22D1ED54AA800792CD7 /* Phase_1_Wireframe.xcdatamodeld */,
 			);
@@ -206,6 +209,14 @@
 				0A7BE24B1ED54AA800792CD7 /* Info.plist */,
 			);
 			path = "Phase 1 WireframeUITests";
+			sourceTree = "<group>";
+		};
+		0AB8B0D71EDA234200BA3AD6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AB8B0D51EDA233200BA3AD6 /* RecordedAudioObject.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		0AB970681ED6529900A5ADBF /* Fonts */ = {
@@ -614,6 +625,7 @@
 				0A7E51201ED79B2400DD0B78 /* GeneralUINavigationBar.swift in Sources */,
 				0AC92E6A1ED6BC71007D636D /* GeneralUILabel.swift in Sources */,
 				0A7E51241ED7A52D00DD0B78 /* RecorderViewController.swift in Sources */,
+				0AB8B0D61EDA233200BA3AD6 /* RecordedAudioObject.swift in Sources */,
 				0AC92E721ED6C333007D636D /* GeneralUITableView.swift in Sources */,
 				0AC92E5D1ED6B0C0007D636D /* GeneralUIColor.swift in Sources */,
 				0A7BE2271ED54AA800792CD7 /* AppDelegate.swift in Sources */,
