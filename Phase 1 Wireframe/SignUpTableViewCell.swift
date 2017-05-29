@@ -8,23 +8,16 @@
 
 import UIKit
 
+/// The `GeneralUITableViewCell` objects that appear in the SignupTableView. This custom class has `IBOutlets` for buttons, labels, and text fields.
 class SignUpTableViewCell: GeneralUITableViewCell {
     
     // MARK: - IBOutlets
+    
+    /// UIButton used for social media buttons.
     @IBOutlet weak var button: UIButton?
+    /// Label inbetween buttons.
     @IBOutlet weak var label: UILabel?
+    /// `CustomUITextField` where the user can specify email, phone number or password.
     @IBOutlet weak var textField: CustomUITextField?
-    
-    
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
-    }
 
 }

@@ -14,7 +14,7 @@
     <a title="EqualizerTableViewCell Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (70% documented)</p>
+        <p><a href="../index.html"> Docs</a> (76% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -109,7 +109,13 @@
         <section>
           <section class="section">
             <h1>EqualizerTableViewCell</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">EqualizerTableViewCell</span><span class="p">:</span> <span class="kt"><a href="../Classes/GeneralUITableViewCell.html">GeneralUITableViewCell</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Custom <code><a href="../Classes/GeneralUITableViewCell.html">GeneralUITableViewCell</a></code> made for the EqualizerTableView. These cells contain <code>VerticalSlider</code> objects that allow the user to control gain on different frequencies for an equalizer.</p>
 
           </section>
           <section class="section task-group-section">
@@ -128,8 +134,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A <code>StackView</code> that contains 7 <code>VerticalSlider</code> objects.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">sliderStackView</span><span class="p">:</span> <span class="kt">UIStackView</span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -147,8 +161,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A <code>StackView</code> that contains 7 <code><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></code> objects.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">labelStackView</span><span class="p">:</span> <span class="kt">UIStackView</span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -166,8 +188,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This property gets set by each cell&rsquo;s parent <code><a href="../Classes/GeneralUITableView.html">GeneralUITableView</a></code>. When it gets set, the cell decides how to label the <code>VerticalSlider</code> objects and what color they will be. Calls <code>updateSelf</code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">row</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -185,7 +215,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Sets the font for all <code><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></code> objects. Also adds a target to each <code>VerticalSlider</code> that calls <code>EqualizerViewController.updateGains</code> which results in the equalizers pulling data from the <code>VerticalSlider</code> objects to set the different frequency&rsquo;s gain levels.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -211,8 +242,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This function is invoked when <code><a href="../Classes/EqualizerTableViewCell.html#/s:vC17Phase_1_Wireframe22EqualizerTableViewCell3rowGSqSi_">row</a></code> gets set by the parent <code><a href="../Classes/GeneralUITableView.html">GeneralUITableView</a></code>. It sets the tint color for the <code>VerticalSlider</code> objects as well as the text for each <code><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></code> based on the <code><a href="../Classes/EqualizerTableViewCell.html#/s:vC17Phase_1_Wireframe22EqualizerTableViewCell3rowGSqSi_">row</a></code> value.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">updateSelf</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
