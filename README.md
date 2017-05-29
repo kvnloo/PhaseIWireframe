@@ -40,7 +40,7 @@ Here is the final color palette:
 
 ![final_color_palette](https://raw.githubusercontent.com/lesseradmin/PhaseIWireframe/master/Assets/Color%20Palettes/Color%20Palette%20Final/ColorPalette.png?token=AGysF6-dSYDG6mAi9au_kVZlNMj2ZZxqks5ZNMCrwA%3D%3D)
 
-Once the color palette was created I started to design custom components for `GeneralUIButton`, `GeneralUIViewController`, `GeneralUITextField`, `CustomUITextField`, `GeneralUITableView`, `GeneralUITableViewCell`, and `UINavigationBar`.
+Once the color palette was created I started to design custom UI Components, which can be seen below.
 
 Here are the Custom UI Components:
 
