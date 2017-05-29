@@ -15,7 +15,7 @@ Phase I Project is a wireframe design of JubiAudio Phase I as described in [this
 
 ### CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+[CocoaPods](http://cocoapods.org) is a dependency manager for Swift and Objective-C Cocoa projects. You can install it with the following command:
 
 ```bash
 $ gem install cocoapods
@@ -47,6 +47,10 @@ Here are the Custom UI Components:
 
 ![custom_ui_components](https://raw.githubusercontent.com/lesseradmin/PhaseIWireframe/master/Assets/UIComponents/UIComponents%403x.png?token=AGysFxBQChLUDXmeGu6Ocbs3olnT0pIrks5ZNMyawA%3D%3D)
 
+Once these components were created, I started to create the layout for the application. Namely, I began designing the MVC (Model View Controller) logic to control the flow of the application. 
+
+// TODO: show the start screen, and the screens for create account, login and demo tools. Explain the design behind the demo tools. Finally include a demo for the app. A 5 minute video should suffice. 
+
 ## Support
 
 Please [open an issue] (https://github.com/lesseradmin/PhaseIWireframe/issues/new) for support.
@@ -60,4 +64,3 @@ Please contribute using [Github Flow](https://guides.github.com/introduction/flo
 ## License
 
 This project is licensed under the MIT License. For a full copy of this license take a look at the LICENSE file.
-
