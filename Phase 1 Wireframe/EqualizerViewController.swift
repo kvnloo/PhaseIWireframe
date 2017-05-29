@@ -24,14 +24,14 @@ class EqualizerViewController: GeneralUIViewController {
     var audioUnit: AudioUnit!
     var equalizer: AVAudioUnitEQ!
 
+    /// Check if user recorded clip or if they want to use real-time recording. If a clip was recorded, `setupAudioPlayer` and `setupAudioEngine` are called consequently.
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         playButton.tintColor = UIColor.GREEN
         if (recordedAudio.filePathUrl == nil) {
-            print("recording failed for some reason")
-            // TODO: Notify user that the recording failed
+            // TODO: Real time mic to speaker
         } else {
             print(recordedAudio.filePathUrl)
             setupAudioPlayer()
@@ -39,12 +39,8 @@ class EqualizerViewController: GeneralUIViewController {
         }
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    /// `try` to create an `AVAudioPlayer` stored into `audioPlayer`.
     func setupAudioPlayer() {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: recordedAudio.filePathUrl)
@@ -53,11 +49,14 @@ class EqualizerViewController: GeneralUIViewController {
         }
     }
     
+    /// This function creates an `AVAudioEngine` stored in `audioEngine`. It next creates an `AVAudioPlayerNode` and attaches it to `audioEngine`. Finally `equalizer` is initialized to `AVAudioUnitEQ` with 14 bands.
     func setupAudioEngine() {
         audioEngine = AVAudioEngine()
         let audioPlayerNode = AVAudioPlayerNode()
         audioEngine.attach(audioPlayerNode)
         equalizer = AVAudioUnitEQ(numberOfBands: 14)
+        // TODO: find band values and attach the equalizer to the audioEngine
+        
         print("bands: ")
 //        eq.bands = [ 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 3072, 4096, 5120, 10240, 16384 ]
     }

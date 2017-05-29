@@ -8,16 +8,15 @@
 
 import UIKit
 
+/// This type was created to ensure that all of the `UIButton` objects are created consistently. This class allows the developer to easily apply a 'theme' across all of the `GeneralUIButton` objects
 class GeneralUIButton: UIButton {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
     
+    // MARK: - Lifecycle
+    
+    /**
+     Customize appearance of the `UIButton` object when this function is called. The theme enforces the cornerRadius, backgroundColor, titleColor, and titleLabelFont to be consistent among all `GeneralUIButton` objects.
+     
+     */
     override func awakeFromNib() {
         super.awakeFromNib()
         

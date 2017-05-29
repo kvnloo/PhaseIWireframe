@@ -46,9 +46,4 @@ class InitialViewController: GeneralUIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }

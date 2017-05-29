@@ -8,9 +8,15 @@
 
 import UIKit
 
+/// This type was created to ensure that all of the `UITableView` objects are created consistently. This class allows the developer to easily apply a 'theme' across all of the `GeneralUITableView` objects
 class GeneralUITableView: UITableView {
 
-    // MARK: - UITableView
+    // MARK: - Lifecycle
+    
+    /**
+     Customize appearance of the `UITableView` object when this function is called. The theme enforces the seperatorStyle, estimatedRowHeight, allowsSelection and backgroundColor to be consistent among all `GeneralUITableView` objects.
+     
+     */
     override func awakeFromNib() {
         super.awakeFromNib()
         

@@ -8,9 +8,15 @@
 
 import UIKit
 
+/// This type was created to ensure that all of the `UIViewController` objects are created consistently. This class allows the developer to easily apply a 'theme' across all of the `GeneralUIViewController` objects
 class GeneralUIViewController: UIViewController {
 
-    // MARK: - UIViewController
+    // MARK: - Lifecycle
+    
+    /**
+     Customize appearance of the `UIViewController` object when this function is called. The theme enforces the background color as well as the appearance of the `navigationController` by calling `setBottomBorderColor` with `color (@param)` set to `UIColor.CREME` and `height (@param)` set to `0.25`. Finally it creates a new `UIBarButtonItem` such that the `Back Button` shows only an arrow to signifiy return.
+     
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,10 +26,4 @@ class GeneralUIViewController: UIViewController {
         let item = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
         self.navigationItem.backBarButtonItem = item
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }

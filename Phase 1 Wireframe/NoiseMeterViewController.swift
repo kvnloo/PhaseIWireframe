@@ -11,52 +11,65 @@ import Foundation
 import AVFoundation
 import CoreAudio
 
+/// A custom class that inherits from `GeneralUIViewController` and `AVAudioRecorderDelegate`. It was created to control the NoiseMeterView.
 class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegate {
     
     // MARK: - IBOutlets
+    
+    /// A dynamic `GeneralUILabel` that displays the Noise Level
     @IBOutlet weak var noiseLevelLabel: GeneralUILabel!
+    /// A static `GeneralUILabel` that displays the dB Unit
     @IBOutlet weak var dbLabel: GeneralUILabel!
     
+    /// A static `GeneralUILabel` that captions the silent UIView
     @IBOutlet weak var silentLabel: GeneralUILabel!
+    /// A static `GeneralUILabel` that captions the quiet UIView
     @IBOutlet weak var quietLabel: GeneralUILabel!
+    /// A static `GeneralUILabel` that captions the average UIView
     @IBOutlet weak var averageLabel: GeneralUILabel!
+    /// A static `GeneralUILabel` that captions the noisy UIView
     @IBOutlet weak var noisyLabel: GeneralUILabel!
+    /// A static `GeneralUILabel` that captions the loud UIView
     @IBOutlet weak var loudLabel: GeneralUILabel!
     
+    /// A static `UIView` that is colored `UIColor.BLUE` to represent the 'silent' noise range
     @IBOutlet weak var noiseMeterViewOne: UIView!
+    /// A static `UIView` that is colored `UIColor.GREEN` to represent the 'quiet' noise range
     @IBOutlet weak var noiseMeterViewTwo: UIView!
+    /// A static `UIView` that is colored `UIColor.PURPLE` to represent the 'average' noise range
     @IBOutlet weak var noiseMeterViewThree: UIView!
+    /// A static `UIView` that is colored `UIColor.ORANGE` to represent the 'noisy' noise range
     @IBOutlet weak var noiseMeterViewFour: UIView!
+    /// A static `UIView` that is colored `UIColor.RED` to represent the 'loud' noise range
     @IBOutlet weak var noiseMeterViewFive: UIView!
     
     // MARK: - Global Variables
+    
+    /// The recorder object on which the noise meter relies.
     var recorder: AVAudioRecorder?
+    /// A timer object to gathers noise data frequently.
     var levelTimer = Timer()
-//    var lowPassResults: Double = 0.0
+    /// An array to store the recorded noise levels, this can be used to display a history graph of the past noise levels.
     var dBs: NSArray = NSArray()
     
     // MARK: - GeneralUIViewController Methods
+    
+    /// This function sets up custom UI Elements specific to this view then calls `setupAVAudioSession` to set up the audio session that measures noise.
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        
+        // Do any additional setup after loading the view:
         // Setup UI Elements
         setupNoiseMeter()
         noiseLevelLabel.font = UIFont.LARGE
         dbLabel.font = UIFont.LARGE
         
-        
         // Setup Audio Session
         setupAVAudioSession()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     // MARK: - Logic
+    
+    /// Creates an `AVAudioSession` as a `sharedInstance` then requests recording permission from the user. If the user allows recording, the `AVAudioSession` has settings changed and the `record` method is called.
     func setupAVAudioSession() {
         //make an AudioSession and request recording permission
         let audioSession = AVAudioSession.sharedInstance()
@@ -78,6 +91,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         }
     }
     
+    /// A function that allows the `recorder` to record storing the file at `filename (@param)`, with settings `settings (@param)`, a flag to determine if the recording should be metered, and a timeInterval for `levelTimer`.
     func record(filename: String, settings: [String:Int], metered: Bool, timeIntervalForResults: TimeInterval) {
         // Get path for app directory
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -106,6 +120,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         }
     }
     
+    /// The callback function for `levelTimer`. This allows the view to be updated with the new noise levels: `recorder` calls `updateMeters` and `updateLabels` is called to update the view.
     func levelTimerCallback() {
         //we have to update meters before we can get the metering values
         recorder!.updateMeters()
@@ -115,6 +130,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         updateLabels(dB: dB)
     }
     
+    /// This function changes the text in the `noiseLevelLabel` and sets the color of the text based on the `NoiseMeterColors`.
     func updateLabels(dB: Float) {
         noiseLevelLabel.text = String(Int(dB))
         if(dB < 50) {
@@ -124,8 +140,8 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
             noiseLevelLabel.textColor = UIColor.GREEN
             dbLabel.textColor = UIColor.GREEN
         }  else if(dB < 90) {
-            noiseLevelLabel.textColor = UIColor.YELLOW
-            dbLabel.textColor = UIColor.YELLOW
+            noiseLevelLabel.textColor = UIColor.PURPLE
+            dbLabel.textColor = UIColor.PURPLE
         } else if(dB < 100) {
             noiseLevelLabel.textColor = UIColor.ORANGE
             dbLabel.textColor = UIColor.ORANGE
@@ -135,6 +151,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         }
     }
     
+    /// Converts from Apple standard noise levels to the universally used decibel system. Changes values from a linear [-160, 0] scale to a logrithmic [0, 120] scale.
     func convertToDecibel (originalValue: Float) -> Float {
         var level: Float
         let min:Float = -80.0
@@ -154,10 +171,11 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         return level * 120
     }
     
+    /// This function sets up the different small `UIViews` that create the NoiseMeter at the top of this `UIView`. Also sets the font for the labels that describe each color of the meter.
     func setupNoiseMeter() {
         noiseMeterViewOne.backgroundColor   = UIColor.BLUE
         noiseMeterViewTwo.backgroundColor   = UIColor.GREEN
-        noiseMeterViewThree.backgroundColor = UIColor.YELLOW
+        noiseMeterViewThree.backgroundColor = UIColor.PURPLE
         noiseMeterViewFour.backgroundColor  = UIColor.ORANGE
         noiseMeterViewFive.backgroundColor  = UIColor.RED
         silentLabel.font  = UIFont.CAPTION
@@ -168,6 +186,8 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     }
     
     // MARK: AVAudioRecorderDelegate
+    
+    /// Ensures that when the recording ends a sucess or failure flag is sent to `recordingEnded` function.
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if !flag {
             recordingEnded(success: false)
@@ -176,6 +196,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         }
     }
     
+    /// Prints whether or not the recording session ended correctly.
     func recordingEnded(success: Bool) {
         if(success) {
             print("RECORDING SUCCEEDED")

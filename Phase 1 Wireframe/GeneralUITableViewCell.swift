@@ -8,7 +8,14 @@
 
 import UIKit
 
+/// This type was created to ensure that all of the `UITableViewCell` objects are created consistently. This class allows the developer to easily apply a 'theme' across all of the `GeneralUITableViewCell` objects
 class GeneralUITableViewCell: UITableViewCell {
+    
+    // MARK: - Lifecycle
+
+    /**
+     Customize appearance of the `UITableViewCell` object when this function is called. The theme enforces the backgroundColor to be consistent among all `GeneralUITableViewCell` objects.
+     */
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -16,10 +23,9 @@ class GeneralUITableViewCell: UITableViewCell {
         self.backgroundColor = UIColor.BACKGROUND
     }
 
+    // MARK: UITableViewCell Properties
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

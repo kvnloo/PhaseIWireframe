@@ -14,7 +14,7 @@
     <a title="RecorderViewController Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (0% documented)</p>
+        <p><a href="../index.html"> Docs</a> (60% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -47,9 +47,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/GeneralUILabel.html">GeneralUILabel</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/GeneralUINavigationBar.html">GeneralUINavigationBar</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/GeneralUITableView.html">GeneralUITableView</a>
@@ -132,8 +129,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The <code>UIButton</code> to start recording.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">recordButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -151,8 +156,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The <code>UIButton</code> to stop recording.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">stopButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -170,8 +183,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The <code><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></code> that displays if in record mode.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">recordingLabel</span><span class="p">:</span> <span class="kt"><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -200,8 +221,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The state of the recorder -&gt; true if recording, false if paused or stopped.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">Bool</span><span class="o">!</span> <span class="c1">// This will decide if the button should be a mic or the pause button</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -219,27 +248,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The `AVAudioRecorder&rsquo; that performs recording from the microphone.</p>
 
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC17Phase_1_Wireframe22RecorderViewController10levelTimerCSo5Timer"></a>
-                    <a name="//apple_ref/swift/Property/levelTimer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC17Phase_1_Wireframe22RecorderViewController10levelTimerCSo5Timer">levelTimer</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">recorder</span><span class="p">:</span> <span class="kt">AVAudioRecorder</span><span class="p">?</span></code></pre>
 
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -257,8 +275,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The `RecordedAudioObject&rsquo; object to store information of the user&rsquo;s recording.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">recordedAudio</span><span class="p">:</span> <span class="kt"><a href="../Classes/RecordedAudioObject.html">RecordedAudioObject</a></span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -287,8 +313,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Hide <code><a href="../Classes/RecorderViewController.html#/s:vC17Phase_1_Wireframe22RecorderViewController10stopButtonXwGSQCSo8UIButton_">stopButton</a></code> and <code><a href="../Classes/RecorderViewController.html#/s:vC17Phase_1_Wireframe22RecorderViewController14recordingLabelXwGSQCS_14GeneralUILabel_">recordingLabel</a></code>. Change tint colors for <code><a href="../Classes/RecorderViewController.html#/s:vC17Phase_1_Wireframe22RecorderViewController12recordButtonXwGSQCSo8UIButton_">recordButton</a></code> and <code><a href="../Classes/RecorderViewController.html#/s:vC17Phase_1_Wireframe22RecorderViewController10stopButtonXwGSQCSo8UIButton_">stopButton</a></code>. Set all dynamic <code>UIButton&#39;s imageView&#39;s contentMode</code> to <code>.scaleAspectFit</code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -306,27 +340,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Set the state and font of the <code><a href="../Classes/RecorderViewController.html#/s:vC17Phase_1_Wireframe22RecorderViewController14recordingLabelXwGSQCS_14GeneralUILabel_">recordingLabel</a></code>. Call <code>setupAVAudioSession</code> to initiate the recording process.</p>
 
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC17Phase_1_Wireframe22RecorderViewController23didReceiveMemoryWarningFT_T_"></a>
-                    <a name="//apple_ref/swift/Method/didReceiveMemoryWarning()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17Phase_1_Wireframe22RecorderViewController23didReceiveMemoryWarningFT_T_">didReceiveMemoryWarning()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
 
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -355,8 +378,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Overridden to send <code><a href="../Classes/RecordedAudioObject.html">RecordedAudioObject</a></code> to the next <code><a href="../Classes/GeneralUIViewController.html">GeneralUIViewController</a></code> that we are seguing to. In this case the only possible segue is to <code><a href="../Classes/EqualizerViewController.html">EqualizerViewController</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">prepare</span><span class="p">(</span><span class="k">for</span> <span class="nv">segue</span><span class="p">:</span> <span class="kt">UIStoryboardSegue</span><span class="p">,</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -385,8 +416,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Creates an <code>AVAudioSession</code> as a <code>sharedInstance</code> then requests recording permission from the user. If the user allows recording, the <code>AVAudioSession</code> has settings changed and the <code>record</code> method is called.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setupAVAudioSession</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -404,8 +443,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A function that allows the <code><a href="../Classes/RecorderViewController.html#/s:vC17Phase_1_Wireframe22RecorderViewController8recorderGSqCSo15AVAudioRecorder_">recorder</a></code> to record storing the file at <code>filename (@param)</code>, with settings <code>settings (@param)</code>, a flag to determine if the recording should be metered, and a timeInterval for <code>levelTimer</code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">record</span><span class="p">(</span><span class="nv">filename</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">settings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Int</span><span class="p">],</span> <span class="nv">metered</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">timeIntervalForResults</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -434,8 +481,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Ensures that when the recording ends a sucess or failure flag is sent to <code>recordingEnded</code> function.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">audioRecorderDidFinishRecording</span><span class="p">(</span><span class="n">_</span> <span class="nv">recorder</span><span class="p">:</span> <span class="kt">AVAudioRecorder</span><span class="p">,</span> <span class="n">successfully</span> <span class="nv">flag</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -453,8 +508,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>If the recording succeeded store the URL of the recorded clip then call <code>performeSegue</code>. Else notify the user that recording failed.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">recordingEnded</span><span class="p">(</span><span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -483,8 +546,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Toggle the state - this function handles the logic of switching the state. Hiding and unhiding different views.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">toggleRecording</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -502,8 +573,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Stop recording. Calls the <code>stop</code> function.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">stopRecording</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

@@ -14,7 +14,7 @@
     <a title="NoiseMeterViewController Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (0% documented)</p>
+        <p><a href="../index.html"> Docs</a> (60% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -47,9 +47,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/GeneralUILabel.html">GeneralUILabel</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/GeneralUINavigationBar.html">GeneralUINavigationBar</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/GeneralUITableView.html">GeneralUITableView</a>
@@ -106,7 +103,13 @@
         <section>
           <section class="section">
             <h1>NoiseMeterViewController</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">NoiseMeterViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/GeneralUIViewController.html">GeneralUIViewController</a></span><span class="p">,</span>  <span class="kt">AVAudioRecorderDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>A custom class that inherits from <code><a href="../Classes/GeneralUIViewController.html">GeneralUIViewController</a></code> and <code>AVAudioRecorderDelegate</code>. It was created to control the NoiseMeterView.</p>
 
           </section>
           <section class="section task-group-section">
@@ -132,8 +135,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A dynamic <code><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></code> that displays the Noise Level</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">noiseLevelLabel</span><span class="p">:</span> <span class="kt"><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -151,8 +162,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A static <code><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></code> that displays the dB Unit</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">dbLabel</span><span class="p">:</span> <span class="kt"><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -170,8 +189,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A static <code><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></code> that captions the silent UIView</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">silentLabel</span><span class="p">:</span> <span class="kt"><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -189,8 +216,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A static <code><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></code> that captions the quiet UIView</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">quietLabel</span><span class="p">:</span> <span class="kt"><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -208,8 +243,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A static <code><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></code> that captions the average UIView</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">averageLabel</span><span class="p">:</span> <span class="kt"><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -227,8 +270,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A static <code><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></code> that captions the noisy UIView</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">noisyLabel</span><span class="p">:</span> <span class="kt"><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -246,8 +297,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A static <code><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></code> that captions the loud UIView</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">loudLabel</span><span class="p">:</span> <span class="kt"><a href="../Classes/GeneralUILabel.html">GeneralUILabel</a></span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -265,8 +324,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A static <code>UIView</code> that is colored <code><a href="../Extensions/UIColor.html#/s:ZvE17Phase_1_WireframeCSo7UIColor4BLUES0_">UIColor.BLUE</a></code> to represent the &lsquo;silent&rsquo; noise range</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">noiseMeterViewOne</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -284,8 +351,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A static <code>UIView</code> that is colored <code><a href="../Extensions/UIColor.html#/s:ZvE17Phase_1_WireframeCSo7UIColor5GREENS0_">UIColor.GREEN</a></code> to represent the &lsquo;quiet&rsquo; noise range</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">noiseMeterViewTwo</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -303,8 +378,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A static <code>UIView</code> that is colored <code><a href="../Extensions/UIColor.html#/s:ZvE17Phase_1_WireframeCSo7UIColor6PURPLES0_">UIColor.PURPLE</a></code> to represent the &lsquo;average&rsquo; noise range</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">noiseMeterViewThree</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -322,8 +405,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A static <code>UIView</code> that is colored <code><a href="../Extensions/UIColor.html#/s:ZvE17Phase_1_WireframeCSo7UIColor6ORANGES0_">UIColor.ORANGE</a></code> to represent the &lsquo;noisy&rsquo; noise range</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">noiseMeterViewFour</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -341,8 +432,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A static <code>UIView</code> that is colored <code><a href="../Extensions/UIColor.html#/s:ZvE17Phase_1_WireframeCSo7UIColor3REDS0_">UIColor.RED</a></code> to represent the &lsquo;loud&rsquo; noise range</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">noiseMeterViewFive</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -371,8 +470,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The recorder object on which the noise meter relies.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">recorder</span><span class="p">:</span> <span class="kt">AVAudioRecorder</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -390,8 +497,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A timer object to gathers noise data frequently.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">levelTimer</span> <span class="o">=</span> <span class="kt">Timer</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -409,8 +524,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>An array to store the recorded noise levels, this can be used to display a history graph of the past noise levels.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">dBs</span><span class="p">:</span> <span class="kt">NSArray</span> <span class="o">=</span> <span class="kt">NSArray</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -439,27 +562,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This function sets up custom UI Elements specific to this view then calls <code>setupAVAudioSession</code> to set up the audio session that measures noise.</p>
 
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC17Phase_1_Wireframe24NoiseMeterViewController23didReceiveMemoryWarningFT_T_"></a>
-                    <a name="//apple_ref/swift/Method/didReceiveMemoryWarning()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17Phase_1_Wireframe24NoiseMeterViewController23didReceiveMemoryWarningFT_T_">didReceiveMemoryWarning()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
 
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -488,8 +600,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Creates an <code>AVAudioSession</code> as a <code>sharedInstance</code> then requests recording permission from the user. If the user allows recording, the <code>AVAudioSession</code> has settings changed and the <code>record</code> method is called.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setupAVAudioSession</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -507,8 +627,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A function that allows the <code><a href="../Classes/NoiseMeterViewController.html#/s:vC17Phase_1_Wireframe24NoiseMeterViewController8recorderGSqCSo15AVAudioRecorder_">recorder</a></code> to record storing the file at <code>filename (@param)</code>, with settings <code>settings (@param)</code>, a flag to determine if the recording should be metered, and a timeInterval for <code><a href="../Classes/NoiseMeterViewController.html#/s:vC17Phase_1_Wireframe24NoiseMeterViewController10levelTimerCSo5Timer">levelTimer</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">record</span><span class="p">(</span><span class="nv">filename</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">settings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Int</span><span class="p">],</span> <span class="nv">metered</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">timeIntervalForResults</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -526,8 +654,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The callback function for <code><a href="../Classes/NoiseMeterViewController.html#/s:vC17Phase_1_Wireframe24NoiseMeterViewController10levelTimerCSo5Timer">levelTimer</a></code>. This allows the view to be updated with the new noise levels: <code><a href="../Classes/NoiseMeterViewController.html#/s:vC17Phase_1_Wireframe24NoiseMeterViewController8recorderGSqCSo15AVAudioRecorder_">recorder</a></code> calls <code>updateMeters</code> and <code>updateLabels</code> is called to update the view.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">levelTimerCallback</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -545,8 +681,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This function changes the text in the <code><a href="../Classes/NoiseMeterViewController.html#/s:vC17Phase_1_Wireframe24NoiseMeterViewController15noiseLevelLabelXwGSQCS_14GeneralUILabel_">noiseLevelLabel</a></code> and sets the color of the text based on the <code>NoiseMeterColors</code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">updateLabels</span><span class="p">(</span><span class="nv">dB</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -564,8 +708,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Converts from Apple standard noise levels to the universally used decibel system. Changes values from a linear [-160, 0] scale to a logrithmic [0, 120] scale.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">convertToDecibel</span> <span class="p">(</span><span class="nv">originalValue</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -583,8 +735,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This function sets up the different small <code>UIViews</code> that create the NoiseMeter at the top of this <code>UIView</code>. Also sets the font for the labels that describe each color of the meter.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setupNoiseMeter</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -613,8 +773,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Ensures that when the recording ends a sucess or failure flag is sent to <code>recordingEnded</code> function.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">audioRecorderDidFinishRecording</span><span class="p">(</span><span class="n">_</span> <span class="nv">recorder</span><span class="p">:</span> <span class="kt">AVAudioRecorder</span><span class="p">,</span> <span class="n">successfully</span> <span class="nv">flag</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -632,8 +800,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Prints whether or not the recording session ended correctly.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">recordingEnded</span><span class="p">(</span><span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
