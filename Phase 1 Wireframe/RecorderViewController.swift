@@ -149,13 +149,11 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
             recorder?.record()
             state = false
             recordButton.setImage(#imageLiteral(resourceName: "pause-button"), for: .normal)
-            recordButton.tintColor = UIColor.ORANGE
             recordingLabel.isHidden = false
         } else {
             recorder?.pause()
             state = true
-            recordButton.setImage(#imageLiteral(resourceName: "microphone-2"), for: .normal)
-            recordButton.tintColor = UIColor.RED
+            recordButton.setImage(#imageLiteral(resourceName: "record-button"), for: .normal)
             recordingLabel.isHidden = true
         }
     }

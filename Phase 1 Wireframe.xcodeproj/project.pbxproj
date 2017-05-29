@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4E88D11EDBDE3F00B69BC8 /* GeneralUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E88D01EDBDE3F00B69BC8 /* GeneralUISlider.swift */; };
+		0A4E88D31EDBFF5400B69BC8 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E88D21EDBFF5400B69BC8 /* song.mp3 */; };
 		0A7BE2271ED54AA800792CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */; };
 		0A7BE2291ED54AA800792CD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2281ED54AA800792CD7 /* LoginViewController.swift */; };
 		0A7BE22C1ED54AA800792CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7BE22A1ED54AA800792CD7 /* Main.storyboard */; };
@@ -69,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A4E88D01EDBDE3F00B69BC8 /* GeneralUISlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUISlider.swift; sourceTree = "<group>"; };
+		0A4E88D21EDBFF5400B69BC8 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		0A5A8C8A1ED8FF430000392C /* Novocaine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Novocaine.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Phase_1_Wireframe-eiypuvltmqzjhxbiwdorbkouosgf/Build/Products/Debug-iphoneos/Novocaine/Novocaine.framework"; sourceTree = "<group>"; };
 		0A7BE2231ED54AA800792CD7 /* Phase 1 Wireframe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phase 1 Wireframe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */,
 				0AC92E701ED6BFF9007D636D /* Storyboards */,
 				0AC92E5A1ED68962007D636D /* Assets.xcassets */,
+				0A4E88D21EDBFF5400B69BC8 /* song.mp3 */,
 				0AB970841ED65EF000A5ADBF /* Custom UI */,
 				0AB970681ED6529900A5ADBF /* Fonts */,
 				0AC92E601ED6B379007D636D /* General */,
@@ -268,6 +273,7 @@
 				0A7BE2571ED55D1000792CD7 /* GeneralUIButton.swift */,
 				0AC92E731ED6C577007D636D /* GeneralUITableViewCell.swift */,
 				0A7E511F1ED79B2400DD0B78 /* GeneralUINavigationBar.swift */,
+				0A4E88D01EDBDE3F00B69BC8 /* GeneralUISlider.swift */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -445,6 +451,7 @@
 				0AB9707B1ED6529900A5ADBF /* Roboto-BoldItalic.ttf in Resources */,
 				0AB970791ED6529900A5ADBF /* Roboto-BlackItalic.ttf in Resources */,
 				0AB970821ED6529900A5ADBF /* Roboto-Thin.ttf in Resources */,
+				0A4E88D31EDBFF5400B69BC8 /* song.mp3 in Resources */,
 				0AB970811ED6529900A5ADBF /* Roboto-Regular.ttf in Resources */,
 				0A7BE2341ED54AA800792CD7 /* LaunchScreen.storyboard in Resources */,
 				0AB9707F1ED6529900A5ADBF /* Roboto-Medium.ttf in Resources */,
@@ -633,6 +640,7 @@
 				0A7E51221ED7A47200DD0B78 /* NoiseMeterViewController.swift in Sources */,
 				0A7BE22F1ED54AA800792CD7 /* Phase_1_Wireframe.xcdatamodeld in Sources */,
 				0AC92E5F1ED6B373007D636D /* GeneralUIViewController.swift in Sources */,
+				0A4E88D11EDBDE3F00B69BC8 /* GeneralUISlider.swift in Sources */,
 				0AB970861ED65F3700A5ADBF /* CustomUITextField.swift in Sources */,
 				0A7BE2581ED55D1000792CD7 /* GeneralUIButton.swift in Sources */,
 			);

@@ -567,7 +567,6 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="skip-button"/>
                                 <connections>
-                                    <action selector="stopRecording:" destination="fED-7N-Nlh" eventType="touchUpInside" id="4xm-fR-dzI"/>
                                     <segue destination="ltK-5B-MD6" kind="show" id="Fko-B9-grE"/>
                                 </connections>
                             </button>
@@ -655,9 +654,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="play-button"/>
                                 <connections>
-                                    <action selector="playAudio:" destination="ltK-5B-MD6" eventType="touchUpInside" id="82X-yF-DT7"/>
-                                    <action selector="startRecording:" destination="fED-7N-Nlh" eventType="touchUpInside" id="LwX-I4-96u"/>
-                                    <action selector="stopRecording:" destination="fED-7N-Nlh" eventType="touchUpInside" id="SEp-0j-cU1"/>
+                                    <action selector="toggleAudio:" destination="ltK-5B-MD6" eventType="touchUpInside" id="k1a-fj-hHB"/>
                                 </connections>
                             </button>
                         </subviews>
