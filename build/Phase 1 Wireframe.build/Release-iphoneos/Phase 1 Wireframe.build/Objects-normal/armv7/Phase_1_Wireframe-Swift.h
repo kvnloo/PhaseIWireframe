@@ -380,7 +380,7 @@ SWIFT_CLASS("_TtC17Phase_1_Wireframe22RecorderViewController")
 @property (nonatomic, strong) AVAudioRecorder * _Nullable recorder;
 /// The `RecordedAudioObject’ object to store information of the user’s recording.
 @property (nonatomic, strong) RecordedAudioObject * _Null_unspecified recordedAudio;
-/// Hide <code>stopButton</code> and <code>recordingLabel</code>. Change tint colors for <code>recordButton</code> and <code>stopButton</code>. Set all dynamic <code>UIButton's imageView's contentMode</code> to <code>.scaleAspectFit</code>.
+/// Hide <code>stopButton</code> and <code>recordingLabel</code>. This must be done since the user should not be able to stop the recording before it even starts.
 - (void)viewWillAppear:(BOOL)animated;
 /// Set the state and font of the <code>recordingLabel</code>. Call <code>setupAVAudioSession</code> to initiate the recording process.
 - (void)viewDidLoad;
