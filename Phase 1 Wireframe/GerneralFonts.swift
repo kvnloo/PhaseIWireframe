@@ -42,4 +42,9 @@ extension UIFont {
     public class var CAPTION: UIFont {
         return UIFont(name: "Roboto-Light", size: 12.0)!
     }
+    
+    /// This is the font that is used by `EqualizerViewController` to display the different band frequencies.
+    public class var EQUALIZER: UIFont {
+        return UIFont(name: "Roboto-Black", size: 14.0)!
+    }
 }

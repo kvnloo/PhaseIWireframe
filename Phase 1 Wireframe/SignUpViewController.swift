@@ -26,10 +26,6 @@ class SignUpViewController: GeneralUIViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
-        case 0:
-            return 66
-        case 1:
-            return 66
         case 2:
             return 42
         default:

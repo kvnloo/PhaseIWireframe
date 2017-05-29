@@ -7,43 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		025B5BFADC4D7F786F32C6259BEF3B02 /* Pods-Phase 1 Wireframe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98939A40CE3F5353494AF426E3B57EB1 /* Pods-Phase 1 Wireframe-dummy.m */; };
-		272CC64D1C77D267C75BF8FC5A269AC9 /* LKEmailValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = ED305F61A94F7BC653550F08E0E2D16F /* LKEmailValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29143AEC4B056A5C8CA785B1FEF52DAC /* Pods-Phase 1 Wireframe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7569CD4A4F580912D3BBCE35121662E8 /* Pods-Phase 1 Wireframe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E01B52544F4C0073808E4D81ECC8392 /* LKValidatorError.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD158BCC4C5FAF6615BCACCAC4838EE /* LKValidatorError.m */; };
-		2EEE176659C0B6097D1E6FD4C5DA0E18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		31B5FF62912B9504FD7FF8EBD198DA09 /* LKLengthValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = D1445112738D66C8BF652C6B90DE89D9 /* LKLengthValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		272CC64D1C77D267C75BF8FC5A269AC9 /* LKEmailValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = FED7C5CA25262D7DEA46C2474BD23108 /* LKEmailValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E01B52544F4C0073808E4D81ECC8392 /* LKValidatorError.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD743070D8BBF3FD1A2F91C54D3F1FE /* LKValidatorError.m */; };
+		31B5FF62912B9504FD7FF8EBD198DA09 /* LKLengthValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EFF679C0B26293A30F7560FA1561664 /* LKLengthValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		353FD105C410CB777CD49F9740494AD4 /* Pods-Phase 1 WireframeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE21B52094F81C0CF3FCC3B3A280D23D /* Pods-Phase 1 WireframeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4029DBA1C07B55C7AA43BA56C0651AAF /* LKRequiredValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A35C10BED51058A263337EA0144AA1 /* LKRequiredValidator.m */; };
-		5183B292E6D6891D8C34FFFA4DFC1AE7 /* LKLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 38010117E27D4820C5F47B21F35B8049 /* LKLengthValidator.m */; };
-		527097B7CAD1BD01D44FEF7F714EBE5E /* InputValidators-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DA1C779E2518584AB7AAC9130ACECC /* InputValidators-dummy.m */; };
-		68928EA952B8CE1F2053C3E909FF262A /* LKRegexValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA503131B377EC8B338D08B74215BC64 /* LKRegexValidator.m */; };
+		4029DBA1C07B55C7AA43BA56C0651AAF /* LKRequiredValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D0943B8DA5B7891A9D0E96FCDB7DB861 /* LKRequiredValidator.m */; };
+		5183B292E6D6891D8C34FFFA4DFC1AE7 /* LKLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C1CAF91BC7E1BA6A88DC260B9A0BF /* LKLengthValidator.m */; };
+		527097B7CAD1BD01D44FEF7F714EBE5E /* InputValidators-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB50F210CE9C8F79E8C93977A67F915 /* InputValidators-dummy.m */; };
+		58F205D0505733D1A09E8BF28FAA2614 /* VerticalSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B763A9334E8B6BC70BB683F46012E694 /* VerticalSlider-dummy.m */; };
+		5EC7B874DD481C8A379019C201793D89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		68928EA952B8CE1F2053C3E909FF262A /* LKRegexValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 94334E73B8F17D1CEE836AF27BE8DABD /* LKRegexValidator.m */; };
 		696696190EEC50449D55425B08FB7B3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		6CDDE81E8BD5459A257CC58B4487014E /* Pods-Phase 1 WireframeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5406E074CA607799607195B624C462 /* Pods-Phase 1 WireframeTests-dummy.m */; };
-		7CCBA3893550A13F0F881978A92691AF /* LKMultipleValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD01D0DD9F61F33B9BEF651A6152444 /* LKMultipleValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CCBA3893550A13F0F881978A92691AF /* LKMultipleValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8916636C19D2B4060E596DDE571D4F55 /* LKMultipleValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		813F5C65408EEF9A4D50AA3241633FA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		814A5FE32470424EB61DB7A59F50D1F1 /* LKEmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D9D0364AC41D9FE9CB71A559A0733 /* LKEmailValidator.m */; };
+		814A5FE32470424EB61DB7A59F50D1F1 /* LKEmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CC29F718CEF4ADFE3801100E1997E5 /* LKEmailValidator.m */; };
 		894DD7854BE44C75F532AEC80BC5314D /* Pods-Phase 1 WireframeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC11B0B8DA9958B9EE9621280A1688 /* Pods-Phase 1 WireframeUITests-dummy.m */; };
-		8A891040D681B8406DEE7FC8F3034841 /* LKValidatorError.h in Headers */ = {isa = PBXBuildFile; fileRef = FB155874C356B2344C1407691C11617B /* LKValidatorError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A891040D681B8406DEE7FC8F3034841 /* LKValidatorError.h in Headers */ = {isa = PBXBuildFile; fileRef = E475B08E7FD29905C164B20A87DC8C30 /* LKValidatorError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FDE67AF4AFD057E5585C9FFD3396F4C /* Pods-Phase 1 WireframeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3387939415021C11D6006B5E0C643731 /* Pods-Phase 1 WireframeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA8B40C0EC298D8CC8A9B0B04F97D820 /* LKMultipleValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 226B2E896E59F66D33AEE4D4773A3660 /* LKMultipleValidator.m */; };
-		B121FB5B917F6FC6659655624CF80987 /* LKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F0973BC4B41C7E652AFD4FDDD0AC784 /* LKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC0F598F25BA08C2F7E31EEDE10B2882 /* LKRequiredValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AF755A21FE608C4F380540ECF7F4C4 /* LKRequiredValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C213C52CA112A472E38873341C4A453E /* LKRegexValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = E7441E677F13A514536B0FB736DDE830 /* LKRegexValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C57465BFB10410660592F732065AA9FC /* InputValidators-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3E71516C918C35689D6917ECC1A0376 /* InputValidators-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C943688DB95DE2335E587BB4AA8CC38A /* LKAlphaValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C1740A93F12CD62C0B2C9DE8D83788E9 /* LKAlphaValidator.m */; };
-		CA5036C8CCE28942FCEAC9188491D636 /* LKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2C02ECEC97095FA7E3EC4C84367EDD /* LKTextField.m */; };
-		CD3FCB922C78AF1D75C7DD95AC303E09 /* LKValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = B5D0B94D362365603538D148BF096A68 /* LKValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DF609AFABFA1F70F99D0819E639ECCE /* VerticalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674553837D0EDFD4CF7B8BA02997E4C /* VerticalSlider.swift */; };
+		AA8B40C0EC298D8CC8A9B0B04F97D820 /* LKMultipleValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 335799B3FF21C7FF1A9AB0D789F890EF /* LKMultipleValidator.m */; };
+		B121FB5B917F6FC6659655624CF80987 /* LKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 080827162CD355C20E0811C79A7E1E15 /* LKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5AB7FC583B30B65013D218094AACCC8 /* Pods-Phase 1 Wireframe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98939A40CE3F5353494AF426E3B57EB1 /* Pods-Phase 1 Wireframe-dummy.m */; };
+		B8704385C635918C3C698E96D0CF7B64 /* Pods-Phase 1 Wireframe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7569CD4A4F580912D3BBCE35121662E8 /* Pods-Phase 1 Wireframe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC0F598F25BA08C2F7E31EEDE10B2882 /* LKRequiredValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = E0DF15C640B57E4A7FCCE239F095FAA7 /* LKRequiredValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C213C52CA112A472E38873341C4A453E /* LKRegexValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = B48D98F1747719A8E320D997E2E2E075 /* LKRegexValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C57465BFB10410660592F732065AA9FC /* InputValidators-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 615454C7A95D36A670F885A7EC552DC3 /* InputValidators-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C943688DB95DE2335E587BB4AA8CC38A /* LKAlphaValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B717E28066E1DE607A7C41950B70388 /* LKAlphaValidator.m */; };
+		CA5036C8CCE28942FCEAC9188491D636 /* LKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 321AC958ACA4E04F787FD7F0AF2CDDC7 /* LKTextField.m */; };
+		CD3FCB922C78AF1D75C7DD95AC303E09 /* LKValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 746A5DFC08BFFEBBC453EC4E3AA23187 /* LKValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6472A612CA0221F78814765CFF16BC7 /* VerticalSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD3F5FBA9602C8D50938DEBB446DBEC /* VerticalSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E514BC0070B30E3EFBC02204C1E3DB01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		EFC8DED83B21FD7EF7FBC86AA740105A /* LKValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF03F4FAA963B6471E401C32989A87A /* LKValidator.m */; };
-		F0FBC8A5386AB3C77F745E03B1F078E7 /* LKNumericValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E40ECBFEA22D7F231F660087D049F49 /* LKNumericValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F748E713A64297C6B3E8AC25EFA83A32 /* LKValidators.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B054D37AB1B464258964CEC0C974039 /* LKValidators.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCC7D552DC502CD1893327C60A1FCD3B /* LKAlphaValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7244B1700C1EFD67F148F103878BD049 /* LKAlphaValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD243722E8BD394D7D05470DF2A3141C /* LKNumericValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = FB81D49A0D6CA16432C021F563CC44CE /* LKNumericValidator.m */; };
+		EFC8DED83B21FD7EF7FBC86AA740105A /* LKValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A9EA6A07DDAC3C79EF715A9B1EF0D1 /* LKValidator.m */; };
+		F0FBC8A5386AB3C77F745E03B1F078E7 /* LKNumericValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD708CD5BDD9231C00EDC14203BE2AA /* LKNumericValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F748E713A64297C6B3E8AC25EFA83A32 /* LKValidators.h in Headers */ = {isa = PBXBuildFile; fileRef = FCCBCF11980937519C8C2651B3BE7C48 /* LKValidators.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCC7D552DC502CD1893327C60A1FCD3B /* LKAlphaValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 17FA808F913B11DC7CD13D1D00A4BBEB /* LKAlphaValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCFEAC4321152D086D49FAAA1746A3B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		FD243722E8BD394D7D05470DF2A3141C /* LKNumericValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55302BF717ABDEEDAC52D130B493D4A4 /* LKNumericValidator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		868C619BF5C987F8A18E99E847958C9A /* PBXContainerItemProxy */ = {
+		5EDE1F86547CA84854BCF51725C48061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58A43748320B7BF49253942DEB2C432F;
+			remoteInfo = VerticalSlider;
+		};
+		EAC34F429D8075508529A11C6D013008 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -53,69 +64,77 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0055F8D3B24AB50AA93259CF0AC3ADE6 /* Pods-Phase 1 WireframeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Phase 1 WireframeTests.modulemap"; sourceTree = "<group>"; };
+		0055F8D3B24AB50AA93259CF0AC3ADE6 /* Pods-Phase 1 WireframeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Phase 1 WireframeTests.modulemap"; sourceTree = "<group>"; };
 		01F28D225CD3D51D582BDFA20A1A7F70 /* Pods-Phase 1 WireframeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Phase 1 WireframeTests-frameworks.sh"; sourceTree = "<group>"; };
-		0A240A0064C218FA66ACA7A668D046BB /* InputValidators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InputValidators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		080827162CD355C20E0811C79A7E1E15 /* LKTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKTextField.h; path = Sources/UI/LKTextField.h; sourceTree = "<group>"; };
+		0E2DA31467D534CB7F8170DDC47DE095 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		103AD5FAD2EE5A088E2BCCFF5E4DF083 /* Pods-Phase 1 WireframeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Phase 1 WireframeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1279DA484A982D8180E575AED120D61C /* Pods-Phase 1 Wireframe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Phase 1 Wireframe-resources.sh"; sourceTree = "<group>"; };
+		134CC707D5D66459736520A9122B53A3 /* VerticalSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VerticalSlider-prefix.pch"; sourceTree = "<group>"; };
+		17FA808F913B11DC7CD13D1D00A4BBEB /* LKAlphaValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKAlphaValidator.h; path = Sources/Validators/LKAlphaValidator.h; sourceTree = "<group>"; };
 		1A5406E074CA607799607195B624C462 /* Pods-Phase 1 WireframeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Phase 1 WireframeTests-dummy.m"; sourceTree = "<group>"; };
 		1D48AC109CAC1D0FC9BE3362DA996030 /* Pods-Phase 1 WireframeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Phase 1 WireframeTests-resources.sh"; sourceTree = "<group>"; };
-		226B2E896E59F66D33AEE4D4773A3660 /* LKMultipleValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKMultipleValidator.m; path = Sources/Validators/LKMultipleValidator.m; sourceTree = "<group>"; };
 		22D69B3B1F449C52F33FB111D8C917B1 /* Pods-Phase 1 WireframeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Phase 1 WireframeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2481556C77274F52D61B2B1B6CE99250 /* Pods-Phase 1 Wireframe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Phase 1 Wireframe.debug.xcconfig"; sourceTree = "<group>"; };
+		25D3E236DB2D69FF696C94E3E4179715 /* Pods_Phase_1_WireframeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Phase_1_WireframeUITests.framework; path = "Pods-Phase 1 WireframeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		292D856EC1FD47A667E9D00BCE4B0FF9 /* Pods-Phase 1 WireframeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Phase 1 WireframeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2DD3F5FBA9602C8D50938DEBB446DBEC /* VerticalSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VerticalSlider-umbrella.h"; sourceTree = "<group>"; };
+		31EE5B53B541FDE518D1479D996674F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		321AC958ACA4E04F787FD7F0AF2CDDC7 /* LKTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKTextField.m; path = Sources/UI/LKTextField.m; sourceTree = "<group>"; };
+		335799B3FF21C7FF1A9AB0D789F890EF /* LKMultipleValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKMultipleValidator.m; path = Sources/Validators/LKMultipleValidator.m; sourceTree = "<group>"; };
 		3387939415021C11D6006B5E0C643731 /* Pods-Phase 1 WireframeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Phase 1 WireframeTests-umbrella.h"; sourceTree = "<group>"; };
-		38010117E27D4820C5F47B21F35B8049 /* LKLengthValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKLengthValidator.m; path = Sources/Validators/LKLengthValidator.m; sourceTree = "<group>"; };
+		34392EB575F7C4312274849C82CA73AC /* Pods_Phase_1_Wireframe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Phase_1_Wireframe.framework; path = "Pods-Phase 1 Wireframe.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA67A17C2930101CC45A535FBAD3135 /* Pods-Phase 1 WireframeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Phase 1 WireframeUITests-resources.sh"; sourceTree = "<group>"; };
+		3CD743070D8BBF3FD1A2F91C54D3F1FE /* LKValidatorError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKValidatorError.m; path = Sources/Core/LKValidatorError.m; sourceTree = "<group>"; };
 		435ED0AB30507DBFCBCECF4936F124F2 /* Pods-Phase 1 WireframeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Phase 1 WireframeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		47DA1C779E2518584AB7AAC9130ACECC /* InputValidators-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InputValidators-dummy.m"; sourceTree = "<group>"; };
-		4B054D37AB1B464258964CEC0C974039 /* LKValidators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKValidators.h; path = Sources/LKValidators.h; sourceTree = "<group>"; };
-		501C5CD97F9B99FC55B4876A69FE94DC /* Pods_Phase_1_WireframeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phase_1_WireframeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51EEF6CCD397381F306C3FACE14A9966 /* InputValidators.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = InputValidators.modulemap; sourceTree = "<group>"; };
-		5357DA4136218DD0A0FBB641CA00DD4C /* InputValidators-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputValidators-prefix.pch"; sourceTree = "<group>"; };
-		55146C144EB04C95D7670BB96F641DD3 /* InputValidators.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InputValidators.xcconfig; sourceTree = "<group>"; };
-		5646DBEA1A445FBFABC765DE60DC1519 /* Pods_Phase_1_WireframeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phase_1_WireframeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CC29F718CEF4ADFE3801100E1997E5 /* LKEmailValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKEmailValidator.m; path = Sources/Validators/LKEmailValidator.m; sourceTree = "<group>"; };
+		4B717E28066E1DE607A7C41950B70388 /* LKAlphaValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKAlphaValidator.m; path = Sources/Validators/LKAlphaValidator.m; sourceTree = "<group>"; };
+		4FB13F4D63A6F390252850B43BBFFA46 /* InputValidators.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = InputValidators.modulemap; sourceTree = "<group>"; };
+		55302BF717ABDEEDAC52D130B493D4A4 /* LKNumericValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKNumericValidator.m; path = Sources/Validators/LKNumericValidator.m; sourceTree = "<group>"; };
 		56625361785CCFD6349D88E6725C540A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A0D9D0364AC41D9FE9CB71A559A0733 /* LKEmailValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKEmailValidator.m; path = Sources/Validators/LKEmailValidator.m; sourceTree = "<group>"; };
 		5CD89A60D588476A193E40B6A52F207C /* Pods-Phase 1 WireframeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Phase 1 WireframeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		615454C7A95D36A670F885A7EC552DC3 /* InputValidators-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputValidators-umbrella.h"; sourceTree = "<group>"; };
 		62F7338209A5277AB098CE27CD0204A8 /* Pods-Phase 1 Wireframe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Phase 1 Wireframe-frameworks.sh"; sourceTree = "<group>"; };
-		6491D4E64C9C19A1A3BBA11132FA78E9 /* Pods-Phase 1 WireframeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Phase 1 WireframeUITests.modulemap"; sourceTree = "<group>"; };
+		6491D4E64C9C19A1A3BBA11132FA78E9 /* Pods-Phase 1 WireframeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Phase 1 WireframeUITests.modulemap"; sourceTree = "<group>"; };
 		656A82E41B20A8784A800F2B601B9790 /* Pods-Phase 1 WireframeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Phase 1 WireframeUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6DF03F4FAA963B6471E401C32989A87A /* LKValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKValidator.m; path = Sources/Core/LKValidator.m; sourceTree = "<group>"; };
-		6F0973BC4B41C7E652AFD4FDDD0AC784 /* LKTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKTextField.h; path = Sources/UI/LKTextField.h; sourceTree = "<group>"; };
-		7244B1700C1EFD67F148F103878BD049 /* LKAlphaValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKAlphaValidator.h; path = Sources/Validators/LKAlphaValidator.h; sourceTree = "<group>"; };
+		70314D34F976EEBD4ABB0126EF63F120 /* Pods_Phase_1_WireframeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Phase_1_WireframeTests.framework; path = "Pods-Phase 1 WireframeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		746A5DFC08BFFEBBC453EC4E3AA23187 /* LKValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKValidator.h; path = Sources/Core/LKValidator.h; sourceTree = "<group>"; };
 		7569CD4A4F580912D3BBCE35121662E8 /* Pods-Phase 1 Wireframe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Phase 1 Wireframe-umbrella.h"; sourceTree = "<group>"; };
+		760C1CAF91BC7E1BA6A88DC260B9A0BF /* LKLengthValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKLengthValidator.m; path = Sources/Validators/LKLengthValidator.m; sourceTree = "<group>"; };
 		7CB8717B8C47FD85021842D145B5A16D /* Pods-Phase 1 WireframeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Phase 1 WireframeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8092E7D03BBB3B691F0F9C5DA3E1B62B /* Pods-Phase 1 WireframeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Phase 1 WireframeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8674553837D0EDFD4CF7B8BA02997E4C /* VerticalSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalSlider.swift; path = VerticalSlider/Classes/VerticalSlider.swift; sourceTree = "<group>"; };
 		86C6BB5BB5BD649C63AD2FC97B870233 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87A35C10BED51058A263337EA0144AA1 /* LKRequiredValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKRequiredValidator.m; path = Sources/Validators/LKRequiredValidator.m; sourceTree = "<group>"; };
-		8E40ECBFEA22D7F231F660087D049F49 /* LKNumericValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKNumericValidator.h; path = Sources/Validators/LKNumericValidator.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8916636C19D2B4060E596DDE571D4F55 /* LKMultipleValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKMultipleValidator.h; path = Sources/Validators/LKMultipleValidator.h; sourceTree = "<group>"; };
+		8EFF679C0B26293A30F7560FA1561664 /* LKLengthValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKLengthValidator.h; path = Sources/Validators/LKLengthValidator.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94334E73B8F17D1CEE836AF27BE8DABD /* LKRegexValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKRegexValidator.m; path = Sources/Validators/LKRegexValidator.m; sourceTree = "<group>"; };
 		98939A40CE3F5353494AF426E3B57EB1 /* Pods-Phase 1 Wireframe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Phase 1 Wireframe-dummy.m"; sourceTree = "<group>"; };
+		9CB50F210CE9C8F79E8C93977A67F915 /* InputValidators-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InputValidators-dummy.m"; sourceTree = "<group>"; };
 		9EEC11B0B8DA9958B9EE9621280A1688 /* Pods-Phase 1 WireframeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Phase 1 WireframeUITests-dummy.m"; sourceTree = "<group>"; };
 		AC23F0C7FB50E0881625C0D5D7A20FA4 /* Pods-Phase 1 WireframeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Phase 1 WireframeTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AD6B8047AE8ACB1071687C4B86C2307B /* Pods-Phase 1 Wireframe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Phase 1 Wireframe-acknowledgements.plist"; sourceTree = "<group>"; };
-		AE2C02ECEC97095FA7E3EC4C84367EDD /* LKTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKTextField.m; path = Sources/UI/LKTextField.m; sourceTree = "<group>"; };
-		B50348575D0E49F2946F0DF645F09424 /* Pods-Phase 1 Wireframe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Phase 1 Wireframe.modulemap"; sourceTree = "<group>"; };
-		B5D0B94D362365603538D148BF096A68 /* LKValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKValidator.h; path = Sources/Core/LKValidator.h; sourceTree = "<group>"; };
+		AFAF6FE5E5F1FF0EDB93E95B5E9584D5 /* InputValidators-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputValidators-prefix.pch"; sourceTree = "<group>"; };
+		B3B94EC59F72538FF6BA2EF124E72F01 /* VerticalSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = VerticalSlider.modulemap; sourceTree = "<group>"; };
+		B48D98F1747719A8E320D997E2E2E075 /* LKRegexValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKRegexValidator.h; path = Sources/Validators/LKRegexValidator.h; sourceTree = "<group>"; };
+		B50348575D0E49F2946F0DF645F09424 /* Pods-Phase 1 Wireframe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Phase 1 Wireframe.modulemap"; sourceTree = "<group>"; };
+		B763A9334E8B6BC70BB683F46012E694 /* VerticalSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VerticalSlider-dummy.m"; sourceTree = "<group>"; };
+		BA1A539FEA005ED9369C8687D6BDC693 /* InputValidators.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InputValidators.xcconfig; sourceTree = "<group>"; };
 		BCE4C1472E40414B31E04E11DBB7CC5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1740A93F12CD62C0B2C9DE8D83788E9 /* LKAlphaValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKAlphaValidator.m; path = Sources/Validators/LKAlphaValidator.m; sourceTree = "<group>"; };
-		CAD158BCC4C5FAF6615BCACCAC4838EE /* LKValidatorError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKValidatorError.m; path = Sources/Core/LKValidatorError.m; sourceTree = "<group>"; };
+		C3DA21D24F4BEE4FF876910C847DBAE0 /* VerticalSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VerticalSlider.framework; path = VerticalSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64AE12DBF336C781B304797B7D4FD42 /* VerticalSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VerticalSlider.xcconfig; sourceTree = "<group>"; };
+		C8A9EA6A07DDAC3C79EF715A9B1EF0D1 /* LKValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKValidator.m; path = Sources/Core/LKValidator.m; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CE21B52094F81C0CF3FCC3B3A280D23D /* Pods-Phase 1 WireframeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Phase 1 WireframeUITests-umbrella.h"; sourceTree = "<group>"; };
-		CF22D76C4E4458B27CD64E9813EF7BFC /* Pods_Phase_1_Wireframe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phase_1_Wireframe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1445112738D66C8BF652C6B90DE89D9 /* LKLengthValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKLengthValidator.h; path = Sources/Validators/LKLengthValidator.h; sourceTree = "<group>"; };
+		D0943B8DA5B7891A9D0E96FCDB7DB861 /* LKRequiredValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKRequiredValidator.m; path = Sources/Validators/LKRequiredValidator.m; sourceTree = "<group>"; };
+		D288597591C2F360C44371E8D1D991FF /* InputValidators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = InputValidators.framework; path = InputValidators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DA5CC6A86C92EC2306A210D8858ED9 /* Pods-Phase 1 Wireframe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Phase 1 Wireframe.release.xcconfig"; sourceTree = "<group>"; };
-		DA503131B377EC8B338D08B74215BC64 /* LKRegexValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKRegexValidator.m; path = Sources/Validators/LKRegexValidator.m; sourceTree = "<group>"; };
-		DAD01D0DD9F61F33B9BEF651A6152444 /* LKMultipleValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKMultipleValidator.h; path = Sources/Validators/LKMultipleValidator.h; sourceTree = "<group>"; };
-		E7441E677F13A514536B0FB736DDE830 /* LKRegexValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKRegexValidator.h; path = Sources/Validators/LKRegexValidator.h; sourceTree = "<group>"; };
-		ED305F61A94F7BC653550F08E0E2D16F /* LKEmailValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKEmailValidator.h; path = Sources/Validators/LKEmailValidator.h; sourceTree = "<group>"; };
-		F3E71516C918C35689D6917ECC1A0376 /* InputValidators-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputValidators-umbrella.h"; sourceTree = "<group>"; };
-		F69176CF05725ED1178656AB1814DE81 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0DF15C640B57E4A7FCCE239F095FAA7 /* LKRequiredValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKRequiredValidator.h; path = Sources/Validators/LKRequiredValidator.h; sourceTree = "<group>"; };
+		E475B08E7FD29905C164B20A87DC8C30 /* LKValidatorError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKValidatorError.h; path = Sources/Core/LKValidatorError.h; sourceTree = "<group>"; };
+		EFD708CD5BDD9231C00EDC14203BE2AA /* LKNumericValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKNumericValidator.h; path = Sources/Validators/LKNumericValidator.h; sourceTree = "<group>"; };
 		F786A89BCCCFA52C66266F0FCAC4748F /* Pods-Phase 1 Wireframe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Phase 1 Wireframe-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F8AF755A21FE608C4F380540ECF7F4C4 /* LKRequiredValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKRequiredValidator.h; path = Sources/Validators/LKRequiredValidator.h; sourceTree = "<group>"; };
-		FB155874C356B2344C1407691C11617B /* LKValidatorError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKValidatorError.h; path = Sources/Core/LKValidatorError.h; sourceTree = "<group>"; };
-		FB81D49A0D6CA16432C021F563CC44CE /* LKNumericValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKNumericValidator.m; path = Sources/Validators/LKNumericValidator.m; sourceTree = "<group>"; };
+		FCCBCF11980937519C8C2651B3BE7C48 /* LKValidators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKValidators.h; path = Sources/LKValidators.h; sourceTree = "<group>"; };
+		FED7C5CA25262D7DEA46C2474BD23108 /* LKEmailValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKEmailValidator.h; path = Sources/Validators/LKEmailValidator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,19 +146,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52377E1112CA4EA8D721FC55B3903F77 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2EEE176659C0B6097D1E6FD4C5DA0E18 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		925083E1859ADE8DCCFDB264C9549A8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E514BC0070B30E3EFBC02204C1E3DB01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B83D8769919D087AA2D60092F29CEF0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFEAC4321152D086D49FAAA1746A3B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F657D8354BC5654BBFA4A660F2B30B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC7B874DD481C8A379019C201793D89 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,12 +181,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4BBCEE837D685893174C0DFEFE900044 /* Pods */ = {
+		3210EDF2C5906ED73D499A1832720FAC /* VerticalSlider */ = {
 			isa = PBXGroup;
 			children = (
-				A0F1EB38F005A0CE160189D59143F84C /* InputValidators */,
+				8674553837D0EDFD4CF7B8BA02997E4C /* VerticalSlider.swift */,
+				49634430272761341E61E0DAF828E7EB /* Support Files */,
 			);
-			name = Pods;
+			name = VerticalSlider;
+			path = VerticalSlider;
+			sourceTree = "<group>";
+		};
+		49634430272761341E61E0DAF828E7EB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31EE5B53B541FDE518D1479D996674F8 /* Info.plist */,
+				B3B94EC59F72538FF6BA2EF124E72F01 /* VerticalSlider.modulemap */,
+				C64AE12DBF336C781B304797B7D4FD42 /* VerticalSlider.xcconfig */,
+				B763A9334E8B6BC70BB683F46012E694 /* VerticalSlider-dummy.m */,
+				134CC707D5D66459736520A9122B53A3 /* VerticalSlider-prefix.pch */,
+				2DD3F5FBA9602C8D50938DEBB446DBEC /* VerticalSlider-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VerticalSlider";
 			sourceTree = "<group>";
 		};
 		4D427CC012FA19B5917FE4D3CF505259 /* Targets Support Files */ = {
@@ -190,6 +233,29 @@
 			path = "Target Support Files/Pods-Phase 1 WireframeTests";
 			sourceTree = "<group>";
 		};
+		6F975094DBEA62640C341778A60AFA75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9090BDB10BC32BF7E3D6C3E30425F217 /* InputValidators */,
+				3210EDF2C5906ED73D499A1832720FAC /* VerticalSlider */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		72F8AEB3AE2D274DFBCC59BE84706BD6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E2DA31467D534CB7F8170DDC47DE095 /* Info.plist */,
+				4FB13F4D63A6F390252850B43BBFFA46 /* InputValidators.modulemap */,
+				BA1A539FEA005ED9369C8687D6BDC693 /* InputValidators.xcconfig */,
+				9CB50F210CE9C8F79E8C93977A67F915 /* InputValidators-dummy.m */,
+				AFAF6FE5E5F1FF0EDB93E95B5E9584D5 /* InputValidators-prefix.pch */,
+				615454C7A95D36A670F885A7EC552DC3 /* InputValidators-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/InputValidators";
+			sourceTree = "<group>";
+		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,69 +264,57 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7701C1BA4C3C8F4AE70E7143753AA2EA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0A240A0064C218FA66ACA7A668D046BB /* InputValidators.framework */,
-				CF22D76C4E4458B27CD64E9813EF7BFC /* Pods_Phase_1_Wireframe.framework */,
-				501C5CD97F9B99FC55B4876A69FE94DC /* Pods_Phase_1_WireframeTests.framework */,
-				5646DBEA1A445FBFABC765DE60DC1519 /* Pods_Phase_1_WireframeUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4BBCEE837D685893174C0DFEFE900044 /* Pods */,
-				7701C1BA4C3C8F4AE70E7143753AA2EA /* Products */,
+				6F975094DBEA62640C341778A60AFA75 /* Pods */,
+				9C801E493E6EA45A8B4AA2463840B968 /* Products */,
 				4D427CC012FA19B5917FE4D3CF505259 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		83EBF29CDBAB4C94D772D15A7175482C /* Support Files */ = {
+		9090BDB10BC32BF7E3D6C3E30425F217 /* InputValidators */ = {
 			isa = PBXGroup;
 			children = (
-				F69176CF05725ED1178656AB1814DE81 /* Info.plist */,
-				51EEF6CCD397381F306C3FACE14A9966 /* InputValidators.modulemap */,
-				55146C144EB04C95D7670BB96F641DD3 /* InputValidators.xcconfig */,
-				47DA1C779E2518584AB7AAC9130ACECC /* InputValidators-dummy.m */,
-				5357DA4136218DD0A0FBB641CA00DD4C /* InputValidators-prefix.pch */,
-				F3E71516C918C35689D6917ECC1A0376 /* InputValidators-umbrella.h */,
+				17FA808F913B11DC7CD13D1D00A4BBEB /* LKAlphaValidator.h */,
+				4B717E28066E1DE607A7C41950B70388 /* LKAlphaValidator.m */,
+				FED7C5CA25262D7DEA46C2474BD23108 /* LKEmailValidator.h */,
+				44CC29F718CEF4ADFE3801100E1997E5 /* LKEmailValidator.m */,
+				8EFF679C0B26293A30F7560FA1561664 /* LKLengthValidator.h */,
+				760C1CAF91BC7E1BA6A88DC260B9A0BF /* LKLengthValidator.m */,
+				8916636C19D2B4060E596DDE571D4F55 /* LKMultipleValidator.h */,
+				335799B3FF21C7FF1A9AB0D789F890EF /* LKMultipleValidator.m */,
+				EFD708CD5BDD9231C00EDC14203BE2AA /* LKNumericValidator.h */,
+				55302BF717ABDEEDAC52D130B493D4A4 /* LKNumericValidator.m */,
+				B48D98F1747719A8E320D997E2E2E075 /* LKRegexValidator.h */,
+				94334E73B8F17D1CEE836AF27BE8DABD /* LKRegexValidator.m */,
+				E0DF15C640B57E4A7FCCE239F095FAA7 /* LKRequiredValidator.h */,
+				D0943B8DA5B7891A9D0E96FCDB7DB861 /* LKRequiredValidator.m */,
+				080827162CD355C20E0811C79A7E1E15 /* LKTextField.h */,
+				321AC958ACA4E04F787FD7F0AF2CDDC7 /* LKTextField.m */,
+				746A5DFC08BFFEBBC453EC4E3AA23187 /* LKValidator.h */,
+				C8A9EA6A07DDAC3C79EF715A9B1EF0D1 /* LKValidator.m */,
+				E475B08E7FD29905C164B20A87DC8C30 /* LKValidatorError.h */,
+				3CD743070D8BBF3FD1A2F91C54D3F1FE /* LKValidatorError.m */,
+				FCCBCF11980937519C8C2651B3BE7C48 /* LKValidators.h */,
+				72F8AEB3AE2D274DFBCC59BE84706BD6 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/InputValidators";
+			name = InputValidators;
+			path = InputValidators;
 			sourceTree = "<group>";
 		};
-		A0F1EB38F005A0CE160189D59143F84C /* InputValidators */ = {
+		9C801E493E6EA45A8B4AA2463840B968 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7244B1700C1EFD67F148F103878BD049 /* LKAlphaValidator.h */,
-				C1740A93F12CD62C0B2C9DE8D83788E9 /* LKAlphaValidator.m */,
-				ED305F61A94F7BC653550F08E0E2D16F /* LKEmailValidator.h */,
-				5A0D9D0364AC41D9FE9CB71A559A0733 /* LKEmailValidator.m */,
-				D1445112738D66C8BF652C6B90DE89D9 /* LKLengthValidator.h */,
-				38010117E27D4820C5F47B21F35B8049 /* LKLengthValidator.m */,
-				DAD01D0DD9F61F33B9BEF651A6152444 /* LKMultipleValidator.h */,
-				226B2E896E59F66D33AEE4D4773A3660 /* LKMultipleValidator.m */,
-				8E40ECBFEA22D7F231F660087D049F49 /* LKNumericValidator.h */,
-				FB81D49A0D6CA16432C021F563CC44CE /* LKNumericValidator.m */,
-				E7441E677F13A514536B0FB736DDE830 /* LKRegexValidator.h */,
-				DA503131B377EC8B338D08B74215BC64 /* LKRegexValidator.m */,
-				F8AF755A21FE608C4F380540ECF7F4C4 /* LKRequiredValidator.h */,
-				87A35C10BED51058A263337EA0144AA1 /* LKRequiredValidator.m */,
-				6F0973BC4B41C7E652AFD4FDDD0AC784 /* LKTextField.h */,
-				AE2C02ECEC97095FA7E3EC4C84367EDD /* LKTextField.m */,
-				B5D0B94D362365603538D148BF096A68 /* LKValidator.h */,
-				6DF03F4FAA963B6471E401C32989A87A /* LKValidator.m */,
-				FB155874C356B2344C1407691C11617B /* LKValidatorError.h */,
-				CAD158BCC4C5FAF6615BCACCAC4838EE /* LKValidatorError.m */,
-				4B054D37AB1B464258964CEC0C974039 /* LKValidators.h */,
-				83EBF29CDBAB4C94D772D15A7175482C /* Support Files */,
+				D288597591C2F360C44371E8D1D991FF /* InputValidators.framework */,
+				34392EB575F7C4312274849C82CA73AC /* Pods_Phase_1_Wireframe.framework */,
+				70314D34F976EEBD4ABB0126EF63F120 /* Pods_Phase_1_WireframeTests.framework */,
+				25D3E236DB2D69FF696C94E3E4179715 /* Pods_Phase_1_WireframeUITests.framework */,
+				C3DA21D24F4BEE4FF876910C847DBAE0 /* VerticalSlider.framework */,
 			);
-			path = InputValidators;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -310,6 +364,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		256ABBFA125596B1FB4E090117B54E60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6472A612CA0221F78814765CFF16BC7 /* VerticalSlider-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36966D04D665217C3DE17869F583D226 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,11 +388,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8FA971179F2D1E1BBEE90FA590F191FD /* Headers */ = {
+		9183C990257EB5AC1862EA4681540B20 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29143AEC4B056A5C8CA785B1FEF52DAC /* Pods-Phase 1 Wireframe-umbrella.h in Headers */,
+				B8704385C635918C3C698E96D0CF7B64 /* Pods-Phase 1 Wireframe-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +432,24 @@
 			);
 			name = "Pods-Phase 1 WireframeUITests";
 			productName = "Pods-Phase 1 WireframeUITests";
-			productReference = 5646DBEA1A445FBFABC765DE60DC1519 /* Pods_Phase_1_WireframeUITests.framework */;
+			productReference = 25D3E236DB2D69FF696C94E3E4179715 /* Pods_Phase_1_WireframeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		58A43748320B7BF49253942DEB2C432F /* VerticalSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 141D610DB7A45CF840C21466315BEF4C /* Build configuration list for PBXNativeTarget "VerticalSlider" */;
+			buildPhases = (
+				D462ED3E96A80A3EBDD60336B510C4BD /* Sources */,
+				F657D8354BC5654BBFA4A660F2B30B86 /* Frameworks */,
+				256ABBFA125596B1FB4E090117B54E60 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VerticalSlider;
+			productName = VerticalSlider;
+			productReference = C3DA21D24F4BEE4FF876910C847DBAE0 /* VerticalSlider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		68DBD8FCE3DA3CE929C43953BBE5766A /* InputValidators */ = {
@@ -387,25 +466,26 @@
 			);
 			name = InputValidators;
 			productName = InputValidators;
-			productReference = 0A240A0064C218FA66ACA7A668D046BB /* InputValidators.framework */;
+			productReference = D288597591C2F360C44371E8D1D991FF /* InputValidators.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9A3F610B0C1E3D6A063518B747AB8BC5 /* Pods-Phase 1 Wireframe */ = {
+		775634507016E883E25ADFECF4873749 /* Pods-Phase 1 Wireframe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BDD8C60C2CD98D18AD0F79C4B1793A9 /* Build configuration list for PBXNativeTarget "Pods-Phase 1 Wireframe" */;
+			buildConfigurationList = 82D29E032BA95F86F3A371AED065503A /* Build configuration list for PBXNativeTarget "Pods-Phase 1 Wireframe" */;
 			buildPhases = (
-				4D66759E210BAD19C54B61591C5DCD84 /* Sources */,
-				52377E1112CA4EA8D721FC55B3903F77 /* Frameworks */,
-				8FA971179F2D1E1BBEE90FA590F191FD /* Headers */,
+				F580C56314D917AD97E2B9170A38AC48 /* Sources */,
+				B83D8769919D087AA2D60092F29CEF0B /* Frameworks */,
+				9183C990257EB5AC1862EA4681540B20 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5496755183A7A02105ADA0022EE4866F /* PBXTargetDependency */,
+				D62D169C06AAE13B99DEBCFFB33CF37E /* PBXTargetDependency */,
+				B6FD6764FB040C69DE8315ECA73C0520 /* PBXTargetDependency */,
 			);
 			name = "Pods-Phase 1 Wireframe";
 			productName = "Pods-Phase 1 Wireframe";
-			productReference = CF22D76C4E4458B27CD64E9813EF7BFC /* Pods_Phase_1_Wireframe.framework */;
+			productReference = 34392EB575F7C4312274849C82CA73AC /* Pods_Phase_1_Wireframe.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D69D3AD00760A4EE338E78DE8FBBC0D1 /* Pods-Phase 1 WireframeTests */ = {
@@ -422,7 +502,7 @@
 			);
 			name = "Pods-Phase 1 WireframeTests";
 			productName = "Pods-Phase 1 WireframeTests";
-			productReference = 501C5CD97F9B99FC55B4876A69FE94DC /* Pods_Phase_1_WireframeTests.framework */;
+			productReference = 70314D34F976EEBD4ABB0126EF63F120 /* Pods_Phase_1_WireframeTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -433,11 +513,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					68DBD8FCE3DA3CE929C43953BBE5766A = {
-						LastSwiftMigration = 0830;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -447,14 +522,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7701C1BA4C3C8F4AE70E7143753AA2EA /* Products */;
+			productRefGroup = 9C801E493E6EA45A8B4AA2463840B968 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				68DBD8FCE3DA3CE929C43953BBE5766A /* InputValidators */,
-				9A3F610B0C1E3D6A063518B747AB8BC5 /* Pods-Phase 1 Wireframe */,
+				775634507016E883E25ADFECF4873749 /* Pods-Phase 1 Wireframe */,
 				D69D3AD00760A4EE338E78DE8FBBC0D1 /* Pods-Phase 1 WireframeTests */,
 				07DF84127CBE624E870723BF0BF35299 /* Pods-Phase 1 WireframeUITests */,
+				58A43748320B7BF49253942DEB2C432F /* VerticalSlider */,
 			);
 		};
 /* End PBXProject section */
@@ -486,14 +562,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D66759E210BAD19C54B61591C5DCD84 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				025B5BFADC4D7F786F32C6259BEF3B02 /* Pods-Phase 1 Wireframe-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		58D713CBB4685E77CF758FA6D5B6431D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -502,14 +570,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D462ED3E96A80A3EBDD60336B510C4BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F205D0505733D1A09E8BF28FAA2614 /* VerticalSlider-dummy.m in Sources */,
+				9DF609AFABFA1F70F99D0819E639ECCE /* VerticalSlider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F580C56314D917AD97E2B9170A38AC48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AB7FC583B30B65013D218094AACCC8 /* Pods-Phase 1 Wireframe-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5496755183A7A02105ADA0022EE4866F /* PBXTargetDependency */ = {
+		B6FD6764FB040C69DE8315ECA73C0520 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VerticalSlider;
+			target = 58A43748320B7BF49253942DEB2C432F /* VerticalSlider */;
+			targetProxy = 5EDE1F86547CA84854BCF51725C48061 /* PBXContainerItemProxy */;
+		};
+		D62D169C06AAE13B99DEBCFFB33CF37E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = InputValidators;
 			target = 68DBD8FCE3DA3CE929C43953BBE5766A /* InputValidators */;
-			targetProxy = 868C619BF5C987F8A18E99E847958C9A /* PBXContainerItemProxy */;
+			targetProxy = EAC34F429D8075508529A11C6D013008 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -554,9 +645,41 @@
 			};
 			name = Release;
 		};
-		3FE0E2B2CB8936992069E3F8B76C7746 /* Debug */ = {
+		1B36C02A8A317577507D4701F14B7DE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2481556C77274F52D61B2B1B6CE99250 /* Pods-Phase 1 Wireframe.debug.xcconfig */;
+			baseConfigurationReference = C64AE12DBF336C781B304797B7D4FD42 /* VerticalSlider.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VerticalSlider/VerticalSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VerticalSlider/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VerticalSlider/VerticalSlider.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = VerticalSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3114D3EDA02197BF692FB5B19055BC3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C64AE12DBF336C781B304797B7D4FD42 /* VerticalSlider.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -569,20 +692,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Phase 1 Wireframe/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/VerticalSlider/VerticalSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VerticalSlider/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Phase 1 Wireframe/Pods-Phase 1 Wireframe.modulemap";
+				MODULEMAP_FILE = "Target Support Files/VerticalSlider/VerticalSlider.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Phase_1_Wireframe;
+				PRODUCT_NAME = VerticalSlider;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -659,7 +780,43 @@
 			};
 			name = Release;
 		};
-		A2CC3DD5689D06BCEBE428E57DED8607 /* Release */ = {
+		A87DE57DC7A2944C68E7C1AE0967B27C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2481556C77274F52D61B2B1B6CE99250 /* Pods-Phase 1 Wireframe.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Phase 1 Wireframe/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Phase 1 Wireframe/Pods-Phase 1 Wireframe.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Phase_1_Wireframe;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AFE65D2A8E1847F927050B58D83881AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5DA5CC6A86C92EC2306A210D8858ED9 /* Pods-Phase 1 Wireframe.release.xcconfig */;
 			buildSettings = {
@@ -810,9 +967,8 @@
 		};
 		C65E3C451B5CB4D7D88E717166B97954 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55146C144EB04C95D7670BB96F641DD3 /* InputValidators.xcconfig */;
+			baseConfigurationReference = BA1A539FEA005ED9369C8687D6BDC693 /* InputValidators.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -843,9 +999,8 @@
 		};
 		DA98BE5418ECF31E9353531B524E26E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55146C144EB04C95D7670BB96F641DD3 /* InputValidators.xcconfig */;
+			baseConfigurationReference = BA1A539FEA005ED9369C8687D6BDC693 /* InputValidators.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -867,7 +1022,6 @@
 				PRODUCT_NAME = InputValidators;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -878,6 +1032,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		141D610DB7A45CF840C21466315BEF4C /* Build configuration list for PBXNativeTarget "VerticalSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3114D3EDA02197BF692FB5B19055BC3A /* Debug */,
+				1B36C02A8A317577507D4701F14B7DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -896,11 +1059,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BDD8C60C2CD98D18AD0F79C4B1793A9 /* Build configuration list for PBXNativeTarget "Pods-Phase 1 Wireframe" */ = {
+		82D29E032BA95F86F3A371AED065503A /* Build configuration list for PBXNativeTarget "Pods-Phase 1 Wireframe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3FE0E2B2CB8936992069E3F8B76C7746 /* Debug */,
-				A2CC3DD5689D06BCEBE428E57DED8607 /* Release */,
+				A87DE57DC7A2944C68E7C1AE0967B27C /* Debug */,
+				AFE65D2A8E1847F927050B58D83881AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

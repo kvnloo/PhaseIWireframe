@@ -14,7 +14,7 @@
     <a title="EqualizerViewController Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../index.html"> Docs</a> (66% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -40,6 +40,9 @@
                 <a href="../Classes/DemoToolsViewController.html">DemoToolsViewController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/EqualizerTableViewCell.html">EqualizerTableViewCell</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/EqualizerViewController.html">EqualizerViewController</a>
               </li>
               <li class="nav-group-task">
@@ -47,6 +50,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/GeneralUILabel.html">GeneralUILabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GeneralUISlider.html">GeneralUISlider</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/GeneralUITableView.html">GeneralUITableView</a>
@@ -119,9 +125,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController10playButtonXwGSQCSo8UIButton_"></a>
-                    <a name="//apple_ref/swift/Property/playButton" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController10playButtonXwGSQCSo8UIButton_">playButton</a>
+                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController10mainButtonXwGSQCSo8UIButton_"></a>
+                    <a name="//apple_ref/swift/Property/mainButton" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController10mainButtonXwGSQCSo8UIButton_">mainButton</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -129,8 +135,43 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This button allows the user to toggle between Record and Stop mode if in realTime, otherwise it will allow toggling between Play and Pause mode</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">mainButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController9tableViewXwGSQCS_18GeneralUITableView_"></a>
+                    <a name="//apple_ref/swift/Property/tableView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController9tableViewXwGSQCS_18GeneralUITableView_">tableView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code><a href="../Classes/GeneralUITableView.html">GeneralUITableView</a></code> that contains all of the bands for the <code>AVAudioUnitEQ</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt"><a href="../Classes/GeneralUITableView.html">GeneralUITableView</a></span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -149,6 +190,168 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController11audioEngineCSo13AVAudioEngine"></a>
+                    <a name="//apple_ref/swift/Property/audioEngine" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController11audioEngineCSo13AVAudioEngine">audioEngine</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The audio engine that is used for all audio effects</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">audioEngine</span><span class="p">:</span> <span class="kt">AVAudioEngine</span> <span class="o">=</span> <span class="kt">AVAudioEngine</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController15audioPlayerNodeGSQCSo17AVAudioPlayerNode_"></a>
+                    <a name="//apple_ref/swift/Property/audioPlayerNode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController15audioPlayerNodeGSQCSo17AVAudioPlayerNode_">audioPlayerNode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>audioPlayerNode</code> is used if the user recorded on the previous screen</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">audioPlayerNode</span><span class="p">:</span> <span class="kt">AVAudioPlayerNode</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController12audioSessionGSQCSo14AVAudioSession_"></a>
+                    <a name="//apple_ref/swift/Property/audioSession" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController12audioSessionGSQCSo14AVAudioSession_">audioSession</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>audioSession</code> is used if in realTime</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">audioSession</span><span class="p">:</span> <span class="kt">AVAudioSession</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController13leftEqualizerGSQCSo13AVAudioUnitEQ_"></a>
+                    <a name="//apple_ref/swift/Property/leftEqualizer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController13leftEqualizerGSQCSo13AVAudioUnitEQ_">leftEqualizer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The equalizer for the 0th channel</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">leftEqualizer</span><span class="p">:</span> <span class="kt">AVAudioUnitEQ</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController14rightEqualizerGSQCSo13AVAudioUnitEQ_"></a>
+                    <a name="//apple_ref/swift/Property/rightEqualizer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController14rightEqualizerGSQCSo13AVAudioUnitEQ_">rightEqualizer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The equalizer for the 1th channel</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">rightEqualizer</span><span class="p">:</span> <span class="kt">AVAudioUnitEQ</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController14audioMixerNodeGSQCSo16AVAudioMixerNode_"></a>
+                    <a name="//apple_ref/swift/Property/audioMixerNode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController14audioMixerNodeGSQCSo16AVAudioMixerNode_">audioMixerNode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The mixer is used to mix together multichannel audio</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">audioMixerNode</span><span class="p">:</span> <span class="kt">AVAudioMixerNode</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController13recordedAudioGSQCS_19RecordedAudioObject_"></a>
                     <a name="//apple_ref/swift/Property/recordedAudio" class="dashAnchor"></a>
                     <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController13recordedAudioGSQCS_19RecordedAudioObject_">recordedAudio</a>
@@ -159,8 +362,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Information regarding the recorded clip from the previous <code><a href="../Classes/GeneralUIViewController.html">GeneralUIViewController</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">recordedAudio</span><span class="p">:</span> <span class="kt"><a href="../Classes/RecordedAudioObject.html">RecordedAudioObject</a></span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -168,9 +379,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController11audioPlayerGSQCSo13AVAudioPlayer_"></a>
-                    <a name="//apple_ref/swift/Property/audioPlayer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController11audioPlayerGSQCSo13AVAudioPlayer_">audioPlayer</a>
+                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController9audioFileGSQCSo11AVAudioFile_"></a>
+                    <a name="//apple_ref/swift/Property/audioFile" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController9audioFileGSQCSo11AVAudioFile_">audioFile</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -178,8 +389,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The audio file in which this class attempts to record.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">audioFile</span><span class="p">:</span> <span class="kt">AVAudioFile</span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -187,9 +406,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController11audioEngineGSQCSo13AVAudioEngine_"></a>
-                    <a name="//apple_ref/swift/Property/audioEngine" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController11audioEngineGSQCSo13AVAudioEngine_">audioEngine</a>
+                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController8realTimeGSQSb_"></a>
+                    <a name="//apple_ref/swift/Property/realTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController8realTimeGSQSb_">realTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -197,8 +416,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A flag used to represent if in realTime or if audio clip was recorded on the previous <code>GeneralUIViewConroller</code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">realTime</span><span class="p">:</span> <span class="kt">Bool</span><span class="o">!</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -206,9 +433,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController9audioUnitGSQVs13OpaquePointer_"></a>
-                    <a name="//apple_ref/swift/Property/audioUnit" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController9audioUnitGSQVs13OpaquePointer_">audioUnit</a>
+                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController5stateSb"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController5stateSb">state</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -216,18 +443,37 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>If in <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController8realTimeGSQSb_">realTime</a></code>, this flag determines if the class is in record mode or stop mode. If not in realTime, this flag determines if the class is in play mode or pause mode.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Lifecycle"></a>
+                <a name="//apple_ref/swift/Section/Lifecycle" class="dashAnchor"></a>
+                <a href="#/Lifecycle">
+                  <h3 class="section-name">Lifecycle</h3>
+                </a>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC17Phase_1_Wireframe23EqualizerViewController9equalizerGSQCSo13AVAudioUnitEQ_"></a>
-                    <a name="//apple_ref/swift/Property/equalizer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC17Phase_1_Wireframe23EqualizerViewController9equalizerGSQCSo13AVAudioUnitEQ_">equalizer</a>
+                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController14viewWillAppearFSbT_"></a>
+                    <a name="//apple_ref/swift/Method/viewWillAppear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController14viewWillAppearFSbT_">viewWillAppear(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -235,8 +481,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Set&rsquo;s the <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController10mainButtonXwGSQCSo8UIButton_">mainButton</a></code> imageView based on <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController8realTimeGSQSb_">realTime</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -254,7 +508,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Check if user recorded clip or if they want to use real-time recording. If a clip was recorded, <code>setupAudioPlayer</code> and <code>setupAudioEngine</code> are called consequently.</p>
+                        <p>Check if user recorded clip or if they want to use real-time recording. Set the value for <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController8realTimeGSQSb_">realTime</a></code> based on if recordedAudio is nil. Once <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController8realTimeGSQSb_">realTime</a></code> is set, <code>setupEqualizer</code> is called.</p>
 
                       </div>
                       <div class="declaration">
@@ -268,12 +522,23 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/TableView%20Setup"></a>
+                <a name="//apple_ref/swift/Section/TableView Setup" class="dashAnchor"></a>
+                <a href="#/TableView%20Setup">
+                  <h3 class="section-name">TableView Setup</h3>
+                </a>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController16setupAudioPlayerFT_T_"></a>
-                    <a name="//apple_ref/swift/Method/setupAudioPlayer()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController16setupAudioPlayerFT_T_">setupAudioPlayer()</a>
+                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController16numberOfSectionsFT2inCSo11UITableView_Si"></a>
+                    <a name="//apple_ref/swift/Method/numberOfSections(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController16numberOfSectionsFT2inCSo11UITableView_Si">numberOfSections(in:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -281,14 +546,122 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>try</code> to create an <code>AVAudioPlayer</code> stored into <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController11audioPlayerGSQCSo13AVAudioPlayer_">audioPlayer</a></code>.</p>
+                        <p>Returns the number of sections in the TableView</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setupAudioPlayer</span><span class="p">()</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">numberOfSections</span><span class="p">(</span><span class="k">in</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController9tableViewFTCSo11UITableView14heightForRowAtV10Foundation9IndexPath_V12CoreGraphics7CGFloat"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:heightForRowAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController9tableViewFTCSo11UITableView14heightForRowAtV10Foundation9IndexPath_V12CoreGraphics7CGFloat">tableView(_:heightForRowAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the height for row at <code>indexPath</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">heightForRowAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController9tableViewFTCSo11UITableView21numberOfRowsInSectionSi_Si"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:numberOfRowsInSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController9tableViewFTCSo11UITableView21numberOfRowsInSectionSi_Si">tableView(_:numberOfRowsInSection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the number of rows given the <code>section</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">numberOfRowsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController9tableViewFTCSo11UITableView23titleForHeaderInSectionSi_GSqSS_"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:titleForHeaderInSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController9tableViewFTCSo11UITableView23titleForHeaderInSectionSi_GSqSS_">tableView(_:titleForHeaderInSection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the title for header given the <code>section</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">titleForHeaderInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController9tableViewFTCSo11UITableView12cellForRowAtV10Foundation9IndexPath_CSo15UITableViewCell"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:cellForRowAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController9tableViewFTCSo11UITableView12cellForRowAtV10Foundation9IndexPath_CSo15UITableViewCell">tableView(_:cellForRowAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Determines which cell to return based on the <code>indexPath</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">cellForRowAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UITableViewCell</span></code></pre>
 
                         </div>
                       </div>
@@ -308,7 +681,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This function creates an <code>AVAudioEngine</code> stored in <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController11audioEngineGSQCSo13AVAudioEngine_">audioEngine</a></code>. It next creates an <code>AVAudioPlayerNode</code> and attaches it to <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController11audioEngineGSQCSo13AVAudioEngine_">audioEngine</a></code>. Finally <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController9equalizerGSQCSo13AVAudioUnitEQ_">equalizer</a></code> is initialized to <code>AVAudioUnitEQ</code> with 14 bands.</p>
+                        <p>This function creates an <code>AVAudioEngine</code> stored in <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController11audioEngineCSo13AVAudioEngine">audioEngine</a></code>. Then based on <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController8realTimeGSQSb_">realTime</a></code>, it sets up real-time multichannel microphone to speaker output or streams from an audio file. In both of these cases the input is sent to an equalizer that the user may modify. These two channels are then mixed together with <code>audioEngine.mainMixerNode</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -325,9 +698,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController9playAudioFCSo8UIButtonT_"></a>
-                    <a name="//apple_ref/swift/Method/playAudio(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController9playAudioFCSo8UIButtonT_">playAudio(_:)</a>
+                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController14setupEqualizerFT13numberOfBandsSi_T_"></a>
+                    <a name="//apple_ref/swift/Method/setupEqualizer(numberOfBands:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController14setupEqualizerFT13numberOfBandsSi_T_">setupEqualizer(numberOfBands:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -335,8 +708,135 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Called in <code>viewDidLoad</code>, this function sets up the equalizer with 14 bands per channel.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setupEqualizer</span><span class="p">(</span><span class="nv">numberOfBands</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController11updateGainsFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/updateGains()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController11updateGainsFT_T_">updateGains()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This function is called every time a <code>VerticalSlider</code> changes. It updates the actual gain values within each equalizer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">updateGains</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController14startRecordingFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/startRecording()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController14startRecordingFT_T_">startRecording()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This function is called if in real-time mode. It starts the recording process and streams the audio to speaker after digital signal processing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">startRecording</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController13stopRecordingFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/stopRecording()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController13stopRecordingFT_T_">stopRecording()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This function is called if in real-time mode. It stops the recording process and stops the audioEngine after removing the recording tap.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">stopRecording</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/IBActions"></a>
+                <a name="//apple_ref/swift/Section/IBActions" class="dashAnchor"></a>
+                <a href="#/IBActions">
+                  <h3 class="section-name">IBActions</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC17Phase_1_Wireframe23EqualizerViewController11toggleAudioFCSo8UIButtonT_"></a>
+                    <a name="//apple_ref/swift/Method/toggleAudio(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17Phase_1_Wireframe23EqualizerViewController11toggleAudioFCSo8UIButtonT_">toggleAudio(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This IBAction is called by <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController10mainButtonXwGSQCSo8UIButton_">mainButton</a></code>. Based on realTime and state, it manages setting the <code>imageView</code> for <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController10mainButtonXwGSQCSo8UIButton_">mainButton</a></code>. As well as changing <code><a href="../Classes/EqualizerViewController.html#/s:vC17Phase_1_Wireframe23EqualizerViewController5stateSb">state</a></code> for future toggles.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">toggleAudio</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -346,7 +846,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-05-28)</p>
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-05-29)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

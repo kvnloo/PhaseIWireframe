@@ -1,12 +1,15 @@
 PODS:
   - InputValidators (1.0.0)
+  - VerticalSlider (1.0.1)
 
 DEPENDENCIES:
   - InputValidators
+  - VerticalSlider
 
 SPEC CHECKSUMS:
   InputValidators: b278d3042d23893533d688cfb1563370d4cb184e
+  VerticalSlider: 33906a3bff2d22669d902d9e27b957c5f516ab5c
 
-PODFILE CHECKSUM: f4ab53829456bc3a26da54ea4845674e2dc97310
+PODFILE CHECKSUM: 557db174c66f5a7a49e4e0d45b7d935f06450c91
 
 COCOAPODS: 1.2.0

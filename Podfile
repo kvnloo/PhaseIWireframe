@@ -5,6 +5,7 @@ target 'Phase 1 Wireframe' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'InputValidators'
+  pod 'VerticalSlider'
 
   # Pods for Phase 1 Wireframe
 

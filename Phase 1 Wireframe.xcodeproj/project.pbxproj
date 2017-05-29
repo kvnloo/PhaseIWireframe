@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A4E88D11EDBDE3F00B69BC8 /* GeneralUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E88D01EDBDE3F00B69BC8 /* GeneralUISlider.swift */; };
 		0A4E88D31EDBFF5400B69BC8 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E88D21EDBFF5400B69BC8 /* song.mp3 */; };
+		0A4E88D51EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E88D41EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift */; };
 		0A7BE2271ED54AA800792CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */; };
 		0A7BE2291ED54AA800792CD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2281ED54AA800792CD7 /* LoginViewController.swift */; };
 		0A7BE22C1ED54AA800792CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7BE22A1ED54AA800792CD7 /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 /* Begin PBXFileReference section */
 		0A4E88D01EDBDE3F00B69BC8 /* GeneralUISlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUISlider.swift; sourceTree = "<group>"; };
 		0A4E88D21EDBFF5400B69BC8 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
+		0A4E88D41EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualizerTableViewCell.swift; sourceTree = "<group>"; };
 		0A5A8C8A1ED8FF430000392C /* Novocaine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Novocaine.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Phase_1_Wireframe-eiypuvltmqzjhxbiwdorbkouosgf/Build/Products/Debug-iphoneos/Novocaine/Novocaine.framework"; sourceTree = "<group>"; };
 		0A7BE2231ED54AA800792CD7 /* Phase 1 Wireframe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phase 1 Wireframe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				0AB970891ED66D3800A5ADBF /* SignUpTableViewCell.swift */,
+				0A4E88D41EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift */,
 				0AB970851ED65F3700A5ADBF /* CustomUITextField.swift */,
 			);
 			name = "Custom UI";
@@ -622,6 +625,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AC92E6C1ED6BD14007D636D /* GerneralFonts.swift in Sources */,
+				0A4E88D51EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift in Sources */,
 				0AB8B0D41ED9663F00BA3AD6 /* EqualizerViewController.swift in Sources */,
 				0AB9708A1ED66D3800A5ADBF /* SignUpTableViewCell.swift in Sources */,
 				0AC92E681ED6BB3B007D636D /* DemoToolsViewController.swift in Sources */,
