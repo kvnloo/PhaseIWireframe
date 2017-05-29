@@ -666,7 +666,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="EQUALIZER" id="P9K-59-HWt"/>
                     <connections>
-                        <outlet property="playButton" destination="VbA-iC-OTI" id="uBz-Rr-Qfk"/>
+                        <outlet property="mainButton" destination="VbA-iC-OTI" id="tbf-jZ-RsF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNZ-ze-aHv" userLabel="First Responder" sceneMemberID="firstResponder"/>

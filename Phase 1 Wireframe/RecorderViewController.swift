@@ -95,7 +95,7 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
         // Get path for app directory
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let docsDirect = paths[0]
-        let audioUrl:URL = try docsDirect.appendingPathComponent(filename)
+        let audioUrl:URL = docsDirect.appendingPathComponent(filename)
         
         // create the session
         let session = AVAudioSession.sharedInstance()
