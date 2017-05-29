@@ -32,17 +32,13 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     
     // MARK: - GeneralUIViewController Methods
     
-    /// Hide `stopButton` and `recordingLabel`. Change tint colors for `recordButton` and `stopButton`. Set all dynamic `UIButton's imageView's contentMode` to `.scaleAspectFit`.
+    /// Hide `stopButton` and `recordingLabel`. This must be done since the user should not be able to stop the recording before it even starts.
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // Do any additional setup after calling super classes function
         stopButton.isHidden = true
         recordingLabel.isHidden = true
-        recordButton.imageView?.contentMode = .scaleAspectFit
-        stopButton.imageView?.contentMode   = .scaleAspectFit
-        recordButton.tintColor = UIColor.RED
-        stopButton.tintColor   = UIColor.WHITE
         
     }
     
