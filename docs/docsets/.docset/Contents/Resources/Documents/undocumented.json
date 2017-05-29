@@ -127,58 +127,65 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerTableViewCell.swift",
+      "line": 12,
+      "symbol": "EqualizerTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerTableViewCell.swift",
+      "line": 14,
+      "symbol": "EqualizerTableViewCell.sliderStackView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerTableViewCell.swift",
       "line": 15,
+      "symbol": "EqualizerTableViewCell.labelStackView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerTableViewCell.swift",
+      "line": 17,
+      "symbol": "EqualizerTableViewCell.row",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerTableViewCell.swift",
+      "line": 34,
+      "symbol": "EqualizerTableViewCell.updateSelf()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
+      "line": 16,
       "symbol": "EqualizerViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
-      "line": 18,
-      "symbol": "EqualizerViewController.playButton",
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/GeneralUISlider.swift",
+      "line": 12,
+      "symbol": "GeneralUISlider",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/GeneralUISlider.swift",
+      "line": 14,
+      "symbol": "GeneralUISlider.angle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
-      "line": 21,
-      "symbol": "EqualizerViewController.recordedAudio",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
-      "line": 22,
-      "symbol": "EqualizerViewController.audioPlayer",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
-      "line": 23,
-      "symbol": "EqualizerViewController.audioEngine",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
-      "line": 24,
-      "symbol": "EqualizerViewController.audioUnit",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
-      "line": 25,
-      "symbol": "EqualizerViewController.equalizer",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
-      "line": 64,
-      "symbol": "EqualizerViewController.playAudio(_:)",
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/GeneralUISlider.swift",
+      "line": 20,
+      "symbol": "GeneralUISlider.updateView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -324,21 +331,21 @@
     },
     {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/SignUpViewController.swift",
-      "line": 40,
+      "line": 36,
       "symbol": "SignUpViewController.tableView(_:numberOfRowsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/SignUpViewController.swift",
-      "line": 44,
+      "line": 40,
       "symbol": "SignUpViewController.tableView(_:cellForRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/SignUpViewController.swift",
-      "line": 92,
+      "line": 88,
       "symbol": "SignUpViewController.tableView(_:didSelectRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

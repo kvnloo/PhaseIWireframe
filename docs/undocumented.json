@@ -71,55 +71,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/CustomUITextField.swift",
-      "line": 12,
-      "symbol": "CustomUITextField",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/CustomUITextField.swift",
-      "line": 15,
-      "symbol": "CustomUITextField.leftImage",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/CustomUITextField.swift",
-      "line": 21,
-      "symbol": "CustomUITextField.leftPadding",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/CustomUITextField.swift",
-      "line": 22,
-      "symbol": "CustomUITextField.imageWidth",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/CustomUITextField.swift",
-      "line": 23,
-      "symbol": "CustomUITextField.color",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/CustomUITextField.swift",
-      "line": 31,
-      "symbol": "CustomUITextField.leftViewRect(forBounds:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/CustomUITextField.swift",
-      "line": 46,
-      "symbol": "CustomUITextField.updateView()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/DemoToolsViewController.swift",
       "line": 11,
       "symbol": "DemoToolsViewController",
