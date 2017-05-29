@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "97696ef24fcce576e66a2174382aac14"
-build_time: [549337792, 290998000]
+build_time: [549337960, 797762000]
 inputs:
   "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/GerneralFonts.swift": [9223372036854775807, 0]
   "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift": [9223372036854775807, 0]
