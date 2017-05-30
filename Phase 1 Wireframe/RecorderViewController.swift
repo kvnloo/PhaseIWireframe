@@ -27,10 +27,6 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     // MARK: - Global Variables
     /// The state of the recorder -> true if recording, false if paused or stopped.
     var state: Bool! // This will decide if the button should be a mic or the pause button
-    /// The `AVAudioRecorder' that performs recording from the microphone.
-    var recorder: AVAudioRecorder?
-    /// The `RecordedAudioObject' object to store information of the user's recording.
-    var recordedAudio: RecordedAudioObject!
     
     // MARK: - GeneralUIViewController Methods
     
@@ -53,7 +49,8 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
         recordingLabel.font = UIFont.CAPTION
         
         // Setup Audio session
-        setupAVAudioSession()
+        Audio.sharedInstance.setupAVAudioSession()
+        Audio.sharedInstance.recorderDelegate = self
     }
     
     // MARK: Navigation
@@ -62,57 +59,8 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         if segue.identifier == "SegueToEqualizerPlayer" {
-            let vc = segue.destination as! EqualizerViewController
             let data = sender as! RecordedAudioObject
-            vc.recordedAudio = data
-        }
-    }
-
-    // MARK: AVAudioRecorder
-    
-    /// Creates an `AVAudioSession` as a `sharedInstance` then requests recording permission from the user. If the user allows recording, the `AVAudioSession` has settings changed and the `record` method is called.
-    func setupAVAudioSession() {
-        //make an AudioSession and request recording permission
-        let audioSession = AVAudioSession.sharedInstance()
-        audioSession.requestRecordPermission { [unowned self] allowed in
-            if allowed { // Microphone allowed, do what you like!
-                
-                // settings for a high-quality single-channel recording session
-                let settings = [
-                    AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-                    AVSampleRateKey: 44100,
-                    AVNumberOfChannelsKey: 2,
-                    AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
-                ]
-                self.record(filename: "audioFileName.m4a", settings: settings, metered: false, timeIntervalForResults: 0.5)
-            } else {
-                // Microphone permission denied
-                print("Failed to get recording permission")
-            }
-        }
-    }
-    
-    /// A function that allows the `recorder` to record storing the file at `filename (@param)`, with settings `settings (@param)`, a flag to determine if the recording should be metered, and a timeInterval for `levelTimer`.
-    func record(filename: String, settings: [String:Int], metered: Bool, timeIntervalForResults: TimeInterval) {
-        // Get path for app directory
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let docsDirect = paths[0]
-        let audioUrl:URL = docsDirect.appendingPathComponent(filename)
-        
-        // create the session
-        let session = AVAudioSession.sharedInstance()
-        do {
-            // configure the session for recording and playback
-            try session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: .defaultToSpeaker)
-            try session.setActive(true)
-            // create the audio recording, and assign ourselves as the delegate
-            recorder = try AVAudioRecorder(url: audioUrl, settings: settings)
-            recorder?.delegate = self
-            recorder?.prepareToRecord()
-            recorder?.isMeteringEnabled = metered
-        }
-        catch let error {
-            print("recording failed...printing error: \n", error)
+            Audio.sharedInstance.recordedAudio = data
         }
     }
     
@@ -120,18 +68,10 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     
     /// Ensures that when the recording ends a sucess or failure flag is sent to `recordingEnded` function.
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        recordingEnded(success: flag)
-    }
-    
-    /// If the recording succeeded store the URL of the recorded clip then call `performeSegue`. Else notify the user that recording failed.
-    func recordingEnded(success: Bool) {
-        if success {
-            // Initialize RecordedAudioObject
-            recordedAudio = RecordedAudioObject()
-            recordedAudio.filePathUrl = recorder?.url
-            recordedAudio.title       = recorder?.url.lastPathComponent
+        if flag {
+            Audio.sharedInstance.recordingEndedSuccessfully()
             // Perform Segue to EqualizerPlayer
-            self.performSegue(withIdentifier: "SegueToEqualizerPlayer", sender: recordedAudio)
+            self.performSegue(withIdentifier: "SegueToEqualizerPlayer", sender: Audio.sharedInstance.recordedAudio)
         } else {
             // TODO: notify user of failure.
             print("RECORDING FAILED")
@@ -144,12 +84,12 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     @IBAction func toggleRecording(_ sender: UIButton) {
         stopButton.isHidden = false
         if state {
-            recorder?.record()
+            Audio.sharedInstance.recorder?.record()
             state = false
             recordButton.setImage(#imageLiteral(resourceName: "pause-button"), for: .normal)
             recordingLabel.isHidden = false
         } else {
-            recorder?.pause()
+            Audio.sharedInstance.recorder?.pause()
             state = true
             recordButton.setImage(#imageLiteral(resourceName: "record-button"), for: .normal)
             recordingLabel.isHidden = true
@@ -159,7 +99,7 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     
     /// Stop recording. Calls the `stop` function.
     @IBAction func stopRecording(_ sender: UIButton) {
-        recorder?.stop()
+        Audio.sharedInstance.recorder?.stop()
         print("stopped recording")
         
     }

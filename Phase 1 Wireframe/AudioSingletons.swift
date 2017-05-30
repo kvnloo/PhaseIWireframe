@@ -37,7 +37,14 @@ class Audio {
     /// The `AVAudioRecorder' that performs recording from the microphone.
     var recorder: AVAudioRecorder?
     /// The `AVAudioRecorderDelegate' that must be passed into `recorder.
-    var recorderDelegate: AVAudioRecorderDelegate?
+    var recorderDelegate: AVAudioRecorderDelegate? {
+        didSet {
+            recorder?.delegate = recorderDelegate
+        }
+    }
+    
+    // Define identifier
+    let notificationName = Notification.Name("NotificationIdentifier")
     
     typealias HandlerFunction = ()  -> Void
 
@@ -47,10 +54,9 @@ class Audio {
     
     private init() {
         audioSession = AVAudioSession.sharedInstance()
-        
-        setupEqualizer(numberOfBands: 14)
     }
     
+    /// Creates an `AVAudioSession` as a `sharedInstance` then requests recording permission from the user. If the user allows recording, the `AVAudioSession` has settings changed and the `record` method is called.
     func setupAVAudioSession() {
         //make an AudioSession and request recording permission
         let audioSession = AVAudioSession.sharedInstance()
@@ -72,6 +78,7 @@ class Audio {
         }
     }
     
+    /// Called in other VC's `viewDidLoad`, this function sets up the equalizer with 14 bands per channel.
     func setupEqualizer(numberOfBands: Int) {
         
         leftEqualizer = AVAudioUnitEQ(numberOfBands: numberOfBands)
@@ -98,7 +105,8 @@ class Audio {
         }
     }
     
-    func setupAudioEngine(realTime: Bool, failedToGetDesiredChannels: HandlerFunction) {
+    /// This function creates an `AVAudioEngine` stored in `audioEngine`. Then based on `realTime`, it sets up real-time multichannel microphone to speaker output or streams from an audio file. In both of these cases the input is sent to an equalizer that the user may modify. These two channels are then mixed together with `audioEngine.mainMixerNode`.
+    func setupAudioEngine(realTime: Bool, handler: @escaping HandlerFunction) {
         
         audioEngine.stop()
         audioEngine.reset()
@@ -122,7 +130,7 @@ class Audio {
                 if audioSession.outputNumberOfChannels >= desiredNumChannels {
                     try! audioSession.setPreferredOutputNumberOfChannels(desiredNumChannels)
                 } else {
-                    failedToGetDesiredChannels()
+                    handler()
                 }
             } catch {
                 assertionFailure("AVAudioSession setup error: \(error)")
@@ -161,22 +169,35 @@ class Audio {
         } else {
             audioPlayerNode = AVAudioPlayerNode()
             audioEngine.attach(audioPlayerNode!)
-            audioEngine.connect(audioPlayerNode!, to: leftEqualizer, format: nil)
-            audioEngine.connect(leftEqualizer, to: audioEngine.outputNode, format: nil)
-            
-        }
-        
-        
-        do {
-            if realTime {
-                
-            } else {
+            let format = audioPlayerNode.outputFormat(forBus: 0)
+            let connectionPoints = [
+                AVAudioConnectionPoint(node: leftEqualizer, bus: 0),
+                AVAudioConnectionPoint(node: rightEqualizer, bus: 0)]
+            audioEngine.connect(audioPlayerNode, to: connectionPoints, fromBus: 0, format: format)
+            audioEngine.connect(leftEqualizer, to: audioMixerNode, format: nil)
+            audioEngine.connect(rightEqualizer, to: audioMixerNode, format: nil)
+            do {
                 audioFile = try AVAudioFile(forReading: recordedAudio.filePathUrl)
                 audioEngine.prepare()
                 try audioEngine.start()
-                audioPlayerNode?.scheduleFile(audioFile, at: nil, completionHandler: nil)
-            }
-        } catch _ {}
+//                let audioFormat = audioFile.processingFormat
+//                let audioFrameCount = UInt32(audioFile.length)
+//                let audioFileBuffer = AVAudioPCMBuffer(pcmFormat: audioFormat, frameCapacity: audioFrameCount)
+//                try audioFile.read(into: audioFileBuffer, frameCount: audioFrameCount)
+                schedule()
+                
+            } catch _ {}
+        }
+    }
+    
+    func schedule() {
+        audioPlayerNode.scheduleFile(audioFile, at: nil, completionHandler: {
+            self.audioPlayerNode.pause()
+            // Post notification
+            print("notification posted")
+            NotificationCenter.default.post(name: self.notificationName, object: nil)
+            self.schedule()
+        })
     }
     
     func recordWithAVAudioRecorder(filename: String, settings: [String:Int], metered: Bool, timeIntervalForResults: TimeInterval) {
@@ -200,6 +221,47 @@ class Audio {
         catch let error {
             print("recording failed...printing error: \n", error)
         }
+    }
+    
+    /// This function is called if in real-time mode. It starts the recording process and streams the audio to speaker after digital signal processing.
+    func startRecordingWithAudioEngine() {
+        try! audioEngine.start()
+        let format = audioMixerNode.outputFormat(forBus: 0)
+        audioMixerNode.installTap(onBus: 0, bufferSize: 1024, format: format, block:
+            { (buffer: AVAudioPCMBuffer!, time: AVAudioTime!) -> Void in
+                print(NSString(string: "writing"))
+                do{
+                    if self.audioFile == nil {
+                        print("was nil")
+                    }
+                    try self.audioFile.write(from: buffer)
+                }
+                catch {
+                    print(NSString(string: "Write failed"));
+                }
+        })
+    }
+    
+    /// This function is called if in real-time mode. It stops the recording process and stops the audioEngine after removing the recording tap.
+    func stopRecordingWithAudioEngine() {
+        audioEngine.mainMixerNode.removeTap(onBus: 0)
+        audioEngine.stop()
+    }
+    
+    func playWithAudioPlayerNode() {
+        audioPlayerNode?.play()
+    }
+    
+    func pauseWithAudioPlayerNode() {
+        audioPlayerNode?.pause()
+    }
+    
+    /// If the recording succeeded store the URL of the recorded clip then call `performeSegue`. Else notify the user that recording failed.
+    func recordingEndedSuccessfully() {
+        // Initialize RecordedAudioObject
+        Audio.sharedInstance.recordedAudio = RecordedAudioObject()
+        Audio.sharedInstance.recordedAudio.filePathUrl = Audio.sharedInstance.recorder?.url
+        Audio.sharedInstance.recordedAudio.title       = Audio.sharedInstance.recorder?.url.lastPathComponent
     }
 
 }

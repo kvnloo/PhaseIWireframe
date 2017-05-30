@@ -54,12 +54,15 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     
     // MARK: - GeneralUIViewController Methods
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Setup UI Elements
+        setupNoiseMeter()
+    }
     /// This function sets up custom UI Elements specific to this view then calls `setupAVAudioSession` to set up the audio session that measures noise.
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view:
-        // Setup UI Elements
-        setupNoiseMeter()
         noiseLevelLabel.font = UIFont.LARGE
         dbLabel.font = UIFont.LARGE
         
