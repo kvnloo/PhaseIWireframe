@@ -13,7 +13,9 @@ import Foundation
 import AudioToolbox
 import VerticalSlider
 
-/** 
+/** This `GeneralUIViewController` controls the equalizer view. It allows the user to either stream real time audio from the microphone to the speaker after passing through a dual-channel equalizer. There are a total of 28 `VerticalSlider` objects that the user can control in order to change the gain at any given frequency.
+ 
+    TODO: cleanup code.
  
  */
 class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UITableViewDataSource {

@@ -4,113 +4,134 @@
     <title>Classes  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
+
+
     <a title="Classes  Reference"></a>
-    <header>
-      <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (82% documented)</p>
-      </div>
-    </header>
-    <div class="content-wrapper">
-      <p id="breadcrumbs">
-        <a href="index.html"> Reference</a>
-        <img id="carat" src="img/carat.png" />
-        Classes  Reference
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+           Docs
+        </a>
+         (98% documented)
       </p>
-    </div>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html"> Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Classes  Reference
+    </p>
+
     <div class="content-wrapper">
-      <nav class="sidebar">
+      <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="Classes.html">Classes</a>
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/AppDelegate.html">AppDelegate</a>
+                <a class="nav-group-task-link" href="Classes/AppDelegate.html">AppDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/Audio.html">Audio</a>
+                <a class="nav-group-task-link" href="Classes/Audio.html">Audio</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/CustomUITextField.html">CustomUITextField</a>
+                <a class="nav-group-task-link" href="Classes/CustomUITextField.html">CustomUITextField</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/EqualizerTableViewCell.html">EqualizerTableViewCell</a>
+                <a class="nav-group-task-link" href="Classes/EqualizerTableViewCell.html">EqualizerTableViewCell</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/EqualizerViewController.html">EqualizerViewController</a>
+                <a class="nav-group-task-link" href="Classes/EqualizerViewController.html">EqualizerViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/GeneralUIButton.html">GeneralUIButton</a>
+                <a class="nav-group-task-link" href="Classes/GeneralUIButton.html">GeneralUIButton</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/GeneralUILabel.html">GeneralUILabel</a>
+                <a class="nav-group-task-link" href="Classes/GeneralUILabel.html">GeneralUILabel</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/GeneralUITableView.html">GeneralUITableView</a>
+                <a class="nav-group-task-link" href="Classes/GeneralUITableView.html">GeneralUITableView</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/GeneralUITableViewCell.html">GeneralUITableViewCell</a>
+                <a class="nav-group-task-link" href="Classes/GeneralUITableViewCell.html">GeneralUITableViewCell</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/GeneralUITextField.html">GeneralUITextField</a>
+                <a class="nav-group-task-link" href="Classes/GeneralUITextField.html">GeneralUITextField</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/GeneralUIViewController.html">GeneralUIViewController</a>
+                <a class="nav-group-task-link" href="Classes/GeneralUIViewController.html">GeneralUIViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/InitialViewController.html">InitialViewController</a>
+                <a class="nav-group-task-link" href="Classes/InitialViewController.html">InitialViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/LoginViewController.html">LoginViewController</a>
+                <a class="nav-group-task-link" href="Classes/LoginViewController.html">LoginViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/NoiseMeterViewController.html">NoiseMeterViewController</a>
+                <a class="nav-group-task-link" href="Classes/NoiseMeterViewController.html">NoiseMeterViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/RecordedAudioObject.html">RecordedAudioObject</a>
+                <a class="nav-group-task-link" href="Classes/RecordedAudioObject.html">RecordedAudioObject</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/RecorderViewController.html">RecorderViewController</a>
+                <a class="nav-group-task-link" href="Classes/RecorderViewController.html">RecorderViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/SignUpTableViewCell.html">SignUpTableViewCell</a>
+                <a class="nav-group-task-link" href="Classes/SignUpTableViewCell.html">SignUpTableViewCell</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/SignUpViewController.html">SignUpViewController</a>
+                <a class="nav-group-task-link" href="Classes/SignUpViewController.html">SignUpViewController</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Extensions.html">Extensions</a>
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Extensions/UIColor.html">UIColor</a>
+                <a class="nav-group-task-link" href="Extensions/UIColor.html">UIColor</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UIFont.html">UIFont</a>
+                <a class="nav-group-task-link" href="Extensions/UIFont.html">UIFont</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UINavigationBar.html">UINavigationBar</a>
+                <a class="nav-group-task-link" href="Extensions/UINavigationBar.html">UINavigationBar</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
       <article class="main-content">
-        <section>
-          <section class="section">
+
+        <section class="section">
+          <div class="section-content">
             <h1>Classes</h1>
             <p>The following classes are available globally.</p>
 
-          </section>
-          <section class="section task-group-section">
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -142,7 +163,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -156,7 +177,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>This <code><a href="Classes/GeneralUIViewController.html">GeneralUIViewController</a></code> controls the equalizer view. It allows the user to either stream real time audio from the microphone to the speaker after passing through a dual-channel equalizer. There are a total of 28 <code>VerticalSlider</code> objects that the user can control in order to change the gain at any given frequency.</p>
+<pre class="highlight plaintext"><code>TODO: cleanup code.
+</code></pre>
+
                         <a href="Classes/EqualizerViewController.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
@@ -173,7 +197,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -205,7 +229,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -219,9 +243,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This is a custom model that allows to store both a URL and a title for an audio clip.
+    // TODO: create a mechanism to display and edit the name of the file.</p>
 
                         <a href="Classes/RecordedAudioObject.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">RecordedAudioObject</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -229,7 +262,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -243,9 +276,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This <code><a href="Classes/GeneralUIViewController.html">GeneralUIViewController</a></code> controls the sign up view. It allows the user to create an account through Facebook, Google, E-mail, or Phone.</p>
+
+<p>TODO: configure firebase backend system. Create an api-manager to control https requests. input validation for email/phone number.</p>
 
                         <a href="Classes/SignUpViewController.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SignUpViewController</span><span class="p">:</span> <span class="kt"><a href="Classes/GeneralUIViewController.html">GeneralUIViewController</a></span><span class="p">,</span> <span class="kt">UITableViewDelegate</span><span class="p">,</span> <span class="kt">UITableViewDataSource</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -253,7 +296,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -267,9 +310,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Controls the initial view with which the user is presented.</p>
+<pre class="highlight plaintext"><code>TODO: add in appdelegate to check if the user is signed in.
+</code></pre>
 
                         <a href="Classes/InitialViewController.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">InitialViewController</span><span class="p">:</span> <span class="kt"><a href="Classes/GeneralUIViewController.html">GeneralUIViewController</a></span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -277,7 +330,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -291,7 +344,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>This <code><a href="Classes/GeneralUIViewController.html">GeneralUIViewController</a></code> controls the login view. It allows the user to login through Facebook, Google, E-mail, or Phone.</p>
+<pre class="highlight plaintext"><code>TODO: configure firebase backend system. Create an api-manager to control https requests. input validation for email/phone number.
+</code></pre>
+
                         <a href="Classes/LoginViewController.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
@@ -308,7 +364,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -340,7 +396,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -372,7 +428,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -386,7 +442,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>This <code><a href="Classes/GeneralUIViewController.html">GeneralUIViewController</a></code> controls the Equalizer&rsquo;s recorder view. It allows the user to prerecord an audio clip if they do not want to use the equalizer in real-time.</p>
+
+<p>TODO: Use singleton instead of local variables and methods. This is just to allow for code abstraction and reduce viewcontroller complexity.</p>
+
                         <a href="Classes/RecorderViewController.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
@@ -403,7 +462,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -435,7 +494,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -459,7 +518,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -491,7 +550,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -523,7 +582,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -555,7 +614,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -587,7 +646,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -619,7 +678,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -650,14 +709,15 @@
                 </li>
               </ul>
             </div>
-          </section>
+          </div>
         </section>
-        <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-05-30)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
-        </section>
+
       </article>
     </div>
+    <section class="footer">
+      <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-05-30)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
   </body>
 </div>
 </html>

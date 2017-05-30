@@ -12,7 +12,9 @@ import AVFoundation
 import CoreAudio
 
 /** 
+    This `GeneralUIViewController` controls the Equalizer's recorder view. It allows the user to prerecord an audio clip if they do not want to use the equalizer in real-time.
  
+    TODO: Use singleton instead of local variables and methods. This is just to allow for code abstraction and reduce viewcontroller complexity.
  */
 class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
 

@@ -8,22 +8,34 @@
 
 import UIKit
 
+/** This `GeneralUIViewController` controls the sign up view. It allows the user to create an account through Facebook, Google, E-mail, or Phone.
+ 
+ TODO: configure firebase backend system. Create an api-manager to control https requests. input validation for email/phone number.
+ 
+ */
 class SignUpViewController: GeneralUIViewController, UITableViewDelegate, UITableViewDataSource {
 
     // MARK: - IBOutlets
+    
+    /// This table view sets up simple scrolling and reusable cells to simplify view layouts. This solution is more elegant than implementing a scroll view.
     @IBOutlet weak var signUpTableView: GeneralUITableView!
     
     // MARK: - UIViewController
+    
+    /// Setup the view.
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
     // MARK: - UITableViewDataSource
+    
+    /// Returns the number of sections in this tableView.
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+    /// Returns the height of a given cell based on indexPath.
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 2:
@@ -33,10 +45,12 @@ class SignUpViewController: GeneralUIViewController, UITableViewDelegate, UITabl
         }
     }
     
+    /// Returns the number of rows in this tableView.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 7
     }
     
+    /// Returns the cell using a reusable identifier based on the indexPath.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: SignUpTableViewCell
         switch indexPath.row {
@@ -85,6 +99,8 @@ class SignUpViewController: GeneralUIViewController, UITableViewDelegate, UITabl
     }
     
     // MARK: - UITableViewDelegate
+    
+    /// Unselects a row after it is selected by the user. This tableview does not need selection.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }

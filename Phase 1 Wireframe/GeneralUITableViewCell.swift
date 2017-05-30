@@ -16,16 +16,9 @@ class GeneralUITableViewCell: UITableViewCell {
     /**
      Customize appearance of the `UITableViewCell` object when this function is called. The theme enforces the backgroundColor to be consistent among all `GeneralUITableViewCell` objects.
      */
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         self.backgroundColor = UIColor.BACKGROUND
     }
-
-    // MARK: UITableViewCell Properties
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-
 }

@@ -54,6 +54,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     
     // MARK: - GeneralUIViewController Methods
     
+    /// Calls `setupNoiseMeter` to color all of the `UIViews` to make them look like a legend for the `noiseLevelLabel`.
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // Setup UI Elements
