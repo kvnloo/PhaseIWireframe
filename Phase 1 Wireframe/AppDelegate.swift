@@ -9,12 +9,18 @@
 import UIKit
 
 @UIApplicationMain
-/** This file handles special UIApplication states including the following:
-    
-    applicationDidFinishLaunching: - handles on-startup configuration and construction
-    applicationWillTerminate: - handles clean up at the end, when the application terminates
-    Extraneous functionality should NOT be placed in the AppDelegate since they don't really belong there. This includes the following
+
+/** 
+    This file handles special UIApplication states including the following:
+ 
+        applicationDidFinishLaunching: - handles on-startup configuration and construction
+ 
+        applicationWillTerminate: - handles clean up at the end, when the application terminates
+ 
+    Extraneous functionality should NOT be placed in the AppDelegate since they don't really belong there. This includes the following:
+ 
         Document data -- this should be placed in a document manager singleton
+ 
         Button/table/view controllers, view delegate methods or other view handling (top-level view in applicationDidFinishLaunching: is still allowed) -- this work should be in respective view controller classes.
  */
 class AppDelegate: UIResponder, UIApplicationDelegate {
