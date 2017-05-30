@@ -74,7 +74,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         //make an AudioSession and request recording permission
         let audioSession = AVAudioSession.sharedInstance()
         audioSession.requestRecordPermission { [unowned self] allowed in
-            if (allowed) { // Microphone allowed, do what you like!
+            if allowed { // Microphone allowed, do what you like!
                 
                 // settings for a high-quality single-channel recording session
                 let settings = [
@@ -110,7 +110,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
             recorder?.prepareToRecord()
             recorder?.isMeteringEnabled = metered
             recorder?.record()
-            if(metered) {
+            if metered {
                 //instantiate a timer to be called with whatever frequency we want to grab metering values
                 self.levelTimer = Timer.scheduledTimer(timeInterval: timeIntervalForResults, target: self, selector: #selector(NoiseMeterViewController.levelTimerCallback), userInfo: nil, repeats: true)
             }
@@ -133,19 +133,19 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     /// This function changes the text in the `noiseLevelLabel` and sets the color of the text based on the `NoiseMeterColors`.
     func updateLabels(dB: Float) {
         noiseLevelLabel.text = String(Int(dB))
-        if(dB < 50) {
+        if dB < 50 {
             noiseLevelLabel.textColor = UIColor.BLUE
             dbLabel.textColor = UIColor.BLUE
-        } else if(dB < 75) {
+        } else if dB < 75 {
             noiseLevelLabel.textColor = UIColor.GREEN
             dbLabel.textColor = UIColor.GREEN
-        }  else if(dB < 90) {
+        }  else if dB < 90 {
             noiseLevelLabel.textColor = UIColor.PURPLE
             dbLabel.textColor = UIColor.PURPLE
-        } else if(dB < 100) {
+        } else if dB < 100 {
             noiseLevelLabel.textColor = UIColor.ORANGE
             dbLabel.textColor = UIColor.ORANGE
-        }  else if(dB < 120) {
+        }  else if dB < 120 {
             noiseLevelLabel.textColor = UIColor.RED
             dbLabel.textColor = UIColor.RED
         }
@@ -156,9 +156,9 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         var level: Float
         let min:Float = -80.0
         
-        if (originalValue < min) {
+        if originalValue < min {
             level = 0.0
-        } else if (originalValue >= 0.0) {
+        } else if originalValue >= 0.0 {
             level = 1.0
         } else {
             let root:Float            = 2.0
@@ -198,7 +198,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     
     /// Prints whether or not the recording session ended correctly.
     func recordingEnded(success: Bool) {
-        if(success) {
+        if success {
             print("RECORDING SUCCEEDED")
         } else {
             print("RECORDING FAILED")

@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A23A1D41EDCF5AD0002E626 /* RecordedAudioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23A1D31EDCF5AD0002E626 /* RecordedAudioObject.swift */; };
+		0A23A1D71EDCF8C60002E626 /* AudioSingletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23A1D61EDCF8C60002E626 /* AudioSingletons.swift */; };
 		0A4E88D11EDBDE3F00B69BC8 /* GeneralUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E88D01EDBDE3F00B69BC8 /* GeneralUISlider.swift */; };
 		0A4E88D31EDBFF5400B69BC8 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E88D21EDBFF5400B69BC8 /* song.mp3 */; };
 		0A4E88D51EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E88D41EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift */; };
 		0A7BE2271ED54AA800792CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */; };
 		0A7BE2291ED54AA800792CD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2281ED54AA800792CD7 /* LoginViewController.swift */; };
 		0A7BE22C1ED54AA800792CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7BE22A1ED54AA800792CD7 /* Main.storyboard */; };
-		0A7BE22F1ED54AA800792CD7 /* Phase_1_Wireframe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE22D1ED54AA800792CD7 /* Phase_1_Wireframe.xcdatamodeld */; };
 		0A7BE2341ED54AA800792CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7BE2321ED54AA800792CD7 /* LaunchScreen.storyboard */; };
 		0A7BE23F1ED54AA800792CD7 /* Phase_1_WireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE23E1ED54AA800792CD7 /* Phase_1_WireframeTests.swift */; };
 		0A7BE24A1ED54AA800792CD7 /* Phase_1_WireframeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2491ED54AA800792CD7 /* Phase_1_WireframeUITests.swift */; };
@@ -22,7 +23,6 @@
 		0A7E51221ED7A47200DD0B78 /* NoiseMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E51211ED7A47200DD0B78 /* NoiseMeterViewController.swift */; };
 		0A7E51241ED7A52D00DD0B78 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E51231ED7A52D00DD0B78 /* RecorderViewController.swift */; };
 		0AB8B0D41ED9663F00BA3AD6 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB8B0D31ED9663F00BA3AD6 /* EqualizerViewController.swift */; };
-		0AB8B0D61EDA233200BA3AD6 /* RecordedAudioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB8B0D51EDA233200BA3AD6 /* RecordedAudioObject.swift */; };
 		0AB970771ED6529900A5ADBF /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9706A1ED6529900A5ADBF /* LICENSE.txt */; };
 		0AB970781ED6529900A5ADBF /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9706B1ED6529900A5ADBF /* Roboto-Black.ttf */; };
 		0AB970791ED6529900A5ADBF /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9706C1ED6529900A5ADBF /* Roboto-BlackItalic.ttf */; };
@@ -72,6 +72,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A23A1D31EDCF5AD0002E626 /* RecordedAudioObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudioObject.swift; sourceTree = "<group>"; };
+		0A23A1D61EDCF8C60002E626 /* AudioSingletons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSingletons.swift; sourceTree = "<group>"; };
 		0A4E88D01EDBDE3F00B69BC8 /* GeneralUISlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUISlider.swift; sourceTree = "<group>"; };
 		0A4E88D21EDBFF5400B69BC8 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		0A4E88D41EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualizerTableViewCell.swift; sourceTree = "<group>"; };
@@ -80,7 +82,6 @@
 		0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A7BE2281ED54AA800792CD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0A7BE22B1ED54AA800792CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0A7BE22E1ED54AA800792CD7 /* Phase_1_Wireframe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phase_1_Wireframe.xcdatamodel; sourceTree = "<group>"; };
 		0A7BE2331ED54AA800792CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A7BE2351ED54AA800792CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A7BE23A1ED54AA800792CD7 /* Phase 1 WireframeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phase 1 WireframeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +95,6 @@
 		0A7E51211ED7A47200DD0B78 /* NoiseMeterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseMeterViewController.swift; sourceTree = "<group>"; };
 		0A7E51231ED7A52D00DD0B78 /* RecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
 		0AB8B0D31ED9663F00BA3AD6 /* EqualizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
-		0AB8B0D51EDA233200BA3AD6 /* RecordedAudioObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordedAudioObject.swift; path = ../RecordedAudioObject.swift; sourceTree = "<group>"; };
 		0AB9706A1ED6529900A5ADBF /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		0AB9706B1ED6529900A5ADBF /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		0AB9706C1ED6529900A5ADBF /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -160,6 +160,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A23A1D51EDCF8230002E626 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				0A23A1D61EDCF8C60002E626 /* AudioSingletons.swift */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
 		0A7BE21A1ED54AA800792CD7 = {
 			isa = PBXGroup;
 			children = (
@@ -194,8 +202,8 @@
 				0AC92E601ED6B379007D636D /* General */,
 				0AC92E6F1ED6BFDF007D636D /* ViewControllers */,
 				0AB8B0D71EDA234200BA3AD6 /* Models */,
+				0A23A1D51EDCF8230002E626 /* Singletons */,
 				0A7BE2351ED54AA800792CD7 /* Info.plist */,
-				0A7BE22D1ED54AA800792CD7 /* Phase_1_Wireframe.xcdatamodeld */,
 			);
 			path = "Phase 1 Wireframe";
 			sourceTree = "<group>";
@@ -221,7 +229,7 @@
 		0AB8B0D71EDA234200BA3AD6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0AB8B0D51EDA233200BA3AD6 /* RecordedAudioObject.swift */,
+				0A23A1D31EDCF5AD0002E626 /* RecordedAudioObject.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -628,6 +636,7 @@
 				0A4E88D51EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift in Sources */,
 				0AB8B0D41ED9663F00BA3AD6 /* EqualizerViewController.swift in Sources */,
 				0AB9708A1ED66D3800A5ADBF /* SignUpTableViewCell.swift in Sources */,
+				0A23A1D41EDCF5AD0002E626 /* RecordedAudioObject.swift in Sources */,
 				0AC92E681ED6BB3B007D636D /* DemoToolsViewController.swift in Sources */,
 				0AB970881ED663CF00A5ADBF /* SignUpViewController.swift in Sources */,
 				0AC92E661ED6BA64007D636D /* InitialViewController.swift in Sources */,
@@ -636,16 +645,15 @@
 				0A7E51201ED79B2400DD0B78 /* GeneralUINavigationBar.swift in Sources */,
 				0AC92E6A1ED6BC71007D636D /* GeneralUILabel.swift in Sources */,
 				0A7E51241ED7A52D00DD0B78 /* RecorderViewController.swift in Sources */,
-				0AB8B0D61EDA233200BA3AD6 /* RecordedAudioObject.swift in Sources */,
 				0AC92E721ED6C333007D636D /* GeneralUITableView.swift in Sources */,
 				0AC92E5D1ED6B0C0007D636D /* GeneralUIColor.swift in Sources */,
 				0A7BE2271ED54AA800792CD7 /* AppDelegate.swift in Sources */,
 				0AC92E6E1ED6BEE2007D636D /* GeneralUITextField.swift in Sources */,
 				0A7E51221ED7A47200DD0B78 /* NoiseMeterViewController.swift in Sources */,
-				0A7BE22F1ED54AA800792CD7 /* Phase_1_Wireframe.xcdatamodeld in Sources */,
 				0AC92E5F1ED6B373007D636D /* GeneralUIViewController.swift in Sources */,
 				0A4E88D11EDBDE3F00B69BC8 /* GeneralUISlider.swift in Sources */,
 				0AB970861ED65F3700A5ADBF /* CustomUITextField.swift in Sources */,
+				0A23A1D71EDCF8C60002E626 /* AudioSingletons.swift in Sources */,
 				0A7BE2581ED55D1000792CD7 /* GeneralUIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -922,19 +930,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		0A7BE22D1ED54AA800792CD7 /* Phase_1_Wireframe.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				0A7BE22E1ED54AA800792CD7 /* Phase_1_Wireframe.xcdatamodel */,
-			);
-			currentVersion = 0A7BE22E1ED54AA800792CD7 /* Phase_1_Wireframe.xcdatamodel */;
-			path = Phase_1_Wireframe.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 0A7BE21B1ED54AA800792CD7 /* Project object */;
 }

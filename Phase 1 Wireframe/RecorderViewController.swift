@@ -19,6 +19,8 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var recordButton: UIButton!
     /// The `UIButton` to stop recording.
     @IBOutlet weak var stopButton: UIButton!
+    
+    
     /// The `GeneralUILabel` that displays if in record mode.
     @IBOutlet weak var recordingLabel: GeneralUILabel!
     
@@ -59,7 +61,7 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     /// Overridden to send `RecordedAudioObject` to the next `GeneralUIViewController` that we are seguing to. In this case the only possible segue is to `EqualizerViewController`.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        if (segue.identifier == "SegueToEqualizerPlayer") {
+        if segue.identifier == "SegueToEqualizerPlayer" {
             let vc = segue.destination as! EqualizerViewController
             let data = sender as! RecordedAudioObject
             vc.recordedAudio = data
@@ -73,7 +75,7 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
         //make an AudioSession and request recording permission
         let audioSession = AVAudioSession.sharedInstance()
         audioSession.requestRecordPermission { [unowned self] allowed in
-            if (allowed) { // Microphone allowed, do what you like!
+            if allowed { // Microphone allowed, do what you like!
                 
                 // settings for a high-quality single-channel recording session
                 let settings = [
@@ -118,16 +120,12 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     
     /// Ensures that when the recording ends a sucess or failure flag is sent to `recordingEnded` function.
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        if flag {
-            recordingEnded(success: true)
-        } else {
-            recordingEnded(success: false)
-        }
+        recordingEnded(success: flag)
     }
     
     /// If the recording succeeded store the URL of the recorded clip then call `performeSegue`. Else notify the user that recording failed.
     func recordingEnded(success: Bool) {
-        if(success) {
+        if success {
             // Initialize RecordedAudioObject
             recordedAudio = RecordedAudioObject()
             recordedAudio.filePathUrl = recorder?.url
@@ -145,7 +143,7 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     /// Toggle the state - this function handles the logic of switching the state. Hiding and unhiding different views.
     @IBAction func toggleRecording(_ sender: UIButton) {
         stopButton.isHidden = false
-        if(state) {
+        if state {
             recorder?.record()
             state = false
             recordButton.setImage(#imageLiteral(resourceName: "pause-button"), for: .normal)
@@ -156,6 +154,7 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
             recordButton.setImage(#imageLiteral(resourceName: "record-button"), for: .normal)
             recordingLabel.isHidden = true
         }
+        
     }
     
     /// Stop recording. Calls the `stop` function.

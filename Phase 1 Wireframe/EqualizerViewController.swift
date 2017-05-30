@@ -55,8 +55,8 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
     /// Set's the `mainButton` imageView based on `realTime`.
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if (recordedAudio == nil) {
-            mainButton
+        if recordedAudio == nil {
+            self.mainButton
                 .setImage(#imageLiteral(resourceName: "record-button"), for: .normal)
         }
     }
@@ -65,7 +65,7 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if (recordedAudio == nil) {
+        if recordedAudio == nil {
             realTime = true
         } else {
             realTime = false
@@ -144,11 +144,7 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
                 if audioSession.outputNumberOfChannels >= desiredNumChannels {
                     try! audioSession.setPreferredOutputNumberOfChannels(desiredNumChannels)
                 } else {
-                    // TODO: Notify User that only 1 channel is available
-                    var cell = tableView.cellForRow(at: IndexPath(row: 0, section: 1))
-                    cell?.isUserInteractionEnabled = false
-                    cell = tableView.cellForRow(at: IndexPath(row: 1, section: 1))
-                    cell?.isUserInteractionEnabled = false
+                    failedToGetDesiredNumberOfChannels()
                 }
             } catch {
                 assertionFailure("AVAudioSession setup error: \(error)")
@@ -203,6 +199,15 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
                 audioPlayerNode?.scheduleFile(audioFile, at: nil, completionHandler: nil)
             }
         } catch _ {}
+    }
+    
+    func failedToGetDesiredNumberOfChannels() {
+        // TODO: Notify User that only 1 channel is available
+        var cell = tableView.cellForRow(at: IndexPath(row: 0, section: 1))
+        cell?.isUserInteractionEnabled = false
+        cell = tableView.cellForRow(at: IndexPath(row: 1, section: 1))
+        cell?.isUserInteractionEnabled = false
+
     }
     
     /// Called in `viewDidLoad`, this function sets up the equalizer with 14 bands per channel.
