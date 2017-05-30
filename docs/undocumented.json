@@ -9,50 +9,8 @@
     },
     {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/AudioSingletons.swift",
-      "line": 14,
-      "symbol": "Audio",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/AudioSingletons.swift",
-      "line": 47,
-      "symbol": "Audio.notificationName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/AudioSingletons.swift",
-      "line": 53,
-      "symbol": "Audio.sharedInstance",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/AudioSingletons.swift",
-      "line": 193,
-      "symbol": "Audio.schedule()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/AudioSingletons.swift",
-      "line": 203,
-      "symbol": "Audio.recordWithAVAudioRecorder(filename:settings:metered:timeIntervalForResults:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/AudioSingletons.swift",
-      "line": 251,
-      "symbol": "Audio.playWithAudioPlayerNode()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/AudioSingletons.swift",
-      "line": 255,
-      "symbol": "Audio.pauseWithAudioPlayerNode()",
+      "line": 58,
+      "symbol": "Audio.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -74,20 +32,6 @@
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
       "line": 59,
       "symbol": "EqualizerViewController.viewWillDisappear(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
-      "line": 110,
-      "symbol": "EqualizerViewController.failedToGetDesiredNumberOfChannels()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
-      "line": 147,
-      "symbol": "EqualizerViewController.finishedPlayingClip()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },

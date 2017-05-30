@@ -17,9 +17,9 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
     
     // MARK: IBOutlets
     
-    /// This button allows the user to toggle between Record and Stop mode if in realTime, otherwise it will allow toggling between Play and Pause mode
+    /// This button allows the user to toggle between `Record` and `Stop` mode if in real time, otherwise it will allow toggling between `Play` and `Pause` mode.
     @IBOutlet weak var mainButton: UIButton!
-    /// The `GeneralUITableView` that contains all of the bands for the `AVAudioUnitEQ`
+    /// The `GeneralUITableView` that contains all of the bands for the `AVAudioUnitEQ`.
     @IBOutlet weak var tableView: GeneralUITableView!
     
     // MARK: Global Variables
@@ -64,12 +64,12 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
     
     // MARK: - TableView Setup
     
-    /// Returns the number of sections in the TableView
+    /// Returns the number of sections in `tableView`.
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
-    /// Returns the height for row at `indexPath`.
+    /// Returns the height for row at `indexPath` in `tableView`.
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 2 {
             return 100
@@ -77,7 +77,7 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
         return 264
     }
     
-    /// Returns the number of rows given the `section`.
+    /// Returns the number of rows given the `section` in `tableView`.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 2
@@ -86,7 +86,7 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
         }
     }
     
-    /// Returns the title for header given the `section`.
+    /// Returns the title for header given the `section` in `tableView`.
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
@@ -96,7 +96,7 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
         }
     }
     
-    /// Determines which cell to return based on the `indexPath`.
+    /// Determines which cell to return based on the `indexPath` in `tableView`.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 2 {
             return tableView.dequeueReusableCell(withIdentifier: "EmptyCell") as! GeneralUITableViewCell
@@ -107,6 +107,7 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
         }
     }
     
+    /// This function is called as a callback function in the case that the number of channels requested from the tapped input is less than 2.
     func failedToGetDesiredNumberOfChannels() {
         // TODO: Notify User that only 1 channel is available
         var cell = tableView.cellForRow(at: IndexPath(row: 0, section: 1))
@@ -144,6 +145,7 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
         
     }
     
+    /// This is a callback function to update UIElements after the clip finishes playing.
     func finishedPlayingClip() {
         print("notification received")
         DispatchQueue.main.async {
@@ -151,7 +153,6 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
             self.mainButton.setImage(#imageLiteral(resourceName: "play-button"), for: .normal)
             self.state = true
         }
-        
     }
     
     // MARK: - IBActions

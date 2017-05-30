@@ -10,7 +10,8 @@ import UIKit
 
 /**
     `GeneralUIColor.swift` is an extension on the UIColor class that defines the colors shown in the color palette generated for this application. This color palette can be found [here](https://github.com/lesseradmin/PhaseIWireframe/blob/master/Assets/Color%20Palettes/Color%20Palette%20Final/ColorPalette.png). It also includes colors for "Facebook Blue" and "Google+ Red". These are used for social media buttons.
-     - note: Many of the colors in storyboard are not accurate since the colors are later set using these definitions.
+ 
+     - Note: Many of the colors in storyboard are not accurate since the colors are later set using these definitions.
  
  */
 public extension UIColor {

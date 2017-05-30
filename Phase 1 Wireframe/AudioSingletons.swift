@@ -10,23 +10,23 @@ import Foundation
 import UIKit
 import AVFoundation
 
-
+/// A singleton class to help abstract function calls and methods for setting up different `AVFoundation` components.
 class Audio {
     
-    /// The audio engine that is used for all audio effects
+    /// The engine that is used for all audio effects. `AVAudioEngine` allows for real time audio editing which let's the programmer tap the microphone for input then forward all data through different effect chains. Finally, the output of these effect chains can be mixed together through `audioMixerNode`.
     var audioEngine: AVAudioEngine = AVAudioEngine()
     
-    /// The `audioPlayerNode` is used if the user recorded on the previous screen
+    /// This is used if the user recorded on the previous screen. It is set up such that the audio plays in a faux-loop fasion. Rather than using the .loop feature which would repeat an audio buffer endlessly, audio files are scheduled such that when the file ends, UIElemnts are modified before the next audio file gets queued.
     var audioPlayerNode: AVAudioPlayerNode!
-    /// The `audioSession` is used if in realTime
+    /// This is used if the user skipped recording on the previous screen. It uses the `audioEngine` to tap input from the mic and send it to this `AVAudioSession` to play through the speakers after being manipulated for effects.
     var audioSession: AVAudioSession!
     
-    /// The equalizer for the 0th channel
+    /// The equalizer for the 0th channel.
     var leftEqualizer: AVAudioUnitEQ!
-    /// The equalizer for the 1th channel
+    /// The equalizer for the 1st channel.
     var rightEqualizer: AVAudioUnitEQ!
     
-    /// The mixer is used to mix together multichannel audio
+    /// The mixer is used to mix together multichannel audio.
     var audioMixerNode: AVAudioMixerNode!
     
     /// Information regarding the recorded clip from the previous `GeneralUIViewController`.
@@ -43,13 +43,16 @@ class Audio {
         }
     }
     
-    // Define identifier
+    /// A notification that is used to update UIElements in `EqualizerViewController`.
     let notificationName = Notification.Name("NotificationIdentifier")
     
+    // MARK: TypeAliases
+    /// A type alias to allow creating functions that accept other functions as parameters.
     typealias HandlerFunction = ()  -> Void
 
     
-    
+    // MARK: Static Classes
+    /// A sharedInstance that can be used by all other classes. This is reaquired to make this class a singleton.
     static let sharedInstance = Audio()
     
     private init() {
@@ -190,6 +193,7 @@ class Audio {
         }
     }
     
+    /// A recursive function that is used to infinitely schedule the same audio clip that was recorded on the previous screen.
     func schedule() {
         audioPlayerNode.scheduleFile(audioFile, at: nil, completionHandler: {
             self.audioPlayerNode.pause()
@@ -200,6 +204,7 @@ class Audio {
         })
     }
     
+    /// Sets up the AVAudioRecorder and records into `filename (@param)` using `settings (@param)`. A time interval is also included as an iterative callback which allows for getting metering results.
     func recordWithAVAudioRecorder(filename: String, settings: [String:Int], metered: Bool, timeIntervalForResults: TimeInterval) {
         // Get path for app directory
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -248,10 +253,12 @@ class Audio {
         audioEngine.stop()
     }
     
+    /// Plays the audioPlayerNode
     func playWithAudioPlayerNode() {
         audioPlayerNode?.play()
     }
     
+    /// Pauses the audioPlayerNode
     func pauseWithAudioPlayerNode() {
         audioPlayerNode?.pause()
     }

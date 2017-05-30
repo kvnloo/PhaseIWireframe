@@ -80,7 +80,7 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     
     // MARK: IBActions
     
-    /// Toggle the state - this function handles the logic of switching the state. Hiding and unhiding different views.
+    /// Toggle the state - this function handles the logic of switching the state as well as toggling the visibility for different views.
     @IBAction func toggleRecording(_ sender: UIButton) {
         stopButton.isHidden = false
         if state {
@@ -97,11 +97,9 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
         
     }
     
-    /// Stop recording. Calls the `stop` function.
+    /// Stops recording by invoking the `AVAudioRecorder's stop` method on `Audio.sharedInstance.recorder`.
     @IBAction func stopRecording(_ sender: UIButton) {
         Audio.sharedInstance.recorder?.stop()
-        print("stopped recording")
-        
     }
     
 }

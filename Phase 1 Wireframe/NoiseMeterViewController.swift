@@ -16,31 +16,31 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     
     // MARK: - IBOutlets
     
-    /// A dynamic `GeneralUILabel` that displays the Noise Level
+    /// A dynamic `GeneralUILabel` that displays the Noise Level.
     @IBOutlet weak var noiseLevelLabel: GeneralUILabel!
-    /// A static `GeneralUILabel` that displays the dB Unit
+    /// A static `GeneralUILabel` that displays the dB Unit.
     @IBOutlet weak var dbLabel: GeneralUILabel!
     
-    /// A static `GeneralUILabel` that captions the silent UIView
+    /// A static `GeneralUILabel` that captions the silent UIView.
     @IBOutlet weak var silentLabel: GeneralUILabel!
-    /// A static `GeneralUILabel` that captions the quiet UIView
+    /// A static `GeneralUILabel` that captions the quiet UIView.
     @IBOutlet weak var quietLabel: GeneralUILabel!
-    /// A static `GeneralUILabel` that captions the average UIView
+    /// A static `GeneralUILabel` that captions the average UIView.
     @IBOutlet weak var averageLabel: GeneralUILabel!
-    /// A static `GeneralUILabel` that captions the noisy UIView
+    /// A static `GeneralUILabel` that captions the noisy UIView.
     @IBOutlet weak var noisyLabel: GeneralUILabel!
-    /// A static `GeneralUILabel` that captions the loud UIView
+    /// A static `GeneralUILabel` that captions the loud UIView.
     @IBOutlet weak var loudLabel: GeneralUILabel!
     
-    /// A static `UIView` that is colored `UIColor.BLUE` to represent the 'silent' noise range
+    /// A static `UIView` that is colored `UIColor.BLUE` to represent the 'silent' noise range.
     @IBOutlet weak var noiseMeterViewOne: UIView!
-    /// A static `UIView` that is colored `UIColor.GREEN` to represent the 'quiet' noise range
+    /// A static `UIView` that is colored `UIColor.GREEN` to represent the 'quiet' noise range.
     @IBOutlet weak var noiseMeterViewTwo: UIView!
-    /// A static `UIView` that is colored `UIColor.PURPLE` to represent the 'average' noise range
+    /// A static `UIView` that is colored `UIColor.PURPLE` to represent the 'average' noise range.
     @IBOutlet weak var noiseMeterViewThree: UIView!
-    /// A static `UIView` that is colored `UIColor.ORANGE` to represent the 'noisy' noise range
+    /// A static `UIView` that is colored `UIColor.ORANGE` to represent the 'noisy' noise range.
     @IBOutlet weak var noiseMeterViewFour: UIView!
-    /// A static `UIView` that is colored `UIColor.RED` to represent the 'loud' noise range
+    /// A static `UIView` that is colored `UIColor.RED` to represent the 'loud' noise range.
     @IBOutlet weak var noiseMeterViewFive: UIView!
     
     // MARK: - Global Variables
@@ -49,7 +49,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     var recorder: AVAudioRecorder?
     /// A timer object to gathers noise data frequently.
     var levelTimer = Timer()
-    /// An array to store the recorded noise levels, this can be used to display a history graph of the past noise levels.
+    /// An array to store the recorded noise levels. This can possibly be used to display a history graph of the past noise levels.
     var dBs: NSArray = NSArray()
     
     // MARK: - GeneralUIViewController Methods
@@ -99,7 +99,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
         // Get path for app directory
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let docsDirect = paths[0]
-        let audioUrl = try docsDirect.appendingPathComponent(filename)
+        let audioUrl = docsDirect.appendingPathComponent(filename)
         
         // create the session
         let session = AVAudioSession.sharedInstance()

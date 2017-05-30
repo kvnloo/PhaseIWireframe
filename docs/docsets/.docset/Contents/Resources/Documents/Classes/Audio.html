@@ -14,7 +14,7 @@
     <a title="Audio Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (73% documented)</p>
+        <p><a href="../index.html"> Docs</a> (78% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -112,7 +112,13 @@
         <section>
           <section class="section">
             <h1>Audio</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">Audio</span></code></pre>
+
+                </div>
+              </div>
+            <p>A singleton class to help abstract function calls and methods for setting up different <code>AVFoundation</code> components.</p>
 
           </section>
           <section class="section task-group-section">
@@ -131,7 +137,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The audio engine that is used for all audio effects</p>
+                        <p>The engine that is used for all audio effects. <code>AVAudioEngine</code> allows for real time audio editing which let&rsquo;s the programmer tap the microphone for input then forward all data through different effect chains. Finally, the output of these effect chains can be mixed together through <code><a href="../Classes/Audio.html#/s:vC17Phase_1_Wireframe5Audio14audioMixerNodeGSQCSo16AVAudioMixerNode_">audioMixerNode</a></code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -158,7 +164,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>audioPlayerNode</code> is used if the user recorded on the previous screen</p>
+                        <p>This is used if the user recorded on the previous screen. It is set up such that the audio plays in a faux-loop fasion. Rather than using the .loop feature which would repeat an audio buffer endlessly, audio files are scheduled such that when the file ends, UIElemnts are modified before the next audio file gets queued.</p>
 
                       </div>
                       <div class="declaration">
@@ -185,7 +191,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>audioSession</code> is used if in realTime</p>
+                        <p>This is used if the user skipped recording on the previous screen. It uses the <code><a href="../Classes/Audio.html#/s:vC17Phase_1_Wireframe5Audio11audioEngineCSo13AVAudioEngine">audioEngine</a></code> to tap input from the mic and send it to this <code>AVAudioSession</code> to play through the speakers after being manipulated for effects.</p>
 
                       </div>
                       <div class="declaration">
@@ -212,7 +218,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The equalizer for the 0th channel</p>
+                        <p>The equalizer for the 0th channel.</p>
 
                       </div>
                       <div class="declaration">
@@ -239,7 +245,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The equalizer for the 1th channel</p>
+                        <p>The equalizer for the 1st channel.</p>
 
                       </div>
                       <div class="declaration">
@@ -266,7 +272,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The mixer is used to mix together multichannel audio</p>
+                        <p>The mixer is used to mix together multichannel audio.</p>
 
                       </div>
                       <div class="declaration">
@@ -401,12 +407,69 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A notification that is used to update UIElements in <code><a href="../Classes/EqualizerViewController.html">EqualizerViewController</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">let</span> <span class="nv">notificationName</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"NotificationIdentifier"</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/TypeAliases"></a>
+                <a name="//apple_ref/swift/Section/TypeAliases" class="dashAnchor"></a>
+                <a href="#/TypeAliases">
+                  <h3 class="section-name">TypeAliases</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C17Phase_1_Wireframe5Audio15HandlerFunction"></a>
+                    <a name="//apple_ref/swift/Alias/HandlerFunction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C17Phase_1_Wireframe5Audio15HandlerFunction">HandlerFunction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A type alias to allow creating functions that accept other functions as parameters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">typealias</span> <span class="kt">HandlerFunction</span> <span class="o">=</span> <span class="p">()</span>  <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Static%20Classes"></a>
+                <a name="//apple_ref/swift/Section/Static Classes" class="dashAnchor"></a>
+                <a href="#/Static%20Classes">
+                  <h3 class="section-name">Static Classes</h3>
+                </a>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -420,8 +483,43 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
+                        <p>A sharedInstance that can be used by all other classes. This is reaquired to make this class a singleton.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">sharedInstance</span> <span class="o">=</span> <span class="kt">Audio</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC17Phase_1_Wireframe5AudiocFT_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17Phase_1_Wireframe5AudiocFT_S0_">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
                         <p>Undocumented</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">Audio</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -500,7 +598,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setupAudioEngine</span><span class="p">(</span><span class="nv">realTime</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">HandlerFunction</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setupAudioEngine</span><span class="p">(</span><span class="nv">realTime</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Classes/Audio.html#/s:C17Phase_1_Wireframe5Audio15HandlerFunction">HandlerFunction</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -520,8 +618,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A recursive function that is used to infinitely schedule the same audio clip that was recorded on the previous screen.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">schedule</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -539,8 +645,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Sets up the AVAudioRecorder and records into <code>filename (@param)</code> using <code>settings (@param)</code>. A time interval is also included as an iterative callback which allows for getting metering results.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">recordWithAVAudioRecorder</span><span class="p">(</span><span class="nv">filename</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">settings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Int</span><span class="p">],</span> <span class="nv">metered</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">timeIntervalForResults</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -612,8 +726,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Plays the audioPlayerNode</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">playWithAudioPlayerNode</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -631,8 +753,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Pauses the audioPlayerNode</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">pauseWithAudioPlayerNode</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
