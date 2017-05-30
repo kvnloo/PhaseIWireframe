@@ -8,6 +8,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/AudioSingletons.swift",
+      "line": 58,
+      "symbol": "Audio.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/DemoToolsViewController.swift",
       "line": 11,
       "symbol": "DemoToolsViewController",

@@ -13,6 +13,9 @@ import Foundation
 import AudioToolbox
 import VerticalSlider
 
+/** 
+ 
+ */
 class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // MARK: IBOutlets

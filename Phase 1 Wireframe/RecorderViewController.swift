@@ -11,6 +11,9 @@ import Foundation
 import AVFoundation
 import CoreAudio
 
+/** 
+ 
+ */
 class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
 
     // MARK: - IBOutlets

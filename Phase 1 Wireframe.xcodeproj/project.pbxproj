@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0A23A1D41EDCF5AD0002E626 /* RecordedAudioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23A1D31EDCF5AD0002E626 /* RecordedAudioObject.swift */; };
 		0A23A1D71EDCF8C60002E626 /* AudioSingletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23A1D61EDCF8C60002E626 /* AudioSingletons.swift */; };
-		0A4E88D11EDBDE3F00B69BC8 /* GeneralUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E88D01EDBDE3F00B69BC8 /* GeneralUISlider.swift */; };
 		0A4E88D31EDBFF5400B69BC8 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E88D21EDBFF5400B69BC8 /* song.mp3 */; };
 		0A4E88D51EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E88D41EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift */; };
 		0A7BE2271ED54AA800792CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */; };
@@ -43,7 +42,6 @@
 		0AC92E5D1ED6B0C0007D636D /* GeneralUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E5C1ED6B0C0007D636D /* GeneralUIColor.swift */; };
 		0AC92E5F1ED6B373007D636D /* GeneralUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E5E1ED6B373007D636D /* GeneralUIViewController.swift */; };
 		0AC92E661ED6BA64007D636D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E651ED6BA64007D636D /* InitialViewController.swift */; };
-		0AC92E681ED6BB3B007D636D /* DemoToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E671ED6BB3B007D636D /* DemoToolsViewController.swift */; };
 		0AC92E6A1ED6BC71007D636D /* GeneralUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E691ED6BC71007D636D /* GeneralUILabel.swift */; };
 		0AC92E6C1ED6BD14007D636D /* GerneralFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E6B1ED6BD14007D636D /* GerneralFonts.swift */; };
 		0AC92E6E1ED6BEE2007D636D /* GeneralUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E6D1ED6BEE2007D636D /* GeneralUITextField.swift */; };
@@ -74,7 +72,6 @@
 /* Begin PBXFileReference section */
 		0A23A1D31EDCF5AD0002E626 /* RecordedAudioObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudioObject.swift; sourceTree = "<group>"; };
 		0A23A1D61EDCF8C60002E626 /* AudioSingletons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSingletons.swift; sourceTree = "<group>"; };
-		0A4E88D01EDBDE3F00B69BC8 /* GeneralUISlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUISlider.swift; sourceTree = "<group>"; };
 		0A4E88D21EDBFF5400B69BC8 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		0A4E88D41EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualizerTableViewCell.swift; sourceTree = "<group>"; };
 		0A5A8C8A1ED8FF430000392C /* Novocaine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Novocaine.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Phase_1_Wireframe-eiypuvltmqzjhxbiwdorbkouosgf/Build/Products/Debug-iphoneos/Novocaine/Novocaine.framework"; sourceTree = "<group>"; };
@@ -115,7 +112,6 @@
 		0AC92E5C1ED6B0C0007D636D /* GeneralUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUIColor.swift; sourceTree = "<group>"; };
 		0AC92E5E1ED6B373007D636D /* GeneralUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUIViewController.swift; sourceTree = "<group>"; };
 		0AC92E651ED6BA64007D636D /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		0AC92E671ED6BB3B007D636D /* DemoToolsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoToolsViewController.swift; sourceTree = "<group>"; };
 		0AC92E691ED6BC71007D636D /* GeneralUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUILabel.swift; sourceTree = "<group>"; };
 		0AC92E6B1ED6BD14007D636D /* GerneralFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GerneralFonts.swift; sourceTree = "<group>"; };
 		0AC92E6D1ED6BEE2007D636D /* GeneralUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUITextField.swift; sourceTree = "<group>"; };
@@ -284,7 +280,6 @@
 				0A7BE2571ED55D1000792CD7 /* GeneralUIButton.swift */,
 				0AC92E731ED6C577007D636D /* GeneralUITableViewCell.swift */,
 				0A7E511F1ED79B2400DD0B78 /* GeneralUINavigationBar.swift */,
-				0A4E88D01EDBDE3F00B69BC8 /* GeneralUISlider.swift */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -295,7 +290,6 @@
 				0A7E51211ED7A47200DD0B78 /* NoiseMeterViewController.swift */,
 				0A7E51231ED7A52D00DD0B78 /* RecorderViewController.swift */,
 				0AB8B0D31ED9663F00BA3AD6 /* EqualizerViewController.swift */,
-				0AC92E671ED6BB3B007D636D /* DemoToolsViewController.swift */,
 				0A7BE2281ED54AA800792CD7 /* LoginViewController.swift */,
 				0AC92E651ED6BA64007D636D /* InitialViewController.swift */,
 				0AB970871ED663CF00A5ADBF /* SignUpViewController.swift */,
@@ -637,7 +631,6 @@
 				0AB8B0D41ED9663F00BA3AD6 /* EqualizerViewController.swift in Sources */,
 				0AB9708A1ED66D3800A5ADBF /* SignUpTableViewCell.swift in Sources */,
 				0A23A1D41EDCF5AD0002E626 /* RecordedAudioObject.swift in Sources */,
-				0AC92E681ED6BB3B007D636D /* DemoToolsViewController.swift in Sources */,
 				0AB970881ED663CF00A5ADBF /* SignUpViewController.swift in Sources */,
 				0AC92E661ED6BA64007D636D /* InitialViewController.swift in Sources */,
 				0A7BE2291ED54AA800792CD7 /* LoginViewController.swift in Sources */,
@@ -651,7 +644,6 @@
 				0AC92E6E1ED6BEE2007D636D /* GeneralUITextField.swift in Sources */,
 				0A7E51221ED7A47200DD0B78 /* NoiseMeterViewController.swift in Sources */,
 				0AC92E5F1ED6B373007D636D /* GeneralUIViewController.swift in Sources */,
-				0A4E88D11EDBDE3F00B69BC8 /* GeneralUISlider.swift in Sources */,
 				0AB970861ED65F3700A5ADBF /* CustomUITextField.swift in Sources */,
 				0A23A1D71EDCF8C60002E626 /* AudioSingletons.swift in Sources */,
 				0A7BE2581ED55D1000792CD7 /* GeneralUIButton.swift in Sources */,

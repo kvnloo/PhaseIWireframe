@@ -15,44 +15,9 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/DemoToolsViewController.swift",
-      "line": 11,
-      "symbol": "DemoToolsViewController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
-      "line": 16,
-      "symbol": "EqualizerViewController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/EqualizerViewController.swift",
-      "line": 59,
+      "line": 62,
       "symbol": "EqualizerViewController.viewWillDisappear(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/GeneralUISlider.swift",
-      "line": 12,
-      "symbol": "GeneralUISlider",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/GeneralUISlider.swift",
-      "line": 14,
-      "symbol": "GeneralUISlider.angle",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/GeneralUISlider.swift",
-      "line": 20,
-      "symbol": "GeneralUISlider.updateView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -121,49 +86,42 @@
     },
     {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/LoginViewController.swift",
-      "line": 11,
-      "symbol": "LoginViewController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/LoginViewController.swift",
-      "line": 15,
+      "line": 18,
       "symbol": "LoginViewController.tableView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/LoginViewController.swift",
-      "line": 24,
+      "line": 27,
       "symbol": "LoginViewController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/LoginViewController.swift",
-      "line": 28,
+      "line": 31,
       "symbol": "LoginViewController.tableView(_:heightForRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/LoginViewController.swift",
-      "line": 37,
+      "line": 40,
       "symbol": "LoginViewController.tableView(_:numberOfRowsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/LoginViewController.swift",
-      "line": 41,
+      "line": 44,
       "symbol": "LoginViewController.tableView(_:cellForRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/LoginViewController.swift",
-      "line": 86,
+      "line": 89,
       "symbol": "LoginViewController.tableView(_:didSelectRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -194,13 +152,6 @@
       "line": 13,
       "symbol": "RecordedAudioObject.title",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/RecorderViewController.swift",
-      "line": 14,
-      "symbol": "RecorderViewController",
-      "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {

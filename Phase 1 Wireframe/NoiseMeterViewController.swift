@@ -192,11 +192,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     
     /// Ensures that when the recording ends a sucess or failure flag is sent to `recordingEnded` function.
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        if !flag {
-            recordingEnded(success: false)
-        } else {
-            recordingEnded(success: true)
-        }
+        recordingEnded(success: flag)
     }
     
     /// Prints whether or not the recording session ended correctly.

@@ -33,7 +33,7 @@ extension UIFont {
         return UIFont(name: "Roboto-Black", size: 40.0)!
     }
     
-    /// This is the font that is used by `NoiseMeterViewController` to display the Noise Level in Decibels.
+    /// This is the font that is used by `NoiseMeterViewController` to display the Noise Level in decibels.
     public class var LARGE: UIFont {
         return UIFont(name: "Roboto-Black", size: 48.0)!
     }

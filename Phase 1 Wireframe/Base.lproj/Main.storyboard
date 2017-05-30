@@ -425,7 +425,7 @@
         <!--DEMO TOOLS-->
         <scene sceneID="yil-kb-gmA">
             <objects>
-                <viewController id="e3D-r8-DUa" customClass="DemoToolsViewController" customModule="Phase_1_Wireframe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="e3D-r8-DUa" customClass="GeneralUIViewController" customModule="Phase_1_Wireframe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hmj-dZ-QB1"/>
                         <viewControllerLayoutGuide type="bottom" id="l6x-be-J3O"/>
