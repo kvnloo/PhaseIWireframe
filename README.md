@@ -3,7 +3,15 @@
 [![Doc coverage](https://img.shields.io/badge/docs-98%25-brightgreen.svg)](lesseradmin.github.io/PhaseIWireframe/) [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](lesseradmin.github.io/PhaseIWireframe/) [![License MIT](https://img.shields.io/badge/license-MIT-4481C7.svg)](https://opensource.org/licenses/MIT)
 
 
-Phase I Project is a wireframe design of JubiAudio Phase I as described in [this](https://github.com/lesseradmin/PhaseIWireframe/blob/master/blueprint/Assignment.pdf) spec document.
+## Description
+
+Phase I Project is a project to develop an iOS Application with two main purposes:
+
+  1. Create a noise meter that can display a noise level in decibels in real-time.
+
+  2. Construct a 14-band dual-channel audio equalizer that is able to process audio in real-time.
+
+I was given a wireframe design of JubiAudio Phase I as described in [this](https://github.com/lesseradmin/PhaseIWireframe/blob/master/blueprint/Assignment.pdf) spec document.
 
 
 ## Requirements
