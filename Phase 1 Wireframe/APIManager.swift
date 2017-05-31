@@ -39,6 +39,7 @@ class APIManager: NSObject, GIDSignInDelegate, GIDSignInUIDelegate {
                     return
                 }
                 self.presentNotification(title: "Account created successfully", message: "Now sign-in to use your account!", actionTitle: "Ok")
+                self.user = nil
                 NotificationCenter.default.post(name:self.initialNotification, object: nil)
             }
         }
@@ -74,6 +75,7 @@ class APIManager: NSObject, GIDSignInDelegate, GIDSignInUIDelegate {
                     self.user = User(token: FBSDKAccessToken.current().tokenString)
                     self.presentNotification(title: "Sign-in successful", message: "You may now continue using the application and your data will be saved online!", actionTitle: "Ok")
                     NotificationCenter.default.post(name:self.demoNotification, object: nil)
+                    self.loadData()
                 }
                 
             }
@@ -101,6 +103,7 @@ class APIManager: NSObject, GIDSignInDelegate, GIDSignInUIDelegate {
             APIManager.sharedInstance.user = User(token: authentication.accessToken)
             APIManager.sharedInstance.presentNotification(title: "Sign-in successful", message: "You may now continue using the application and your data will be saved online!", actionTitle: "Ok")
             NotificationCenter.default.post(name:APIManager.sharedInstance.demoNotification, object: nil)
+            self.loadData()
         }
     }
     

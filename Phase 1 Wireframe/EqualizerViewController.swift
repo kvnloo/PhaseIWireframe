@@ -18,14 +18,15 @@ import VerticalSlider
     TODO: cleanup code.
  
  */
-class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UITableViewDataSource {
+class EqualizerViewController: GeneralUIViewController {
     
     // MARK: IBOutlets
     
+    @IBOutlet weak var sliderStackView1: UIStackView!
+    @IBOutlet weak var sliderStackView2: UIStackView!
+    
     /// This button allows the user to toggle between `Record` and `Stop` mode if in real time, otherwise it will allow toggling between `Play` and `Pause` mode.
     @IBOutlet weak var mainButton: UIButton!
-    /// The `GeneralUITableView` that contains all of the bands for the `AVAudioUnitEQ`.
-    @IBOutlet weak var tableView: GeneralUITableView!
     
     // MARK: Global Variables
     
@@ -33,6 +34,7 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
     var realTime: Bool!
     /// If in `realTime`, this flag determines if the class is in record mode or stop mode. If not in realTime, this flag determines if the class is in play mode or pause mode.
     var state: Bool = true
+    var channel1: Bool!
     
     // MARK: Lifecycle
     
@@ -41,12 +43,25 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
         super.viewWillAppear(animated)
         
         if Audio.sharedInstance.recordedAudio == nil {
-            self.mainButton
-                .setImage(#imageLiteral(resourceName: "record-button"), for: .normal)
+            self.mainButton.setImage(#imageLiteral(resourceName: "record-button"), for: .normal)
         }
-        APIManager.sharedInstance.loadData()
+
+    }
+    /// Check if user recorded clip or if they want to use real-time recording. Set the value for `realTime` based on if recordedAudio is nil. Once `realTime` is set, `setupEqualizer` is called.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        
+        Audio.sharedInstance.setupEqualizer(numberOfBands: 14)
+        if Audio.sharedInstance.recordedAudio == nil {
+            realTime = true
+        } else {
+            realTime = false
+            Audio.sharedInstance.setupAudioEngine(realTime: realTime, handler: self.finishedPlayingClip)
+        }
         if let user = APIManager.sharedInstance.user, let data = user.data {
-            
+            print("data: ", data)
             let split = data.split()
             let left = split.left
             let right = split.right
@@ -56,23 +71,31 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
             for i in 0...(right.count - 1) {
                 Audio.sharedInstance.rightEqualizer.bands[i].gain = right[i]
             }
-        }
-        tableView.reloadData()
-    }
-    /// Check if user recorded clip or if they want to use real-time recording. Set the value for `realTime` based on if recordedAudio is nil. Once `realTime` is set, `setupEqualizer` is called.
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        Audio.sharedInstance.setupEqualizer(numberOfBands: 14)
-        if Audio.sharedInstance.recordedAudio == nil {
-            realTime = true
+            if !channel1 {
+                var sliders = (sliderStackView2.subviews + sliderStackView1.subviews)
+                for i in 0...(sliders.count - 1) {
+                    let slider = sliders[i] as! VerticalSlider
+                    slider.slider.value = left[i]
+                    
+                }
+            } else {
+                var sliders = (sliderStackView2.subviews + sliderStackView1.subviews)
+                for i in 0...(sliders.count - 1) {
+                    let slider = sliders[i] as! VerticalSlider
+                    slider.slider.value = right[i]
+                    
+                }
+            }
         } else {
-            realTime = false
-            Audio.sharedInstance.setupAudioEngine(realTime: realTime, handler: self.finishedPlayingClip)
+            print("data was null")
         }
+
         // Register to receive notification
         NotificationCenter.default.addObserver(self, selector: #selector(self.finishedPlayingClip), name: Audio.sharedInstance.notificationName, object: nil)
+        for view in (sliderStackView1.subviews + sliderStackView2.subviews) {
+            let slider = view as! VerticalSlider
+            slider.slider.addTarget(nil, action: #selector(EqualizerViewController.updateGains), for: .valueChanged)
+        }
     }
     
     /// Remove notification observers when view will disappear.
@@ -97,59 +120,14 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
         }
     }
     
-    // MARK: - TableView Setup
-    
-    /// Returns the number of sections in `tableView`.
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
-    
-    /// Returns the height for row at `indexPath` in `tableView`.
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 2 {
-            return 100
-        }
-        return 264
-    }
-    
-    /// Returns the number of rows given the `section` in `tableView`.
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return 2
-        } else {
-            return 3
-        }
-    }
-    
-    /// Returns the title for header given the `section` in `tableView`.
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 0:
-            return "Channel 0"
-        default:
-            return "Channel 1"
-        }
-    }
-    
-    /// Determines which cell to return based on the `indexPath` in `tableView`.
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 2 {
-            return tableView.dequeueReusableCell(withIdentifier: "EmptyCell") as! GeneralUITableViewCell
-        } else {
-            let cell: EqualizerTableViewCell = tableView.dequeueReusableCell(withIdentifier: "SliderTableViewCell") as! EqualizerTableViewCell
-            cell.section = indexPath.section
-            cell.row = indexPath.row
-            return cell
-        }
-    }
-    
     /// This function is called as a callback function in the case that the number of channels requested from the tapped input is less than 2.
     func failedToGetDesiredNumberOfChannels() {
         // TODO: Notify User that only 1 channel is available
-        var cell = tableView.cellForRow(at: IndexPath(row: 0, section: 1))
-        cell?.isUserInteractionEnabled = false
-        cell = tableView.cellForRow(at: IndexPath(row: 1, section: 1))
-        cell?.isUserInteractionEnabled = false
+        APIManager.sharedInstance.vc = self.parent
+//        var cell = tableView.cellForRow(at: IndexPath(row: 0, section: 1))
+//        cell?.isUserInteractionEnabled = false
+//        cell = tableView.cellForRow(at: IndexPath(row: 1, section: 1))
+//        cell?.isUserInteractionEnabled = false
 
     }
     
@@ -157,25 +135,19 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
     func updateGains() {
         let leftBands = Audio.sharedInstance.leftEqualizer.bands
         let rightBands = Audio.sharedInstance.rightEqualizer.bands
-        
-        if let cell1 = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? EqualizerTableViewCell {
+        if !channel1 {
             for i in 0...6 {
-                leftBands[i + 7].gain = (cell1.sliderStackView.subviews[i] as! VerticalSlider).value
+                leftBands[i + 7].gain = (self.sliderStackView1.subviews[i] as! VerticalSlider).value
             }
-        }
-        if let cell2 = tableView.cellForRow(at: IndexPath(row: 1, section: 0)) as? EqualizerTableViewCell {
             for i in 0...6 {
-                leftBands[i].gain = (cell2.sliderStackView.subviews[i] as! VerticalSlider).value
+                leftBands[i].gain = (self.sliderStackView2.subviews[i] as! VerticalSlider).value
             }
-        }
-        if let cell3 = tableView.cellForRow(at: IndexPath(row: 0, section: 1)) as? EqualizerTableViewCell {
+        } else {
             for i in 0...6 {
-                rightBands[i + 7].gain = (cell3.sliderStackView.subviews[i] as! VerticalSlider).value
+                rightBands[i + 7].gain = (self.sliderStackView1.subviews[i] as! VerticalSlider).value
             }
-        }
-        if let cell4 = tableView.cellForRow(at: IndexPath(row: 1, section: 1)) as? EqualizerTableViewCell {
             for i in 0...6 {
-                rightBands[i].gain = (cell4.sliderStackView.subviews[i] as! VerticalSlider).value
+                rightBands[i].gain = (self.sliderStackView2.subviews[i] as! VerticalSlider).value
             }
         }
         
@@ -183,7 +155,6 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
     
     /// This is a callback function to update UIElements after the clip finishes playing.
     func finishedPlayingClip() {
-        print("notification received")
         DispatchQueue.main.async {
             // Update UI
             self.mainButton.setImage(#imageLiteral(resourceName: "play-button"), for: .normal)

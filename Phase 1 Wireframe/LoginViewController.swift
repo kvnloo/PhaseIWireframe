@@ -53,7 +53,6 @@ class LoginViewController: GeneralUIViewController, UITableViewDelegate, UITable
     
     /// Returns the number of rows in this tableView.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("this function has been called")
         return 11
     }
     

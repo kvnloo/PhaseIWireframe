@@ -70,10 +70,11 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
     /// Overridden to send `RecordedAudioObject` to the next `GeneralUIViewController` that we are seguing to. In this case the only possible segue is to `EqualizerViewController`.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        if segue.identifier == "SegueToEqualizerPlayer" {
-            let data = sender as! RecordedAudioObject
-            Audio.sharedInstance.recordedAudio = data
-        }
+//        if segue.identifier == "SegueToEqualizerPlayer" {
+//            let data = sender as! RecordedAudioObject
+//            Audio.sharedInstance.recordedAudio = data
+//        }
+        
     }
     
     // MARK: AVAudioRecorderDelegate

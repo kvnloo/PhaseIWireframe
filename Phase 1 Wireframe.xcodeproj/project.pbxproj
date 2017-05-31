@@ -51,6 +51,7 @@
 		0AC92E6E1ED6BEE2007D636D /* GeneralUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E6D1ED6BEE2007D636D /* GeneralUITextField.swift */; };
 		0AC92E721ED6C333007D636D /* GeneralUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E711ED6C333007D636D /* GeneralUITableView.swift */; };
 		0AC92E741ED6C577007D636D /* GeneralUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC92E731ED6C577007D636D /* GeneralUITableViewCell.swift */; };
+		0AD141AF1EDF21BA00F3D89B /* EqualizerTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD141AE1EDF21BA00F3D89B /* EqualizerTabBarController.swift */; };
 		C7225FC173BDB775994AC548 /* Pods_Phase_1_WireframeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8328C4CA1CB318A446DDCE /* Pods_Phase_1_WireframeUITests.framework */; };
 		CDD8567697AAA3C2764C177B /* Pods_Phase_1_WireframeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E1E4DC0509EC69BA02F426 /* Pods_Phase_1_WireframeTests.framework */; };
 		E351DD171884785597919697 /* Pods_Phase_1_Wireframe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D32D7F85167E9BF036824 /* Pods_Phase_1_Wireframe.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -126,6 +127,7 @@
 		0AC92E6D1ED6BEE2007D636D /* GeneralUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUITextField.swift; sourceTree = "<group>"; };
 		0AC92E711ED6C333007D636D /* GeneralUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUITableView.swift; sourceTree = "<group>"; };
 		0AC92E731ED6C577007D636D /* GeneralUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUITableViewCell.swift; sourceTree = "<group>"; };
+		0AD141AE1EDF21BA00F3D89B /* EqualizerTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualizerTabBarController.swift; sourceTree = "<group>"; };
 		4B1D6CD74C3053B4B9042E92 /* Pods-Phase 1 Wireframe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phase 1 Wireframe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phase 1 Wireframe/Pods-Phase 1 Wireframe.debug.xcconfig"; sourceTree = "<group>"; };
 		6BDE823CC65046B2CA02BA9B /* Pods-Phase 1 WireframeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phase 1 WireframeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Phase 1 WireframeUITests/Pods-Phase 1 WireframeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6F046A1158F17D7A66181766 /* Pods-Phase 1 Wireframe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phase 1 Wireframe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Phase 1 Wireframe/Pods-Phase 1 Wireframe.release.xcconfig"; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 		0AC92E6F1ED6BFDF007D636D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0AD141AE1EDF21BA00F3D89B /* EqualizerTabBarController.swift */,
 				0A7E51211ED7A47200DD0B78 /* NoiseMeterViewController.swift */,
 				0A7E51231ED7A52D00DD0B78 /* RecorderViewController.swift */,
 				0AB8B0D31ED9663F00BA3AD6 /* EqualizerViewController.swift */,
@@ -686,6 +689,7 @@
 				0A7A18C01EDEAAE9009B7BAB /* GeneralNSArray.swift in Sources */,
 				0A7BE2581ED55D1000792CD7 /* GeneralUIButton.swift in Sources */,
 				0A0C32B91EDE886200798582 /* User.swift in Sources */,
+				0AD141AF1EDF21BA00F3D89B /* EqualizerTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
