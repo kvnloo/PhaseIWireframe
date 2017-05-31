@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FBSDKCoreKit
+import GoogleSignIn
 
 @UIApplicationMain
 
@@ -40,6 +41,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.WHITE]
         
         FirebaseApp.configure()
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = APIManager.sharedInstance
+        GIDSignIn.sharedInstance().uiDelegate = APIManager.sharedInstance
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         if let _ = APIManager.sharedInstance.user {
@@ -52,7 +56,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        let fbHandled = FBSDKApplicationDelegate.sharedInstance().application(
+            application,
+            open: url,
+            sourceApplication: sourceApplication,
+            annotation: annotation)
+        let googleHandled = GIDSignIn.sharedInstance().handle(
+            url,
+            sourceApplication:sourceApplication,
+            annotation: [:])
+        return fbHandled || googleHandled
     }
     
     func switchViewControllers(viewController: UIViewController) {

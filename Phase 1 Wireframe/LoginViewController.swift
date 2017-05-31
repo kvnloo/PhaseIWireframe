@@ -9,6 +9,7 @@
 import UIKit
 import FacebookCore
 import FacebookLogin
+import GoogleSignIn
 
 /** This `GeneralUIViewController` controls the login view. It allows the user to login through Facebook, Google, E-mail, or Phone.
  
@@ -61,18 +62,19 @@ class LoginViewController: GeneralUIViewController, UITableViewDelegate, UITable
         var cell: SignUpTableViewCell
         switch indexPath.row {
         case 0:
-            cell                          = tableView.dequeueReusableCell(withIdentifier: "ButtonCell") as! SignUpTableViewCell
-            cell.button?.backgroundColor  = UIColor.FB_BLUE
+            cell                         = tableView.dequeueReusableCell(withIdentifier: "ButtonCell") as! SignUpTableViewCell
+            cell.button?.backgroundColor = UIColor.FB_BLUE
             cell.button?.setTitleColor(UIColor.WHITE, for: .normal)
             cell.button?.setTitle("LOG IN WITH FACEBOOK", for: .normal)
             cell.button?.addTarget(self, action: #selector(self.fbLoginButtonClicked), for: .touchUpInside)
 
             
         case 1:
-            cell                          = tableView.dequeueReusableCell(withIdentifier: "ButtonCell") as! SignUpTableViewCell
-            cell.button?.backgroundColor  = UIColor.GOOGLE_RED
+            cell                         = tableView.dequeueReusableCell(withIdentifier: "ButtonCell") as! SignUpTableViewCell
+            cell.button?.backgroundColor = UIColor.GOOGLE_RED
             cell.button?.setTitleColor(UIColor.WHITE, for: .normal)
             cell.button?.setTitle("LOG IN WITH GOOGLE", for: .normal)
+            cell.button?.addTarget(self, action: #selector(self.googleLoginButtonClicked), for: .touchUpInside)
             
         case 2:
             cell             = tableView.dequeueReusableCell(withIdentifier: "LabelCell") as! SignUpTableViewCell
@@ -150,5 +152,12 @@ class LoginViewController: GeneralUIViewController, UITableViewDelegate, UITable
         APIManager.sharedInstance.vc = self
         APIManager.sharedInstance.fbSignIn()
     }
+    
+    @IBAction func googleLoginButtonClicked(sender: AnyObject) {
+        APIManager.sharedInstance.vc = self
+        APIManager.sharedInstance.googleSignIn()
+    }
+
+    
 }
 

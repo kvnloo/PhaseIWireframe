@@ -57,6 +57,7 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
                 Audio.sharedInstance.rightEqualizer.bands[i].gain = right[i]
             }
         }
+        tableView.reloadData()
     }
     /// Check if user recorded clip or if they want to use real-time recording. Set the value for `realTime` based on if recordedAudio is nil. Once `realTime` is set, `setupEqualizer` is called.
     override func viewDidLoad() {
