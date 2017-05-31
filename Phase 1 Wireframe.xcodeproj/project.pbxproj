@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0C32B21EDE5BD500798582 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C32B11EDE5BD500798582 /* GoogleService-Info.plist */; };
+		0A0C32B51EDE5D1E00798582 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C32B41EDE5D1E00798582 /* APIManager.swift */; };
+		0A0C32B91EDE886200798582 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C32B81EDE886200798582 /* User.swift */; };
 		0A23A1D41EDCF5AD0002E626 /* RecordedAudioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23A1D31EDCF5AD0002E626 /* RecordedAudioObject.swift */; };
 		0A23A1D71EDCF8C60002E626 /* AudioSingletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23A1D61EDCF8C60002E626 /* AudioSingletons.swift */; };
 		0A4E88D31EDBFF5400B69BC8 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E88D21EDBFF5400B69BC8 /* song.mp3 */; };
 		0A4E88D51EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E88D41EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift */; };
+		0A7A18C01EDEAAE9009B7BAB /* GeneralNSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7A18BF1EDEAAE9009B7BAB /* GeneralNSArray.swift */; };
 		0A7BE2271ED54AA800792CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */; };
 		0A7BE2291ED54AA800792CD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2281ED54AA800792CD7 /* LoginViewController.swift */; };
 		0A7BE22C1ED54AA800792CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7BE22A1ED54AA800792CD7 /* Main.storyboard */; };
@@ -70,11 +74,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A0588261EDE43510009ADDF /* Phase 1 Wireframe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Phase 1 Wireframe.entitlements"; sourceTree = "<group>"; };
+		0A0C32B11EDE5BD500798582 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A0C32B41EDE5D1E00798582 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		0A0C32B81EDE886200798582 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0A23A1D31EDCF5AD0002E626 /* RecordedAudioObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudioObject.swift; sourceTree = "<group>"; };
 		0A23A1D61EDCF8C60002E626 /* AudioSingletons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSingletons.swift; sourceTree = "<group>"; };
 		0A4E88D21EDBFF5400B69BC8 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		0A4E88D41EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualizerTableViewCell.swift; sourceTree = "<group>"; };
 		0A5A8C8A1ED8FF430000392C /* Novocaine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Novocaine.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Phase_1_Wireframe-eiypuvltmqzjhxbiwdorbkouosgf/Build/Products/Debug-iphoneos/Novocaine/Novocaine.framework"; sourceTree = "<group>"; };
+		0A7A18BF1EDEAAE9009B7BAB /* GeneralNSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralNSArray.swift; sourceTree = "<group>"; };
 		0A7BE2231ED54AA800792CD7 /* Phase 1 Wireframe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phase 1 Wireframe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A7BE2281ED54AA800792CD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -156,12 +165,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0C32B31EDE5BDE00798582 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0A7BE2351ED54AA800792CD7 /* Info.plist */,
+				0A0C32B11EDE5BD500798582 /* GoogleService-Info.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
 		0A23A1D51EDCF8230002E626 /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
+				0A0C32B41EDE5D1E00798582 /* APIManager.swift */,
 				0A23A1D61EDCF8C60002E626 /* AudioSingletons.swift */,
 			);
 			name = Singletons;
+			sourceTree = "<group>";
+		};
+		0A7A18BE1EDEAACD009B7BAB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0AC92E6B1ED6BD14007D636D /* GerneralFonts.swift */,
+				0AC92E5C1ED6B0C0007D636D /* GeneralUIColor.swift */,
+				0A7A18BF1EDEAAE9009B7BAB /* GeneralNSArray.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		0A7BE21A1ED54AA800792CD7 = {
@@ -189,17 +218,19 @@
 		0A7BE2251ED54AA800792CD7 /* Phase 1 Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				0A0588261EDE43510009ADDF /* Phase 1 Wireframe.entitlements */,
 				0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */,
 				0AC92E701ED6BFF9007D636D /* Storyboards */,
 				0AC92E5A1ED68962007D636D /* Assets.xcassets */,
 				0A4E88D21EDBFF5400B69BC8 /* song.mp3 */,
 				0AB970841ED65EF000A5ADBF /* Custom UI */,
 				0AB970681ED6529900A5ADBF /* Fonts */,
+				0A7A18BE1EDEAACD009B7BAB /* Extensions */,
 				0AC92E601ED6B379007D636D /* General */,
 				0AC92E6F1ED6BFDF007D636D /* ViewControllers */,
 				0AB8B0D71EDA234200BA3AD6 /* Models */,
 				0A23A1D51EDCF8230002E626 /* Singletons */,
-				0A7BE2351ED54AA800792CD7 /* Info.plist */,
+				0A0C32B31EDE5BDE00798582 /* Config */,
 			);
 			path = "Phase 1 Wireframe";
 			sourceTree = "<group>";
@@ -226,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				0A23A1D31EDCF5AD0002E626 /* RecordedAudioObject.swift */,
+				0A0C32B81EDE886200798582 /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -271,8 +303,6 @@
 		0AC92E601ED6B379007D636D /* General */ = {
 			isa = PBXGroup;
 			children = (
-				0AC92E6B1ED6BD14007D636D /* GerneralFonts.swift */,
-				0AC92E5C1ED6B0C0007D636D /* GeneralUIColor.swift */,
 				0AC92E5E1ED6B373007D636D /* GeneralUIViewController.swift */,
 				0AC92E691ED6BC71007D636D /* GeneralUILabel.swift */,
 				0AC92E6D1ED6BEE2007D636D /* GeneralUITextField.swift */,
@@ -409,6 +439,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = QWSA5WNQS4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					0A7BE2391ED54AA800792CD7 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -458,6 +493,7 @@
 				0AB970821ED6529900A5ADBF /* Roboto-Thin.ttf in Resources */,
 				0A4E88D31EDBFF5400B69BC8 /* song.mp3 in Resources */,
 				0AB970811ED6529900A5ADBF /* Roboto-Regular.ttf in Resources */,
+				0A0C32B21EDE5BD500798582 /* GoogleService-Info.plist in Resources */,
 				0A7BE2341ED54AA800792CD7 /* LaunchScreen.storyboard in Resources */,
 				0AB9707F1ED6529900A5ADBF /* Roboto-Medium.ttf in Resources */,
 				0AB970831ED6529900A5ADBF /* Roboto-ThinItalic.ttf in Resources */,
@@ -541,7 +577,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		547ADE497A1F647168F7482C /* [CP] Copy Pods Resources */ = {
@@ -571,7 +607,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8629A9F86264D6034421E9E7 /* [CP] Check Pods Manifest.lock */ = {
@@ -586,7 +622,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B38EE12798EF0E511BAB7495 /* [CP] Embed Pods Frameworks */ = {
@@ -636,6 +672,7 @@
 				0A7BE2291ED54AA800792CD7 /* LoginViewController.swift in Sources */,
 				0AC92E741ED6C577007D636D /* GeneralUITableViewCell.swift in Sources */,
 				0A7E51201ED79B2400DD0B78 /* GeneralUINavigationBar.swift in Sources */,
+				0A0C32B51EDE5D1E00798582 /* APIManager.swift in Sources */,
 				0AC92E6A1ED6BC71007D636D /* GeneralUILabel.swift in Sources */,
 				0A7E51241ED7A52D00DD0B78 /* RecorderViewController.swift in Sources */,
 				0AC92E721ED6C333007D636D /* GeneralUITableView.swift in Sources */,
@@ -646,7 +683,9 @@
 				0AC92E5F1ED6B373007D636D /* GeneralUIViewController.swift in Sources */,
 				0AB970861ED65F3700A5ADBF /* CustomUITextField.swift in Sources */,
 				0A23A1D71EDCF8C60002E626 /* AudioSingletons.swift in Sources */,
+				0A7A18C01EDEAAE9009B7BAB /* GeneralNSArray.swift in Sources */,
 				0A7BE2581ED55D1000792CD7 /* GeneralUIButton.swift in Sources */,
+				0A0C32B91EDE886200798582 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,11 +840,17 @@
 			baseConfigurationReference = 4B1D6CD74C3053B4B9042E92 /* Pods-Phase 1 Wireframe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QWSA5WNQS4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Phase\\ 1\\ Wireframe",
+				);
 				INFOPLIST_FILE = "Phase 1 Wireframe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.veeman961.Phase-1-Wireframe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -815,11 +860,17 @@
 			baseConfigurationReference = 6F046A1158F17D7A66181766 /* Pods-Phase 1 Wireframe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QWSA5WNQS4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Phase\\ 1\\ Wireframe",
+				);
 				INFOPLIST_FILE = "Phase 1 Wireframe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.veeman961.Phase-1-Wireframe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -44,6 +44,19 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
             self.mainButton
                 .setImage(#imageLiteral(resourceName: "record-button"), for: .normal)
         }
+        APIManager.sharedInstance.loadData()
+        if let user = APIManager.sharedInstance.user, let data = user.data {
+            
+            let split = data.split()
+            let left = split.left
+            let right = split.right
+            for i in 0...(left.count - 1) {
+                Audio.sharedInstance.leftEqualizer.bands[i].gain = left[i]
+            }
+            for i in 0...(right.count - 1) {
+                Audio.sharedInstance.rightEqualizer.bands[i].gain = right[i]
+            }
+        }
     }
     /// Check if user recorded clip or if they want to use real-time recording. Set the value for `realTime` based on if recordedAudio is nil. Once `realTime` is set, `setupEqualizer` is called.
     override func viewDidLoad() {
@@ -61,10 +74,26 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
         NotificationCenter.default.addObserver(self, selector: #selector(self.finishedPlayingClip), name: Audio.sharedInstance.notificationName, object: nil)
     }
     
+    /// Remove notification observers when view will disappear.
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         // Stop listening notification
-        NotificationCenter.default.removeObserver(self, name: Audio.sharedInstance.notificationName, object: nil);
+        NotificationCenter.default.removeObserver(self, name: Audio.sharedInstance.notificationName, object: nil)
+    }
+    
+    /// Store data from the sliders.
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        if let user = APIManager.sharedInstance.user {
+            let bands = Audio.sharedInstance.leftEqualizer.bands + Audio.sharedInstance.rightEqualizer.bands
+            var gainData = [Float]()
+            for band in bands {
+                gainData.append(band.gain)
+            }
+            user.setData(data: gainData )
+            APIManager.sharedInstance.saveData()
+            
+        }
     }
     
     // MARK: - TableView Setup
@@ -107,6 +136,7 @@ class EqualizerViewController: GeneralUIViewController, UITableViewDelegate, UIT
             return tableView.dequeueReusableCell(withIdentifier: "EmptyCell") as! GeneralUITableViewCell
         } else {
             let cell: EqualizerTableViewCell = tableView.dequeueReusableCell(withIdentifier: "SliderTableViewCell") as! EqualizerTableViewCell
+            cell.section = indexPath.section
             cell.row = indexPath.row
             return cell
         }

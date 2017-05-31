@@ -6,6 +6,12 @@ target 'Phase 1 Wireframe' do
   use_frameworks!
   pod 'InputValidators'
   pod 'VerticalSlider'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'GoogleSignIn'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
 
   # Pods for Phase 1 Wireframe
 

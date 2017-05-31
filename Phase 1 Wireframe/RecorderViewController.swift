@@ -58,6 +58,13 @@ class RecorderViewController: GeneralUIViewController, AVAudioRecorderDelegate {
         Audio.sharedInstance.recorderDelegate = self
     }
     
+    /// Set the state so that it does not keep getting modified.
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        state = true
+        recordButton.setImage(#imageLiteral(resourceName: "record-button"), for: .normal)
+    }
+    
     // MARK: Navigation
     
     /// Overridden to send `RecordedAudioObject` to the next `GeneralUIViewController` that we are seguing to. In this case the only possible segue is to `EqualizerViewController`.

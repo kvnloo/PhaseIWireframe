@@ -187,7 +187,6 @@ class Audio {
 //                let audioFrameCount = UInt32(audioFile.length)
 //                let audioFileBuffer = AVAudioPCMBuffer(pcmFormat: audioFormat, frameCapacity: audioFrameCount)
 //                try audioFile.read(into: audioFileBuffer, frameCount: audioFrameCount)
-                schedule()
                 
             } catch _ {}
         }
@@ -196,11 +195,11 @@ class Audio {
     /// A recursive function that is used to infinitely schedule the same audio clip that was recorded on the previous screen.
     func schedule() {
         audioPlayerNode.scheduleFile(audioFile, at: nil, completionHandler: {
-            self.audioPlayerNode.pause()
+            print("about to sleep")
             // Post notification
             print("notification posted")
             NotificationCenter.default.post(name: self.notificationName, object: nil)
-            self.schedule()
+            self.pauseWithAudioPlayerNode()
         })
     }
     
@@ -256,6 +255,7 @@ class Audio {
     /// Plays the audioPlayerNode
     func playWithAudioPlayerNode() {
         audioPlayerNode?.play()
+        schedule()
     }
     
     /// Pauses the audioPlayerNode

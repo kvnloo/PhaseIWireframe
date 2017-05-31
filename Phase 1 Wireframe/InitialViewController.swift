@@ -29,6 +29,10 @@ class InitialViewController: GeneralUIViewController {
     @IBOutlet weak var logoImageView: UIImageView!
     /// A label to display the company's name.
     @IBOutlet weak var logoLabel: GeneralUILabel!
+    /// A label to ask the user if they would like to continue without signing in. This gets hidden if the user signs in.
+    @IBOutlet weak var toolsPromptLabel: GeneralUILabel!
+    /// A label to ask the user if they would like to log in. This gets hidden if the user signs in.
+    @IBOutlet weak var loginPrompt: GeneralUILabel!
     
     // MARK: - UIViewController
     
@@ -37,14 +41,25 @@ class InitialViewController: GeneralUIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        
-        logInButton.setTitleColor(UIColor.BLACK, for: .normal)
-        demoToolsButton.setTitleColor(UIColor.BLACK, for: .normal)
-        logInButton.backgroundColor     = UIColor.WHITE
+        if let _ = APIManager.sharedInstance.user {
+            logInButton.backgroundColor     = UIColor.RED
+            logInButton.setTitle("LOG OUT", for: .normal)
+            logInButton.removeTarget(nil, action: nil, for: .allEvents)
+            logInButton.addTarget(self, action: #selector(self.requestLogout(_:)), for: .touchUpInside)
+            createAccountButton.removeFromSuperview()
+            toolsPromptLabel.removeFromSuperview()
+            loginPrompt.removeFromSuperview()
+            demoToolsButton.setTitle("TOOLS", for: .normal)
+            
+        } else {
+            logInButton.backgroundColor     = UIColor.WHITE
+        }
         demoToolsButton.backgroundColor = UIColor.WHITE
-        logoImageView.tintColor         = UIColor.CREME
+        logoImageView.tintColor         = UIColor.WHITE
         logoLabel.font                  = UIFont.LOGO
-        logoLabel.textColor             = UIColor.CREME
+        logoLabel.textColor             = UIColor.WHITE
+        
+        
     }
     
     /// Hides the navigation bar since it would look strange in the initial view with which the user is presented.
@@ -63,4 +78,13 @@ class InitialViewController: GeneralUIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         
     }
+    @IBAction func requestLogout(_ sender: Any) {
+        APIManager.sharedInstance.logout()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier :"initial")
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.switchViewControllers(viewController: viewController)
+    }
+    
+    
 }

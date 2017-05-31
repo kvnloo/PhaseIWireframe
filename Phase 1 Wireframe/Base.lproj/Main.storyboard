@@ -40,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="IsR-cI-xnU">
-                                <rect key="frame" x="62" y="32.5" width="250" height="603.5"/>
+                                <rect key="frame" x="62" y="32" width="250" height="603.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Cqd-H1-lca">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="324.5"/>
@@ -83,18 +83,18 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlg-Sd-PvQ" customClass="GeneralUIButton" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC9-eC-xnH" customClass="GeneralUIButton" customModule="Phase_1_Wireframe" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="22.5" width="250" height="42"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="250" id="By0-eh-Fgc"/>
-                                                    <constraint firstAttribute="height" constant="42" id="a7e-tE-ri0"/>
+                                                    <constraint firstAttribute="height" constant="42" id="4uC-a2-lq1"/>
+                                                    <constraint firstAttribute="width" constant="250" id="bXY-7X-Fju"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal" title="LOG IN"/>
                                                 <connections>
-                                                    <segue destination="G4O-ro-dCF" kind="show" id="Hzr-cG-nJG"/>
+                                                    <segue destination="G4O-ro-dCF" kind="show" id="5K6-iL-jFi"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -119,7 +119,7 @@
                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal" title="DEMO TOOLS"/>
                                                 <connections>
-                                                    <segue destination="e3D-r8-DUa" kind="show" id="76P-Pf-opW"/>
+                                                    <segue destination="e3D-r8-DUa" kind="show" identifier="initialToDemo" id="76P-Pf-opW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -139,9 +139,11 @@
                     <connections>
                         <outlet property="createAccountButton" destination="ZnY-A9-njh" id="meG-rk-IUN"/>
                         <outlet property="demoToolsButton" destination="sLH-Cx-RMZ" id="Xst-Uq-4to"/>
-                        <outlet property="logInButton" destination="zlg-Sd-PvQ" id="fQS-BN-OJP"/>
+                        <outlet property="logInButton" destination="nC9-eC-xnH" id="Q2d-EV-YPk"/>
+                        <outlet property="loginPrompt" destination="jI0-7f-nDC" id="hQO-hh-ecK"/>
                         <outlet property="logoImageView" destination="Kfu-14-eoQ" id="02N-3P-SA5"/>
                         <outlet property="logoLabel" destination="YhF-Fe-VRM" id="8Zn-z7-SVD"/>
+                        <outlet property="toolsPromptLabel" destination="s7r-Ke-IQd" id="31I-0H-D7k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -160,22 +162,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3HE-Zc-NO0" customClass="GeneralUITableView" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G68-SM-BNc" customClass="GeneralUITableView" customModule="Phase_1_Wireframe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ButtonCell" rowHeight="66" id="kkn-bS-3G8" customClass="SignUpTableViewCell" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ButtonCell" rowHeight="66" id="x96-0u-nav" customClass="SignUpTableViewCell" customModule="Phase_1_Wireframe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kkn-bS-3G8" id="O5V-Io-oNh">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x96-0u-nav" id="Pv0-5E-bzD">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y99-i7-7Pi" customClass="GeneralUIButton" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caS-Sc-5fY" customClass="GeneralUIButton" customModule="Phase_1_Wireframe" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="12" width="335" height="42"/>
                                                     <color key="backgroundColor" red="0.36470588240000001" green="0.7843137255" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="42" id="0V0-qb-VIL"/>
+                                                        <constraint firstAttribute="height" constant="42" id="Gad-lt-HfN"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -183,59 +185,57 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="y99-i7-7Pi" secondAttribute="bottom" constant="12" id="5Sv-2X-Oq2"/>
-                                                <constraint firstItem="y99-i7-7Pi" firstAttribute="centerX" secondItem="O5V-Io-oNh" secondAttribute="centerX" id="9L2-Sp-rhD"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="y99-i7-7Pi" secondAttribute="trailing" constant="12" id="Mgf-Rd-UWm"/>
-                                                <constraint firstItem="y99-i7-7Pi" firstAttribute="centerY" secondItem="O5V-Io-oNh" secondAttribute="centerY" id="W2c-mX-aiV"/>
-                                                <constraint firstItem="y99-i7-7Pi" firstAttribute="top" secondItem="O5V-Io-oNh" secondAttribute="top" constant="12" id="kBj-bz-MUb"/>
-                                                <constraint firstItem="y99-i7-7Pi" firstAttribute="leading" secondItem="O5V-Io-oNh" secondAttribute="leadingMargin" constant="12" id="yLD-WV-ENr"/>
+                                                <constraint firstItem="caS-Sc-5fY" firstAttribute="centerX" secondItem="Pv0-5E-bzD" secondAttribute="centerX" id="2Dz-Lw-Hk6"/>
+                                                <constraint firstItem="caS-Sc-5fY" firstAttribute="leading" secondItem="Pv0-5E-bzD" secondAttribute="leadingMargin" constant="12" id="A2O-yG-XJd"/>
+                                                <constraint firstAttribute="bottom" secondItem="caS-Sc-5fY" secondAttribute="bottom" constant="12" id="KdH-9u-Qdg"/>
+                                                <constraint firstItem="caS-Sc-5fY" firstAttribute="centerY" secondItem="Pv0-5E-bzD" secondAttribute="centerY" id="UM7-Bg-Idm"/>
+                                                <constraint firstItem="caS-Sc-5fY" firstAttribute="top" secondItem="Pv0-5E-bzD" secondAttribute="top" constant="12" id="iBz-Fs-v9G"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="caS-Sc-5fY" secondAttribute="trailing" constant="12" id="yTn-41-Bwp"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.15686274510000001" green="0.1764705882" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="button" destination="y99-i7-7Pi" id="Qnf-FI-lZn"/>
+                                            <outlet property="button" destination="caS-Sc-5fY" id="zAF-9Y-lhe"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" rowHeight="42" id="mFm-lJ-CnC" customClass="SignUpTableViewCell" customModule="Phase_1_Wireframe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="94" width="375" height="42"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" rowHeight="16" id="bNs-7b-3LR" customClass="SignUpTableViewCell" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="94" width="375" height="16"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mFm-lJ-CnC" id="oTv-Nl-rSe">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="41.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bNs-7b-3LR" id="tLy-M9-xvU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="15.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vk5-Ja-q6W">
-                                                    <rect key="frame" x="20" y="12" width="335" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2W-ct-ZVP">
+                                                    <rect key="frame" x="20" y="1" width="335" height="14"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="vk5-Ja-q6W" secondAttribute="trailing" constant="12" id="5Ox-EM-YJy"/>
-                                                <constraint firstItem="vk5-Ja-q6W" firstAttribute="top" secondItem="oTv-Nl-rSe" secondAttribute="topMargin" constant="4" id="Ivk-bf-Wug"/>
-                                                <constraint firstItem="vk5-Ja-q6W" firstAttribute="centerX" secondItem="oTv-Nl-rSe" secondAttribute="centerX" id="U8Q-wu-jsR"/>
-                                                <constraint firstItem="vk5-Ja-q6W" firstAttribute="leading" secondItem="oTv-Nl-rSe" secondAttribute="leadingMargin" constant="12" id="k9G-zH-KOL"/>
-                                                <constraint firstItem="vk5-Ja-q6W" firstAttribute="centerY" secondItem="oTv-Nl-rSe" secondAttribute="centerY" id="x9z-fj-LZs"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="vk5-Ja-q6W" secondAttribute="bottom" constant="4" id="zsA-RM-7Q7"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="y2W-ct-ZVP" secondAttribute="trailing" constant="12" id="KDO-id-8eD"/>
+                                                <constraint firstItem="y2W-ct-ZVP" firstAttribute="leading" secondItem="tLy-M9-xvU" secondAttribute="leadingMargin" constant="12" id="bM1-RB-hii"/>
+                                                <constraint firstItem="y2W-ct-ZVP" firstAttribute="centerX" secondItem="tLy-M9-xvU" secondAttribute="centerX" id="qtX-9q-0Fe"/>
+                                                <constraint firstItem="y2W-ct-ZVP" firstAttribute="centerY" secondItem="tLy-M9-xvU" secondAttribute="centerY" id="s6w-ib-ipZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.15686274510000001" green="0.1764705882" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="label" destination="vk5-Ja-q6W" id="OuL-Zc-X9G"/>
+                                            <outlet property="label" destination="y2W-ct-ZVP" id="6IR-0a-u1Q"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextFieldCell" rowHeight="66" id="9ES-fN-a21" customClass="SignUpTableViewCell" customModule="Phase_1_Wireframe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="136" width="375" height="66"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextFieldCell" rowHeight="66" id="b0K-zx-dsL" customClass="SignUpTableViewCell" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="110" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9ES-fN-a21" id="pkc-2h-6yt">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b0K-zx-dsL" id="VvQ-Xw-XSO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TextField" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YaD-Ua-AWD" customClass="CustomUITextField" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TextField" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DWO-wy-LHc" customClass="CustomUITextField" customModule="Phase_1_Wireframe" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="12" width="351" height="42"/>
                                                     <color key="backgroundColor" red="0.35686274509999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="42" id="sOX-tp-5e4"/>
+                                                        <constraint firstAttribute="height" constant="42" id="4wM-hK-p2L"/>
                                                     </constraints>
                                                     <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
@@ -248,37 +248,46 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="YaD-Ua-AWD" firstAttribute="centerX" secondItem="pkc-2h-6yt" secondAttribute="centerX" id="3t7-4C-qEv"/>
-                                                <constraint firstItem="YaD-Ua-AWD" firstAttribute="centerY" secondItem="pkc-2h-6yt" secondAttribute="centerY" id="DUr-p5-dgZ"/>
-                                                <constraint firstItem="YaD-Ua-AWD" firstAttribute="top" secondItem="pkc-2h-6yt" secondAttribute="top" constant="12" id="G9b-lP-0Hd"/>
-                                                <constraint firstAttribute="bottom" secondItem="YaD-Ua-AWD" secondAttribute="bottom" constant="12" id="Gi6-YY-rhy"/>
-                                                <constraint firstAttribute="trailing" secondItem="YaD-Ua-AWD" secondAttribute="trailing" constant="12" id="PMu-ln-nEY"/>
-                                                <constraint firstItem="YaD-Ua-AWD" firstAttribute="leading" secondItem="pkc-2h-6yt" secondAttribute="leading" constant="12" id="kNg-uF-GXH"/>
+                                                <constraint firstAttribute="trailing" secondItem="DWO-wy-LHc" secondAttribute="trailing" constant="12" id="B9w-do-0VF"/>
+                                                <constraint firstItem="DWO-wy-LHc" firstAttribute="top" secondItem="VvQ-Xw-XSO" secondAttribute="top" constant="12" id="Pkx-G9-sci"/>
+                                                <constraint firstItem="DWO-wy-LHc" firstAttribute="centerX" secondItem="VvQ-Xw-XSO" secondAttribute="centerX" id="QJI-XX-qNu"/>
+                                                <constraint firstAttribute="bottom" secondItem="DWO-wy-LHc" secondAttribute="bottom" constant="12" id="TVb-il-lNt"/>
+                                                <constraint firstItem="DWO-wy-LHc" firstAttribute="leading" secondItem="VvQ-Xw-XSO" secondAttribute="leading" constant="12" id="Yvk-gu-B2N"/>
+                                                <constraint firstItem="DWO-wy-LHc" firstAttribute="centerY" secondItem="VvQ-Xw-XSO" secondAttribute="centerY" id="oML-RP-RS7"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.15686274510000001" green="0.1764705882" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="textField" destination="YaD-Ua-AWD" id="Fff-bY-Eio"/>
+                                            <outlet property="textField" destination="DWO-wy-LHc" id="FOQ-Zy-Cxr"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmptyCell" rowHeight="42" id="BvC-Fx-Bo4" customClass="SignUpTableViewCell" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="176" width="375" height="42"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BvC-Fx-Bo4" id="5tK-ZW-WYo">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="41.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.15686274510000001" green="0.1764705882" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="G4O-ro-dCF" id="61w-lY-LZk"/>
-                                    <outlet property="delegate" destination="G4O-ro-dCF" id="bab-2H-CU5"/>
+                                    <outlet property="dataSource" destination="G4O-ro-dCF" id="Kqu-Mx-RD4"/>
+                                    <outlet property="delegate" destination="G4O-ro-dCF" id="qa7-Sj-HxM"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.15686274510000001" green="0.1764705882" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Gnw-2P-aby" firstAttribute="top" secondItem="3HE-Zc-NO0" secondAttribute="bottom" id="PX6-Hq-wcP"/>
-                            <constraint firstAttribute="trailing" secondItem="3HE-Zc-NO0" secondAttribute="trailing" id="k8D-dY-xUZ"/>
-                            <constraint firstItem="3HE-Zc-NO0" firstAttribute="top" secondItem="eyT-6f-akz" secondAttribute="top" id="kUy-ri-lWU"/>
-                            <constraint firstItem="3HE-Zc-NO0" firstAttribute="leading" secondItem="eyT-6f-akz" secondAttribute="leading" id="l7J-DM-GK8"/>
+                            <constraint firstItem="G68-SM-BNc" firstAttribute="top" secondItem="eyT-6f-akz" secondAttribute="top" id="8Sa-DX-OMB"/>
+                            <constraint firstItem="G68-SM-BNc" firstAttribute="leading" secondItem="eyT-6f-akz" secondAttribute="leading" id="E0b-UB-in3"/>
+                            <constraint firstAttribute="bottom" secondItem="G68-SM-BNc" secondAttribute="bottom" id="ExT-s5-cOU"/>
+                            <constraint firstAttribute="trailing" secondItem="G68-SM-BNc" secondAttribute="trailing" id="Upv-gz-eMT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="LOG IN" id="OVT-MJ-wtx"/>
                     <connections>
-                        <outlet property="tableView" destination="3HE-Zc-NO0" id="ncX-95-Ib8"/>
+                        <outlet property="tableView" destination="G68-SM-BNc" id="flB-63-Es4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0A4-Cs-eh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -297,7 +306,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yuJ-hf-U2q" customClass="GeneralUITableView" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yuJ-hf-U2q" customClass="GeneralUITableView" customModule="Phase_1_Wireframe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -333,15 +342,15 @@
                                             <outlet property="button" destination="qHe-RW-tlL" id="5ur-nu-F6R"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" rowHeight="42" id="5GZ-G8-0NJ" customClass="SignUpTableViewCell" customModule="Phase_1_Wireframe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="94" width="375" height="42"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" rowHeight="16" id="5GZ-G8-0NJ" customClass="SignUpTableViewCell" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="94" width="375" height="16"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5GZ-G8-0NJ" id="LXc-qa-DXO">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="41.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="15.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjf-PL-2ym">
-                                                    <rect key="frame" x="20" y="12" width="335" height="18"/>
+                                                    <rect key="frame" x="20" y="1" width="335" height="14"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -350,10 +359,8 @@
                                             <constraints>
                                                 <constraint firstItem="Xjf-PL-2ym" firstAttribute="centerY" secondItem="LXc-qa-DXO" secondAttribute="centerY" id="3pl-qC-Idg"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Xjf-PL-2ym" secondAttribute="trailing" constant="12" id="DTZ-hk-t7d"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Xjf-PL-2ym" secondAttribute="bottom" constant="4" id="kX6-0v-2hH"/>
                                                 <constraint firstItem="Xjf-PL-2ym" firstAttribute="leading" secondItem="LXc-qa-DXO" secondAttribute="leadingMargin" constant="12" id="ns7-cL-82d"/>
                                                 <constraint firstItem="Xjf-PL-2ym" firstAttribute="centerX" secondItem="LXc-qa-DXO" secondAttribute="centerX" id="qHv-QL-qdS"/>
-                                                <constraint firstItem="Xjf-PL-2ym" firstAttribute="top" secondItem="LXc-qa-DXO" secondAttribute="topMargin" constant="4" id="vcq-DR-t7M"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.15686274510000001" green="0.1764705882" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -362,7 +369,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextFieldCell" rowHeight="66" id="DTb-14-w0k" customClass="SignUpTableViewCell" customModule="Phase_1_Wireframe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="136" width="375" height="66"/>
+                                        <rect key="frame" x="0.0" y="110" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DTb-14-w0k" id="cNn-E7-umT">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
@@ -398,6 +405,15 @@
                                             <outlet property="textField" destination="1hb-ng-BcT" id="fr1-Kw-wq0"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmptyCell" rowHeight="42" id="a2s-Rz-DEP" customClass="SignUpTableViewCell" customModule="Phase_1_Wireframe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="176" width="375" height="42"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a2s-Rz-DEP" id="HDi-Q3-pRY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="41.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.15686274510000001" green="0.1764705882" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="QxU-xU-Mcf" id="21b-nK-aFF"/>
@@ -415,7 +431,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="SIGN UP" id="XPe-NG-N0H"/>
                     <connections>
-                        <outlet property="signUpTableView" destination="yuJ-hf-U2q" id="bt5-fF-UkJ"/>
+                        <outlet property="tableView" destination="yuJ-hf-U2q" id="RQd-x9-GLI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDI-qh-mTw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -483,9 +499,9 @@
         <!--Navigation Controller-->
         <scene sceneID="FyU-cv-VpV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fk1-GX-45Z" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="initial" automaticallyAdjustsScrollViewInsets="NO" id="Fk1-GX-45Z" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4si-bu-0Ll">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4si-bu-0Ll">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -511,7 +527,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cv-7d-qiD">
-                                <rect key="frame" x="137" y="305.5" width="101.5" height="56.5"/>
+                                <rect key="frame" x="137.5" y="306" width="101.5" height="56.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2x-Ox-qTp" customClass="GeneralUILabel" customModule="Phase_1_Wireframe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="43.5" height="56.5"/>

@@ -24,8 +24,8 @@ class GeneralUIButton: UIButton {
         self.clipsToBounds         = true
         self.layer.cornerRadius    = 20.0
         self.titleLabel?.font      = UIFont.BUTTON
-        self.backgroundColor       = UIColor.BLUE
-        self.setTitleColor(UIColor.WHITE, for: .normal)
+        self.backgroundColor       = UIColor.GREEN
+        self.setTitleColor(UIColor.BLACK, for: .normal)
     }
 
 }

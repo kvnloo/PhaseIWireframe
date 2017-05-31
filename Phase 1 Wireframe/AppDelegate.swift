@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FBSDKCoreKit
 
 @UIApplicationMain
 
@@ -37,7 +39,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationBarAppearance.barTintColor = UIColor.BACKGROUND
         navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.WHITE]
         
+        FirebaseApp.configure()
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        if let _ = APIManager.sharedInstance.user {
+            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+            let newvc = storyboard.instantiateViewController(withIdentifier: "demo")
+            self.switchViewControllers(viewController: newvc)
+        }
+        
         return true
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+    
+    func switchViewControllers(viewController: UIViewController) {
+        self.window?.rootViewController = viewController
     }
 
     /** Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state. Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -66,7 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      - note: This function is not customized.
      */
     func applicationDidBecomeActive(_ application: UIApplication) {
-        
+        FBSDKAppEvents.activateApp()
     }
 }
 

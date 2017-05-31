@@ -23,6 +23,7 @@ class EqualizerTableViewCell: GeneralUITableViewCell {
             updateSelf()
         }
     }
+    var section: Int?
     
     /// Sets the font for all `GeneralUILabel` objects. Also adds a target to each `VerticalSlider` that calls `EqualizerViewController.updateGains` which results in the equalizers pulling data from the `VerticalSlider` objects to set the different frequency's gain levels.
     override func awakeFromNib() {
@@ -60,6 +61,18 @@ class EqualizerTableViewCell: GeneralUITableViewCell {
             (labels[4] as! GeneralUILabel).text = "128Hz"
             (labels[5] as! GeneralUILabel).text = "256Hz"
             (labels[6] as! GeneralUILabel).text = "512Hz"
+        }
+        
+        if let user = APIManager.sharedInstance.user, let data = user.data {
+            let sliders = sliderStackView.subviews
+            for i in 0...(sliders.count - 1) {
+                let slider = sliders[i] as! VerticalSlider
+                if row! == 0 {
+                    slider.slider.value = data[i + 7 + section! * 14]
+                } else {
+                    slider.slider.value = data[i + section! * 14]
+                }
+            }
         }
     }
 }

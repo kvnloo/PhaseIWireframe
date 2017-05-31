@@ -106,7 +106,7 @@ public extension UIColor {
         CMYK: 18 35 0 0
      */
     public class var PURPLE: UIColor {
-        return UIColor(red: 269/255, green: 35/255, blue: 100/255, alpha: 1.0)
+        return UIColor(red: 208/255, green: 165/255, blue: 255/255, alpha: 1.0)
     }
     
     /** Defined as `Maya Blue` in the color palette. This color replaces all `Blue` in the application. It can be used as a `GeneralUIButton` color, or `UIView`. This can be seen in the `NoiseMeter` where this color indicates an audio decibal range. The following values are this color's representation in various color spaces:
@@ -128,7 +128,7 @@ public extension UIColor {
         CMYK: 0 22 46 0
      */
     public class var ORANGE: UIColor {
-        return UIColor(red: 31/255, green: 46/255, blue: 100/255, alpha: 1.0)
+        return UIColor(red: 255/255, green: 198/255, blue: 137/255, alpha: 1.0)
     }
     
     // MARK: Social Media Button Colors
