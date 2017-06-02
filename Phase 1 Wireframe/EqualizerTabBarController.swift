@@ -7,12 +7,14 @@
 //
 
 import UIKit
-
+/**
+ This class controls the `TabBarController` that manages the 0th and 1st channel equalizer bands that the user can manipulate. This class ensures that the a view is instantiated for each of these channels. It also sets data for each of the instantiated view controllers since they need information regarding which channel each `GeneralUIViewController` will be handeling.
+ */
 class EqualizerTabBarController: UITabBarController {
 
+    /// This function manages instantiating the two `GeneralUIViewController` objects that show up within the `UITabBar`. It also creates a new navigation item for itself since the navigation bars defined in each vc will not show up due to thier relationship with regard to this class. Once these `GeneralUIViewController` objects have been instantiated, they are assigned to the self property `.viewControllers`.
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let vc0 = storyboard.instantiateViewController(withIdentifier: "channel0") as! EqualizerViewController
@@ -26,21 +28,4 @@ class EqualizerTabBarController: UITabBarController {
         vc1.channel1 = true
         self.viewControllers = [vc0, vc1]
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

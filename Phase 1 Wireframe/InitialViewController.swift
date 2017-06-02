@@ -36,7 +36,7 @@ class InitialViewController: GeneralUIViewController {
     
     // MARK: - UIViewController
     
-    /// Configure UIElements of the view. This sets the colors for the different buttons and the tint color for the ImageViews.
+    /// Configure UIElements of the view. This sets the colors for the different buttons and the tint color for the ImageViews. Includes logic for if the user is signed in or not.
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -78,6 +78,10 @@ class InitialViewController: GeneralUIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         
     }
+    
+    // MARK: - IBActions
+    
+    /// An action method for when the user attempts to logout. This makes changes within the `APIManager` that set the user to nil and change the `rootViewController`.
     @IBAction func requestLogout(_ sender: Any) {
         APIManager.sharedInstance.logout()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

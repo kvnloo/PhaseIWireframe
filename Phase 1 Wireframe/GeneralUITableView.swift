@@ -15,7 +15,6 @@ class GeneralUITableView: UITableView {
     
     /**
      Customize appearance of the `UITableView` object when this function is called. The theme enforces the seperatorStyle, estimatedRowHeight, allowsSelection and backgroundColor to be consistent among all `GeneralUITableView` objects.
-     
      */
     override func awakeFromNib() {
         super.awakeFromNib()

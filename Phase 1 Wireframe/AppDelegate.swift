@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// The AppDelegate window. This variable contains information regarding the placment of the Application itself on the phone screen. The rootViewController for this variable will be the `InitialViewController`.
     var window: UIWindow?
 
-    /// The Navigation Bar's appearance is set in this function. Since the entire application will be using the same Navigation bar, setting it here will affect all other views.
+    /// The Navigation Bar's appearance is set in this function. Since the entire application will be using the same Navigation bar, setting it here will affect all other views. Most of the backend is also configured in this function (Firebase, Google SDK, Facebook SDK).
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let navigationBarAppearance = UINavigationBar.appearance()
@@ -55,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    /// This function is called when this application opens an URL. It returns true if the URL has handled by either Google SDK or Facebook SDK and returns when the user finishes logging in. This allows the Safari view to close once the user has signed in.
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         let fbHandled = FBSDKApplicationDelegate.sharedInstance().application(
             application,
@@ -95,7 +96,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     /** Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-     - note: This function is not customized.
+     - note: This function is customized for the Facebook SDK.
      */
     func applicationDidBecomeActive(_ application: UIApplication) {
         FBSDKAppEvents.activateApp()

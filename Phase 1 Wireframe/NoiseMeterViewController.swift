@@ -45,7 +45,7 @@ class NoiseMeterViewController: GeneralUIViewController,  AVAudioRecorderDelegat
     
     // MARK: - Global Variables
     
-    /// The recorder object on which the noise meter relies.
+    /// The recorder object on which the noise meter relies. // TODO: move over to `Audio` class and use the Singleton AVAudioRecorder.
     var recorder: AVAudioRecorder?
     /// A timer object to gathers noise data frequently.
     var levelTimer = Timer()

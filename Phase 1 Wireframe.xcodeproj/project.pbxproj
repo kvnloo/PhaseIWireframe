@@ -14,7 +14,7 @@
 		0A23A1D71EDCF8C60002E626 /* AudioSingletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23A1D61EDCF8C60002E626 /* AudioSingletons.swift */; };
 		0A4E88D31EDBFF5400B69BC8 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E88D21EDBFF5400B69BC8 /* song.mp3 */; };
 		0A4E88D51EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E88D41EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift */; };
-		0A7A18C01EDEAAE9009B7BAB /* GeneralNSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7A18BF1EDEAAE9009B7BAB /* GeneralNSArray.swift */; };
+		0A7A18C01EDEAAE9009B7BAB /* GeneralArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7A18BF1EDEAAE9009B7BAB /* GeneralArray.swift */; };
 		0A7BE2271ED54AA800792CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */; };
 		0A7BE2291ED54AA800792CD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BE2281ED54AA800792CD7 /* LoginViewController.swift */; };
 		0A7BE22C1ED54AA800792CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7BE22A1ED54AA800792CD7 /* Main.storyboard */; };
@@ -84,7 +84,7 @@
 		0A4E88D21EDBFF5400B69BC8 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		0A4E88D41EDC6D1C00B69BC8 /* EqualizerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualizerTableViewCell.swift; sourceTree = "<group>"; };
 		0A5A8C8A1ED8FF430000392C /* Novocaine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Novocaine.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Phase_1_Wireframe-eiypuvltmqzjhxbiwdorbkouosgf/Build/Products/Debug-iphoneos/Novocaine/Novocaine.framework"; sourceTree = "<group>"; };
-		0A7A18BF1EDEAAE9009B7BAB /* GeneralNSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralNSArray.swift; sourceTree = "<group>"; };
+		0A7A18BF1EDEAAE9009B7BAB /* GeneralArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralArray.swift; sourceTree = "<group>"; };
 		0A7BE2231ED54AA800792CD7 /* Phase 1 Wireframe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phase 1 Wireframe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7BE2261ED54AA800792CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A7BE2281ED54AA800792CD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 			children = (
 				0AC92E6B1ED6BD14007D636D /* GerneralFonts.swift */,
 				0AC92E5C1ED6B0C0007D636D /* GeneralUIColor.swift */,
-				0A7A18BF1EDEAAE9009B7BAB /* GeneralNSArray.swift */,
+				0A7A18BF1EDEAAE9009B7BAB /* GeneralArray.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -686,7 +686,7 @@
 				0AC92E5F1ED6B373007D636D /* GeneralUIViewController.swift in Sources */,
 				0AB970861ED65F3700A5ADBF /* CustomUITextField.swift in Sources */,
 				0A23A1D71EDCF8C60002E626 /* AudioSingletons.swift in Sources */,
-				0A7A18C01EDEAAE9009B7BAB /* GeneralNSArray.swift in Sources */,
+				0A7A18C01EDEAAE9009B7BAB /* GeneralArray.swift in Sources */,
 				0A7BE2581ED55D1000792CD7 /* GeneralUIButton.swift in Sources */,
 				0A0C32B91EDE886200798582 /* User.swift in Sources */,
 				0AD141AF1EDF21BA00F3D89B /* EqualizerTabBarController.swift in Sources */,

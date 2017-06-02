@@ -114,19 +114,41 @@ class LoginViewController: GeneralUIViewController, UITableViewDelegate, UITable
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    // MARK: - IBAction
+    // MARK: - Helper Functions
     
+    /// Returns the username that was typed in by the user.
     func getuid() -> String? {
         let cell = tableView.cellForRow(at: IndexPath(row: 3, section: 0)) as! SignUpTableViewCell
         return cell.textField?.text
     }
-    
+    /// Returns the password that was typed in by the user.
     func getpw() -> String? {
         let cell = tableView.cellForRow(at: IndexPath(row: 4, section: 0)) as! SignUpTableViewCell
         return cell.textField?.text
     }
     
-    ///
+    /// Once the user has logged in successfully, the `rootViewController` must be changed and a segue is taken to move the application to the demo page.
+    func userLoggedIn() {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let newvc = storyboard.instantiateViewController(withIdentifier: "initial") as! UINavigationController
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.switchViewControllers(viewController: newvc)
+        newvc.childViewControllers[0].performSegue(withIdentifier: "initialToDemo", sender: Any?.self)
+    }
+    
+    // MARK: - IBAction
+    
+    /// An action item for when the Facebook Login Button is clicked.
+    @IBAction func fbLoginButtonClicked(sender: AnyObject) {
+        APIManager.sharedInstance.vc = self
+        APIManager.sharedInstance.fbSignIn()
+    }
+    /// An action item for when the Google Login Button is clicked.
+    @IBAction func googleLoginButtonClicked(sender: AnyObject) {
+        APIManager.sharedInstance.vc = self
+        APIManager.sharedInstance.googleSignIn()
+    }
+    /// This function takes the information provided in this view's `CustomUITextField` objects and sends the information to `Firebase` to attempt logging in. Any failure messages are shown to the user as a notification.
     @IBAction func loginWithCredentials(_ sender: Any) {
         if let username = getuid(), let password = getpw() {
             if username.contains("@") {
@@ -137,24 +159,6 @@ class LoginViewController: GeneralUIViewController, UITableViewDelegate, UITable
             APIManager.sharedInstance.vc = self
             APIManager.sharedInstance.signIn()
         }
-    }
-    
-    func userLoggedIn() {
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let newvc = storyboard.instantiateViewController(withIdentifier: "initial") as! UINavigationController
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.switchViewControllers(viewController: newvc)
-        newvc.childViewControllers[0].performSegue(withIdentifier: "initialToDemo", sender: Any?.self)
-    }
-    
-    @IBAction func fbLoginButtonClicked(sender: AnyObject) {
-        APIManager.sharedInstance.vc = self
-        APIManager.sharedInstance.fbSignIn()
-    }
-    
-    @IBAction func googleLoginButtonClicked(sender: AnyObject) {
-        APIManager.sharedInstance.vc = self
-        APIManager.sharedInstance.googleSignIn()
     }
 
     

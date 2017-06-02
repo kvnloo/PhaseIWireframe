@@ -15,7 +15,6 @@ class GeneralUIButton: UIButton {
     
     /**
      Customize appearance of the `UIButton` object when this function is called. The theme enforces the cornerRadius, backgroundColor, titleColor, and titleLabelFont to be consistent among all `GeneralUIButton` objects.
-     
      */
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -68,7 +68,7 @@ class SignUpViewController: GeneralUIViewController, UITableViewDelegate, UITabl
             cell.button?.backgroundColor  = UIColor.GOOGLE_RED
             cell.button?.setTitleColor(UIColor.WHITE, for: .normal)
             cell.button?.setTitle("SIGN UP WITH GOOGLE", for: .normal)
-            
+            cell.button?.addTarget(self, action: #selector(self.googleLoginButtonClicked), for: .touchUpInside)
         case 2:
             cell             = tableView.dequeueReusableCell(withIdentifier: "LabelCell") as! SignUpTableViewCell
             cell.label?.text = "or with e-mail / phone number"
@@ -111,18 +111,20 @@ class SignUpViewController: GeneralUIViewController, UITableViewDelegate, UITabl
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    // MARK: - Logic
+    // MARK: - Helper functions
     
+    /// Returns the username that was typed in by the user.
     func getuid() -> String? {
         let cell = tableView.cellForRow(at: IndexPath(row: 3, section: 0)) as! SignUpTableViewCell
         return cell.textField?.text
     }
-    
+    /// Returns the password that was typed in by the user.
     func getpw() -> String? {
         let cell = tableView.cellForRow(at: IndexPath(row: 4, section: 0)) as! SignUpTableViewCell
         return cell.textField?.text
     }
     
+    /// Changes the rootViewController once the user has been created.
     func userCreated() {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let newvc = storyboard.instantiateViewController(withIdentifier: "initial") as! UINavigationController
@@ -130,6 +132,7 @@ class SignUpViewController: GeneralUIViewController, UITableViewDelegate, UITabl
         appDelegate.switchViewControllers(viewController: newvc)
     }
     
+    /// Changes the rootViewController once if the user logs in through social media.
     func userLoggedIn() {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let newvc = storyboard.instantiateViewController(withIdentifier: "initial") as! UINavigationController
@@ -137,7 +140,19 @@ class SignUpViewController: GeneralUIViewController, UITableViewDelegate, UITabl
         appDelegate.switchViewControllers(viewController: newvc)
         newvc.childViewControllers[0].performSegue(withIdentifier: "initialToDemo", sender: Any?.self)
     }
+    // MARK: - IBAction
     
+    /// An action item for when the Facebook Login Button is clicked.
+    @IBAction func fbLoginButtonClicked(sender: AnyObject) {
+        APIManager.sharedInstance.vc = self
+        APIManager.sharedInstance.fbSignIn()
+    }
+    /// An action item for when the Google Login Button is clicked.
+    @IBAction func googleLoginButtonClicked(sender: AnyObject) {
+        APIManager.sharedInstance.vc = self
+        APIManager.sharedInstance.googleSignIn()
+    }
+    /// This function takes the information provided in this view's `CustomUITextField` objects and sends the information to `Firebase` to attempt logging in. Any failure messages are shown to the user as a notification.
     @IBAction func signupWithCredentials(_ sender: Any) {
         print("in action")
         if let username = getuid(), let password = getpw() {
@@ -151,11 +166,7 @@ class SignUpViewController: GeneralUIViewController, UITableViewDelegate, UITabl
             APIManager.sharedInstance.createUser()
         }
     }
-    
-    @IBAction func fbLoginButtonClicked(sender: AnyObject) {
-        APIManager.sharedInstance.vc = self
-        APIManager.sharedInstance.fbSignIn()
-    }
+
     
     
 }
