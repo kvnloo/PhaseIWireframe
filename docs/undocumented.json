@@ -167,27 +167,6 @@
       "symbol": "User",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/User.swift",
-      "line": 23,
-      "symbol": "User.init(uid:pw:email:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/User.swift",
-      "line": 29,
-      "symbol": "User.init(token:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe/Phase 1 Wireframe/User.swift",
-      "line": 33,
-      "symbol": "User.setData(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/Kevin/GoogleDrive/Projects/JubiAudio/PhaseIWireframe"
