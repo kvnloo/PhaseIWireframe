@@ -64,7 +64,7 @@ Once these components were created, I started to create the layout for the appli
 
 ## Support
 
-Please [open an issue] (https://github.com/lesseradmin/PhaseIWireframe/issues/new) for support.
+Please [open an issue](https://github.com/lesseradmin/PhaseIWireframe/issues/new) for support.
 
 
 ## Contributing 
