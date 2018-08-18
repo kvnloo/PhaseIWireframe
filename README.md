@@ -17,7 +17,7 @@ I was given a wireframe design of JubiAudio Phase I as described in [this](https
 ## Requirements
 
 - iOS 10.0+
-- XCode 8.0+
+- Xcode 8.0+
 - Swift 3.0+
 
 
@@ -39,7 +39,7 @@ Once, cocoapods has been installed, run the following command:
 $ pod install
 ```
 
-This will install all of the required dependencies to edit, run, and test this project. These can all be done by opening `~/PhaseIWireframe.xcuserstate` using XCode.
+This will install all of the required dependencies to edit, run, and test this project. These can all be done by opening `~/PhaseIWireframe.xcuserstate` using Xcode.
 
 ## Creation
 
