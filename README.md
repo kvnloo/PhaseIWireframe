@@ -2,6 +2,9 @@
 
 [![Doc coverage](https://img.shields.io/badge/docs-98%25-brightgreen.svg)](https://lesseradmin.github.io/PhaseIWireframe/) [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://lesseradmin.github.io/PhaseIWireframe/) [![License MIT](https://img.shields.io/badge/license-MIT-4481C7.svg)](https://opensource.org/licenses/MIT)
 
+## Docs
+
+The documentation for this project can be found [here](https://lesseradmin.github.io/PhaseIWireframe/). All of the documentation was built from in-line comments that were extracted using [Jazzy](https://github.com/realm/jazzy)
 
 ## Description
 
